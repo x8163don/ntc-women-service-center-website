@@ -29,8 +29,7 @@ export default {
         "https://i1.go2yd.com/image.php?url=0KFRrK8beh",
         "https://i1.go2yd.com/image.php?url=0KFRrK8beh"
       ]
-    },
-
+    }
   }
 }
 </script>
