@@ -69,4 +69,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.swiper-container {
+  width: 100vw;
+}
+</style>
