@@ -1,39 +1,52 @@
 <template>
   <div>
     <!-- Logo -->
-    <div class="w-100 h-10">
-      <img src="../../../assets/logo.png" />
+    <div class="w-100 pa3 ph5-ns bg-white">
+      <img class="h3 db dtc-ns v-mid tl" src="../../../assets/logo.png" />
     </div>
 
     <!-- Menu -->
-    <div class="nav">
-      <router-link to="/about">關於我們</router-link> |
-      <router-link to="/news">最新消息</router-link> |
-      <router-link to="/activity">活動報報</router-link> |
-      <router-link to="/growing">成長小屋</router-link> |
-      <router-link to="/power">女力加油站</router-link> |
-      <router-link to="/info">資訊專區</router-link> |
-      <router-link to="/other">微光天使</router-link> |
-      <router-link to="/center">中心出版</router-link>
+    <div class="flex items-center">
+      <template v-for="(link, index) in links">
+        <router-link :key="index" class="w-25 pa3 mr2" :to="link.to">{{
+          link.showText
+        }}</router-link>
+        <div
+          :key="index"
+          v-if="index !== links.length - 1"
+          class="br h2 dib"
+        ></div>
+      </template>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      links: [
+        { to: "/about", showText: "關於我們" },
+        { to: "/news", showText: "最新消息" },
+        { to: "/activity", showText: "活動報報" },
+        { to: "/growing", showText: "成長小屋" },
+        { to: "/power", showText: "女力加油站" },
+        { to: "/info", showText: "資訊專區" },
+        { to: "/other", showText: "微光天使" },
+        { to: "/center", showText: "中心出版" }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
 .nav {
   padding: 30px;
+  background-color: #f68657;
 }
 
-.nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-.nav a.router-link-exact-active {
+.router-link-exact-active {
   color: #42b983;
 }
 </style>
