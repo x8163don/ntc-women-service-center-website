@@ -1,10 +1,13 @@
-import Vue from "vue"
-import App from "./App.vue"
-import router from "./router"
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-Vue.config.productionTip = false
+import "swiper/css/swiper.min.css";
+import "swiper/js/swiper.min.js";
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   render: h => h(App)
-}).$mount("#app")
+}).$mount("#app");

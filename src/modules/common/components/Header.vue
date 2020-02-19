@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- Logo -->
-    <div>
-      <img src="" />
+    <div class="w-100 h-10">
+      <img src="../../../assets/logo.png" />
     </div>
 
     <!-- Menu -->
