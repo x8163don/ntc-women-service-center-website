@@ -12,7 +12,7 @@
           link.showText
         }}</router-link>
         <div
-          :key="index"
+          :key="'b' + index"
           v-if="index !== links.length - 1"
           class="br h2 dib"
         ></div>
