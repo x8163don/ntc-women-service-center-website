@@ -14,22 +14,47 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <!-- News -->
-    <!-- Activity -->
-    <!-- Power -->
+    <!-- Info -->
+    <div>
+      <span
+        v-for="(tab, index) in tabs"
+        :key="'tab' + index"
+        @click="selectedTab = tab.component"
+        >{{ tab.showName }}</span
+      >
+      <keep-alive>
+        <component v-bind:is="selectedTab"></component>
+      </keep-alive>
+    </div>
 
-    <!-- With you -->
-    <!-- Resource -->
-    <!-- Other website -->
+    <!-- Link -->
+    <div>
+      <!-- With you -->
+      <div>與你有約</div>
+
+      <!-- Resource -->
+      <div>共享資源</div>
+
+      <!-- Other website -->
+      <div>友站連結</div>
+    </div>
   </div>
 </template>
 
 <script>
-import Swiper from "swiper";
+import Swiper from "swiper"
+import HomeActivity from "../components/HomeActivity"
+import HomeNews from "../components/HomeNews"
+import HomePower from "../components/HomePower"
 
 export default {
+  components: {
+    HomeActivity,
+    HomeNews,
+    HomePower
+  },
   mounted() {
-    this.initSwiper();
+    this.initSwiper()
   },
   data() {
     return {
@@ -47,8 +72,25 @@ export default {
           src: "https://i1.go2yd.com/image.php?url=0KFRrK8beh"
         }
       ],
-      swiper: null
-    };
+
+      swiper: null,
+
+      selectedTab: "HomeNews",
+      tabs: [
+        {
+          showName: "最新消息",
+          component: "HomeNews"
+        },
+        {
+          showName: "近期活動",
+          component: "HomeActivity"
+        },
+        {
+          showName: "女力加油站",
+          component: "HomePower"
+        }
+      ]
+    }
   },
   methods: {
     initSwiper() {
@@ -63,10 +105,10 @@ export default {
           el: ".swiper-pagination",
           clickable: true
         }
-      });
+      })
     }
   }
-};
+}
 </script>
 
 <style scoped>
