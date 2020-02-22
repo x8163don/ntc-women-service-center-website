@@ -2,7 +2,7 @@
   <div>
     <!-- Logo -->
     <div class="w-100 pa3 ph5-ns bg-white">
-      <img class="h3 db dtc-ns v-mid tl" src="../../../assets/logo.png" />
+      <img class="h3 db dtc-ns v-mid tl" :src="logoImage" />
     </div>
 
     <!-- Menu -->
@@ -25,6 +25,7 @@
 export default {
   data() {
     return {
+      logoImage: process.env.VUE_APP_IMG_HOST + process.env.VUE_APP_HEADER_LOGO,
       links: [
         { to: "/about", showText: "關於我們" },
         { to: "/news", showText: "最新消息" },
@@ -35,9 +36,9 @@ export default {
         { to: "/other", showText: "微光天使" },
         { to: "/center", showText: "中心出版" }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style scoped>
