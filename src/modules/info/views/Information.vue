@@ -17,38 +17,26 @@ export default {
   components: { SideMenu },
   data() {
     return {
-      title: "關於我們",
+      title: "資訊專區",
       menuItems: [
         {
-          name: "中心簡介",
+          name: "性別主流化專家人才資料庫",
           component: ""
         },
         {
-          name: "大紀事",
+          name: "新北市婦女福利政策",
           component: ""
         },
         {
-          name: "空間介紹",
+          name: "新北市婦女服務連結地圖",
           component: ""
         },
         {
-          name: "交通資訊",
+          name: "性別研究與統計資料",
           component: ""
         },
         {
-          name: "租借方法",
-          component: ""
-        },
-        {
-          name: "參訪預約",
-          component: ""
-        },
-        {
-          name: "獲獎紀錄",
-          component: ""
-        },
-        {
-          name: "新聞報章",
+          name: "好站連結",
           component: ""
         }
       ]

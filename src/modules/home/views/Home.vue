@@ -42,10 +42,10 @@
 </template>
 
 <script>
-import Swiper from "swiper"
-import HomeActivity from "../components/HomeActivity"
-import HomeNews from "../components/HomeNews"
-import HomePower from "../components/HomePower"
+import Swiper from "swiper";
+import HomeActivity from "../components/HomeActivity";
+import HomeNews from "../components/HomeNews";
+import HomePower from "../components/HomePower";
 
 export default {
   components: {
@@ -54,7 +54,7 @@ export default {
     HomePower
   },
   mounted() {
-    this.initSwiper()
+    this.initSwiper();
   },
   data() {
     return {
@@ -90,7 +90,7 @@ export default {
           component: "HomePower"
         }
       ]
-    }
+    };
   },
   methods: {
     initSwiper() {
@@ -105,10 +105,10 @@ export default {
           el: ".swiper-pagination",
           clickable: true
         }
-      })
+      });
     }
   }
-}
+};
 </script>
 
 <style scoped>

@@ -17,38 +17,22 @@ export default {
   components: { SideMenu },
   data() {
     return {
-      title: "關於我們",
+      title: "成長小屋",
       menuItems: [
         {
-          name: "中心簡介",
+          name: "中心館藏",
           component: ""
         },
         {
-          name: "大紀事",
+          name: "圖書雜誌典藏閱讀",
           component: ""
         },
         {
-          name: "空間介紹",
+          name: "性別影音資料庫",
           component: ""
         },
         {
-          name: "交通資訊",
-          component: ""
-        },
-        {
-          name: "租借方法",
-          component: ""
-        },
-        {
-          name: "參訪預約",
-          component: ""
-        },
-        {
-          name: "獲獎紀錄",
-          component: ""
-        },
-        {
-          name: "新聞報章",
+          name: "CEDAW專區",
           component: ""
         }
       ]

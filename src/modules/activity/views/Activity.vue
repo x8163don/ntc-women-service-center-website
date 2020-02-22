@@ -17,38 +17,30 @@ export default {
   components: { SideMenu },
   data() {
     return {
-      title: "關於我們",
+      title: "活動報報",
       menuItems: [
         {
-          name: "中心簡介",
+          name: "近期活動",
           component: ""
         },
         {
-          name: "大紀事",
+          name: "主題活動",
           component: ""
         },
         {
-          name: "空間介紹",
+          name: "本期活動",
           component: ""
         },
         {
-          name: "交通資訊",
+          name: "已下架活動",
           component: ""
         },
         {
-          name: "租借方法",
+          name: "系列活動",
           component: ""
         },
         {
-          name: "參訪預約",
-          component: ""
-        },
-        {
-          name: "獲獎紀錄",
-          component: ""
-        },
-        {
-          name: "新聞報章",
+          name: "婦團協力平台",
           component: ""
         }
       ]

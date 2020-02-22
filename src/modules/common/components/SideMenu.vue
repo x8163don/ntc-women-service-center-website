@@ -5,8 +5,8 @@
 
     <!-- menu items -->
     <div
-      v-for="item in menuItems"
-      :key="item.component"
+      v-for="(item, index) in menuItems"
+      :key="index + item.component"
       @click="selectMenuItem(item)"
     >
       {{ item.name }}
@@ -24,7 +24,9 @@ export default {
     defaultSelectedItem: { type: String, default: "" },
     menuItems: {
       type: Array,
-      default: {}
+      default: function() {
+        return []
+      }
     }
   },
   methods: {

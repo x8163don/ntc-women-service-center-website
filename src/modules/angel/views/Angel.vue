@@ -17,38 +17,26 @@ export default {
   components: { SideMenu },
   data() {
     return {
-      title: "關於我們",
+      title: "微光天使",
       menuItems: [
         {
-          name: "中心簡介",
+          name: "認識微光天使",
           component: ""
         },
         {
-          name: "大紀事",
+          name: "志願服務團組織準則",
           component: ""
         },
         {
-          name: "空間介紹",
+          name: "微光行事曆",
           component: ""
         },
         {
-          name: "交通資訊",
+          name: "活動紀事",
           component: ""
         },
         {
-          name: "租借方法",
-          component: ""
-        },
-        {
-          name: "參訪預約",
-          component: ""
-        },
-        {
-          name: "獲獎紀錄",
-          component: ""
-        },
-        {
-          name: "新聞報章",
+          name: "加入微光天使",
           component: ""
         }
       ]
