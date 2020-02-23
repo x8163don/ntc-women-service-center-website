@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- Logo -->
-    <div class="w-100 pa3 ph5-ns bg-white">
-      <img class="h3 db dtc-ns v-mid tl" :src="logoImage" />
-    </div>
+    <!-- <div class="w-100 pa3 ph5-ns bg-white">
+      <a href="/"><img class="h3 db dtc-ns v-mid tl" :src="logoImage"/></a>
+    </div> -->
 
     <!-- Menu -->
     <div class="flex items-center">
       <template v-for="(link, index) in links">
-        <router-link :key="index" class="w-25 pa3 mr2" :to="link.to">{{
+        <router-link :key="index" class="w-25 pa3 mr2 tc" :to="link.to">{{
           link.showText
         }}</router-link>
         <div

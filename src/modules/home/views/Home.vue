@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Carousel -->
-    <div class="swiper-container">
+    <div class="swiper-container tc">
       <div class="swiper-wrapper">
         <div
           class="swiper-slide"
@@ -15,37 +15,52 @@
     </div>
 
     <!-- Info -->
-    <div>
-      <span
-        v-for="(tab, index) in tabs"
-        :key="'tab' + index"
-        @click="selectedTab = tab.component"
-        >{{ tab.showName }}</span
-      >
-      <keep-alive>
-        <component v-bind:is="selectedTab"></component>
-      </keep-alive>
-    </div>
+    <div class="flex">
+      <div class="w-60 flex flex-wrap">
+        <div
+          v-for="(tab, index) in tabs"
+          :key="'tab' + index"
+          @click="selectedTab = tab.component"
+          class="w4 mr1 pa2 bg-orange white bg-animate hover-bg-white hover-black"
+        >
+          {{ tab.showName }}
+        </div>
+        <div class="w-100">
+          <keep-alive>
+            <component v-bind:is="selectedTab"></component>
+          </keep-alive>
+        </div>
+      </div>
 
-    <!-- Link -->
-    <div>
-      <!-- With you -->
-      <div>與你有約</div>
+      <!-- Link -->
+      <div class="w-40 flex flex-column">
+        <!-- With you -->
+        <div class="lt">
+          <div class="tl w2 h1 bg-red dib v-btm "></div>
+          <div class="tl red dib">與你有約</div>
+        </div>
 
-      <!-- Resource -->
-      <div>共享資源</div>
+        <!-- Resource -->
+        <div>
+          <div class="w2 h1 bg-red dib v-btm"></div>
+          <div class="red dib">共享資源</div>
+        </div>
 
-      <!-- Other website -->
-      <div>友站連結</div>
+        <!-- Other website -->
+        <div>
+          <div class="w2 h1 bg-red dib v-btm"></div>
+          <div class="red dib">友站連結</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Swiper from "swiper";
-import HomeActivity from "../components/HomeActivity";
-import HomeNews from "../components/HomeNews";
-import HomePower from "../components/HomePower";
+import Swiper from "swiper"
+import HomeActivity from "../components/HomeActivity"
+import HomeNews from "../components/HomeNews"
+import HomePower from "../components/HomePower"
 
 export default {
   components: {
@@ -54,7 +69,7 @@ export default {
     HomePower
   },
   mounted() {
-    this.initSwiper();
+    this.initSwiper()
   },
   data() {
     return {
@@ -90,7 +105,7 @@ export default {
           component: "HomePower"
         }
       ]
-    };
+    }
   },
   methods: {
     initSwiper() {
@@ -105,14 +120,19 @@ export default {
           el: ".swiper-pagination",
           clickable: true
         }
-      });
+      })
     }
   }
-};
+}
 </script>
 
 <style scoped>
 .swiper-container {
   width: 100vw;
+}
+
+.tab {
+  background-color: #f68657;
+  color: #fff;
 }
 </style>
