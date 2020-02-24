@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-column pa4">
     <SideMenu
       :title="title"
       :menuItems="menuItems"
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu";
+import SideMenu from "../../common/components/SideMenu"
 export default {
   components: { SideMenu },
   data() {
@@ -44,9 +44,9 @@ export default {
           component: ""
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style></style>

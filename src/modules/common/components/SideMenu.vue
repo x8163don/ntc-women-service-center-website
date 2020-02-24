@@ -1,13 +1,14 @@
 <template>
   <div>
     <!-- title -->
-    <div>{{ title }}</div>
+    <div class="b pa2 f3">{{ title }}</div>
 
     <!-- menu items -->
     <div
       v-for="(item, index) in menuItems"
       :key="index + item.component"
       @click="selectMenuItem(item)"
+      class="pa3"
     >
       {{ item.name }}
     </div>

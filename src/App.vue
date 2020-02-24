@@ -26,7 +26,6 @@ export default {
 <style>
 * {
   font-family: "Noto Sans TC", "Roboto";
-  color: #2c3e50;
 }
 
 body {

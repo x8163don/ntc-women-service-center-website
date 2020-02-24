@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Carousel -->
-    <div class="swiper-container tc">
+    <div class="swiper-container w-100 tc">
       <div class="swiper-wrapper">
         <div
           class="swiper-slide"
@@ -128,7 +128,6 @@ export default {
 
 <style scoped>
 .swiper-container {
-  width: 100vw;
 }
 
 .tab {

@@ -1,27 +1,36 @@
 <template>
-  <div>
+  <div class="flex pa4">
     <SideMenu
       :title="title"
       :menuItems="menuItems"
-      :defaultSelectedItem="menuItems[0].component"
+      :defaultSelectedItem="electedItem"
+      @selectMenuItem="selectMenuItem"
+      class="w-20"
     ></SideMenu>
 
     <!-- Content -->
-    <div></div>
+    <div class="w-80">
+      <keep-alive>
+        <component v-bind:is="electedItem" class="w-100"></component>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu";
+import SideMenu from "../../common/components/SideMenu"
+import AboutIntroduce from "../components/AboutIntroduce"
+
 export default {
-  components: { SideMenu },
+  components: { SideMenu, AboutIntroduce },
   data() {
     return {
       title: "關於我們",
+      electedItem: "AboutIntroduce",
       menuItems: [
         {
           name: "中心簡介",
-          component: ""
+          component: "AboutIntroduce"
         },
         {
           name: "大紀事",
@@ -52,9 +61,14 @@ export default {
           component: ""
         }
       ]
-    };
+    }
+  },
+  methods: {
+    selectMenuItem(selectedItem) {
+      this.electedItem = selectedItem.component
+    }
   }
-};
+}
 </script>
 
 <style></style>

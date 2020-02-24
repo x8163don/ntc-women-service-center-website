@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white o-80">
     <!-- Logo -->
     <!-- <div class="w-100 pa3 ph5-ns bg-white">
       <a href="/"><img class="h3 db dtc-ns v-mid tl" :src="logoImage"/></a>
@@ -8,13 +8,16 @@
     <!-- Menu -->
     <div class="flex items-center">
       <template v-for="(link, index) in links">
-        <router-link :key="index" class="w-25 pa3 mr2 tc" :to="link.to">{{
-          link.showText
-        }}</router-link>
+        <router-link
+          :key="index"
+          class="w-25 pa3 mr2 tc no-underline"
+          :to="link.to"
+          >{{ link.showText }}</router-link
+        >
         <div
           :key="'b' + index"
           v-if="index !== links.length - 1"
-          class="br h2 dib"
+          class="br bw1 h2 dib"
         ></div>
       </template>
     </div>
