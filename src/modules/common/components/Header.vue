@@ -1,23 +1,23 @@
 <template>
-  <div class="br2 br--top bg-white">
+  <div class="br2 br--top bg-white w-100">
     <!-- Logo -->
-    <div class="w-100 pl2">
+    <div class="pl2">
       <a href="/"><img class="h3 db dtc-ns v-mid tl" :src="logoImage"/></a>
     </div>
 
     <!-- Menu -->
-    <div class="flex items-center">
+    <div class="flex items-center bg-blue">
       <template v-for="(link, index) in links">
         <router-link
           :key="index"
-          class="w-25 pa3 mr2 tc no-underline"
+          class="w-25 pa3 tc no-underline default-text-color"
           :to="link.to"
           >{{ link.showText }}</router-link
         >
         <div
           :key="'b' + index"
           v-if="index !== links.length - 1"
-          class="br bw1 h2 dib"
+          class="br bw1 h1 dib"
         ></div>
       </template>
     </div>
@@ -51,6 +51,10 @@ export default {
 }
 
 .router-link-exact-active {
-  color: #42b983;
+  color: #f2d5ef !important;
+}
+
+.default-text-color {
+  color: #c5979d;
 }
 </style>

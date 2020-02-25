@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="w-90 mv4 center">
+    <div class="w-80 mv4 center">
       <Header></Header>
       <router-view />
       <Footer></Footer>
@@ -36,5 +36,9 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.bg-blue {
+  background: #333366;
 }
 </style>

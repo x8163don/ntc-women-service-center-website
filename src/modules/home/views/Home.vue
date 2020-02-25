@@ -8,7 +8,7 @@
           :key="index"
           v-for="(banner, index) in banners"
         >
-          <a :href="banner.link"> <img :src="banner.src"/></a>
+          <a :href="banner.link"><img class="w-100" :src="banner.src"/></a>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -127,9 +127,6 @@ export default {
 </script>
 
 <style scoped>
-.swiper-container {
-}
-
 .tab {
   background-color: #f68657;
   color: #fff;
