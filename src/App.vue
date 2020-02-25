@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <router-view />
-    <Footer></Footer>
+    <div class="w-90 mv4 center">
+      <Header></Header>
+      <router-view />
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
@@ -29,7 +31,7 @@ export default {
 }
 
 body {
-  background-image: url("https://lh3.googleusercontent.com/4t1tpJ7dgUfUJX4Ow0tCEAE4uMvlanQ5s9em3XlsTaXAtK52Ufv11eSumazJhY0ilao9vPGi-7hOGrD_Yu0-cF4G8F2EDpxJU9cf6_E7X5lyLIGT6LMPwljz2H4B87hggcjlJSn6o2gla9fYef4ab7qDjqAZDcBMCkLKKObGAIsxBFiFGviMc2g2y9nFrW6k3-EW1v5fEkZuoczO04jY9gU9RZowtjfIrApzfI7DSiM3A9-KVmtH_A7V328OEepJWLomd0WaNdp-zI4V6YY_PwrbPpLvhNiRQL1lZAZUTSZsqwxKv-dMOk5us42kDzadn_vWjF6uplNO-kHqaTzP-v5I6bCiVM85PxxkEAhEFyMZpf8JtCgjT0kY7lSKt1gHLsamL537A8Hior7f80XI9LQFbMDIu2HDtTKpHNAjun1H1-0s_6YO008GbtraxpM2uYWgsxoJUHarYm_T1V7FXbCnABaufw89GxBxHfuxv3Omxvpvy58ATPE4cG6izgsQqwCdwqjm_egt3UORkrcD54cdLef9aoHENgxTob3_VI73uDPwVkmlLYUHoLuqdR5h0zawcXnCXti5jzrVBs8lozRBB1wf57VaUgG9LtXhDUu-A1Lq_jazTu0ngczqRgy9wluGHQ6T2QplkCp_Z48vpm3ItS7FbgYjvSlcq7Z9E8SnnrYjFzQ-=w1550-h882-no");
+  background-image: url("https://lh3.googleusercontent.com/lLyjyfiHRlCk-KKYK6z7ylftNIXFWz5K5S6dAOlX58nnxX1PAm4ra9VfjJ-Dj2Qb8_l3aqTIy3i7svSsUngkx9etycigK5NBGqfsSeArlh4gj4v1_ZfkKCbffYvRJIUiRr9vpqbVrIwUSTIlFZAfFU1N31ttOW1OJT4D3A2gbky_Yt3YLT6ZuugAyL8sRNVgs1fK6DHc8e_RYk9VDzTEd2uN1IiL3wXyAge-0NoBZvjvyt8b5Drl0Gq5d1Q4n2VgTSrPzOkcpH_4adx3g-NefSEjftVm6Cee-Od8MLV0rSIzDPbqHd81skW_7DnAFlmyzuegpA4r9OVI8tiz_VVkiCKFgwJlMINV7Pp-T0BmdQdkW6-sQjC-Qg0_vZ1rAIurvakvr0S0VIcUAvjphTMutZfOQjS70Cui4IM-2ISum7H9Pfp-Kw65Cact5MRLQujpFHH9MfASXnwuM5Vv-7chXTyc5Yr_TcqIH-epgwJy5C7OPBwa8uxrFf7JZ09ZaET8HTsUtvaEe-ouk0lKUn5YJnI4D1JIQmPMJIkoTnAhkpGzXvXbRSjem7JA4nBIaXGAht9f3hc7HQCNaJEaFwAI_QBTdsBXCGeAdJURjb4N2ufIi4wwAy2jUiqdDFsewxxxWqFMc0q5eUN6Qj6v_FrCVUZ-YN0wLMzqDy5j-qSZDv5lmftadHqwmg=w1280-h720-no");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

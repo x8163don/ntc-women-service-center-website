@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-white o-80">
+  <div class="br2 br--top bg-white">
     <!-- Logo -->
-    <!-- <div class="w-100 pa3 ph5-ns bg-white">
+    <div class="w-100 pl2">
       <a href="/"><img class="h3 db dtc-ns v-mid tl" :src="logoImage"/></a>
-    </div> -->
+    </div>
 
     <!-- Menu -->
     <div class="flex items-center">
