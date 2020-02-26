@@ -20,9 +20,10 @@
 <script>
 import SideMenu from "../../common/components/SideMenu"
 import AboutIntroduce from "../components/AboutIntroduce"
+import AboutMap from "../components/AboutMap"
 
 export default {
-  components: { SideMenu, AboutIntroduce },
+  components: { SideMenu, AboutIntroduce, AboutMap },
   data() {
     return {
       title: "關於我們",
@@ -42,7 +43,7 @@ export default {
         },
         {
           name: "交通資訊",
-          component: ""
+          component: "AboutMap"
         },
         {
           name: "租借方法",
