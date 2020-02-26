@@ -16,7 +16,7 @@
 
     <!-- Info -->
     <div class="flex">
-      <div class="w-60 flex flex-wrap">
+      <div class="pa3 w-60 flex flex-wrap">
         <div
           v-for="(tab, index) in tabs"
           :key="'tab' + index"
@@ -25,7 +25,7 @@
         >
           {{ tab.showName }}
         </div>
-        <div class="w-100">
+        <div class="w-100 h5">
           <keep-alive>
             <component v-bind:is="selectedTab"></component>
           </keep-alive>
@@ -33,7 +33,7 @@
       </div>
 
       <!-- Link -->
-      <div class="w-40 flex flex-column">
+      <div class="w-40 flex flex-column pa3">
         <!-- With you -->
         <div class="lt">
           <div class="tl w2 h1 bg-red dib v-btm "></div>

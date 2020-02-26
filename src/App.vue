@@ -2,7 +2,7 @@
   <div id="app">
     <div class="w-80 mv4 center">
       <Header></Header>
-      <router-view />
+      <router-view class="bg-white" />
       <Footer></Footer>
     </div>
   </div>
