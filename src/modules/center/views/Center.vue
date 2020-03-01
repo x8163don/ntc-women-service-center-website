@@ -4,7 +4,7 @@
       :title="title"
       :menuItems="menuItems"
       :defaultSelectedItem="menuItems[0].component"
-      class="w-25"
+      class="w-20"
     ></SideMenu>
 
     <!-- Content -->

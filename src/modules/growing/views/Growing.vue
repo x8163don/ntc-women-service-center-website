@@ -1,44 +1,44 @@
 <template>
-  <div>
+  <div class="flex pa4">
     <SideMenu
       :title="title"
       :menuItems="menuItems"
-      :defaultSelectedItem="menuItems[0].component"
+      :defaultSelectedItem="electedItem"
+      @selectMenuItem="selectMenuItem"
+      class="w-20"
     ></SideMenu>
 
     <!-- Content -->
-    <div></div>
+    <div class="w-80">
+      <keep-alive>
+        <component v-bind:is="electedItem" class="w-100"></component>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu";
+import SideMenu from "../../common/components/SideMenu"
+import GrowingCollection from "../components/GrowingCollections"
 export default {
-  components: { SideMenu },
+  components: { SideMenu, GrowingCollection },
   data() {
     return {
       title: "成長小屋",
+      electedItem: "GrowingCollection",
       menuItems: [
         {
           name: "中心館藏",
-          component: ""
-        },
-        {
-          name: "圖書雜誌典藏閱讀",
-          component: ""
-        },
-        {
-          name: "性別影音資料庫",
-          component: ""
+          component: "GrowingCollection"
         },
         {
           name: "CEDAW專區",
           component: ""
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style></style>
