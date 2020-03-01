@@ -10,7 +10,7 @@
       <template v-for="(link, index) in links">
         <router-link
           :key="index"
-          class="w-25 pa3 tc no-underline default-text-color"
+          class="w-25 pa3 tc no-underline default-text-color pointer"
           :to="link.to"
           >{{ link.showText }}</router-link
         >

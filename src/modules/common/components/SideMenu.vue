@@ -8,7 +8,7 @@
       v-for="(item, index) in menuItems"
       :key="index + item.component"
       @click="selectMenuItem(item)"
-      class="pa3"
+      class="pa3 pointer"
     >
       {{ item.name }}
     </div>
