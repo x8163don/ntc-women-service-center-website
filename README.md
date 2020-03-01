@@ -1,34 +1,41 @@
 # ntc-women-service-center-website
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
 ### Run your tests
+
 ```
 npm run test
 ```
 
 ### Lints and fixes files
+
 ```
 npm run lint
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # ToDo List
+
 - [x] 專案架構
 - [x] 版面架構
   - [x] 主結構
@@ -36,10 +43,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - [ ] 子頁
 - [ ] 資料補齊
   - [ ] 關於我們
-    - [ ] 中心簡介
-    - [ ] 大紀事    
+    - [ ] 中心簡介 (確認中)
+    - [ ] 大紀事
     - [ ] 空間介紹
-    - [ ] 交通資訊
+    - [ ] 交通資訊 (確認中)
     - [ ] 租借方法
     - [ ] 參訪預約
     - [ ] 獲獎紀錄
@@ -56,7 +63,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     - [ ] 中心館藏
     - [ ] 圖書雜誌典藏閱讀
     - [ ] 性別影音資料庫
-    - [ ] CEDAW專區
+    - [ ] CEDAW 專區
   - [ ] 女力加油站
     - [ ] 活動
     - [ ] 研習
@@ -75,6 +82,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     - [ ] 活動紀事
     - [ ] 加入微光天使
   - [ ] 中心出版
-    - [ ] 影音專區
+    - [ ] 影音專區 (確認中)
     - [ ] 文宣品/刊物
-
