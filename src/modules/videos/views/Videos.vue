@@ -1,13 +1,13 @@
 <template>
   <div>
     <div :key="video.url" v-for="video in videos.videos">
-      <h3 class="gray">{{ video.title }}</h3>
+      <h3 class="gray ma0 pa3">{{ video.title }}</h3>
       <iframe
         :src="video.url"
         frameborder="0"
         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        class="ml3 mb5 w-80 h5"
+        class="mb5 w-60 h5 pl3"
       ></iframe>
     </div>
   </div>
