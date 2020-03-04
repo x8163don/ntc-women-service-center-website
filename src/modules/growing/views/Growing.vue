@@ -28,7 +28,7 @@ export default {
       electedItem: "GrowingCollection",
       menuItems: [
         {
-          name: "中心館藏",
+          name: "館藏書籍",
           component: "GrowingCollection"
         },
         {

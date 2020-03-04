@@ -34,10 +34,6 @@ export default {
           component: "AboutIntroduce"
         },
         {
-          name: "大紀事",
-          component: ""
-        },
-        {
           name: "空間介紹",
           component: ""
         },
@@ -46,7 +42,7 @@ export default {
           component: "AboutMap"
         },
         {
-          name: "租借方法",
+          name: "場地租借",
           component: ""
         },
         {

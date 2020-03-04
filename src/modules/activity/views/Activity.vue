@@ -20,7 +20,11 @@ export default {
       title: "活動報報",
       menuItems: [
         {
-          name: "近期活動",
+          name: "最新活動",
+          component: ""
+        },
+        {
+          name: "過往活動",
           component: ""
         },
         {
@@ -28,19 +32,7 @@ export default {
           component: ""
         },
         {
-          name: "本期活動",
-          component: ""
-        },
-        {
-          name: "已下架活動",
-          component: ""
-        },
-        {
           name: "系列活動",
-          component: ""
-        },
-        {
-          name: "婦團協力平台",
           component: ""
         }
       ]

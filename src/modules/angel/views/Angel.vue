@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu";
+import SideMenu from "../../common/components/SideMenu"
 export default {
   components: { SideMenu },
   data() {
@@ -24,25 +24,17 @@ export default {
           component: ""
         },
         {
-          name: "志願服務團組織準則",
+          name: "招募志工",
           component: ""
         },
         {
-          name: "微光行事曆",
-          component: ""
-        },
-        {
-          name: "活動紀事",
-          component: ""
-        },
-        {
-          name: "加入微光天使",
+          name: "獲獎紀錄",
           component: ""
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style></style>

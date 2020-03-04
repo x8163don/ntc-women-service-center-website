@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu";
+import SideMenu from "../../common/components/SideMenu"
 export default {
   components: { SideMenu },
   data() {
@@ -30,15 +30,11 @@ export default {
         {
           name: "性別議題",
           component: ""
-        },
-        {
-          name: "福利活動登錄",
-          component: ""
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style></style>

@@ -18,7 +18,20 @@ export default {
   data() {
     return {
       title: "最新消息",
-      menuItems: []
+      menuItems: [
+        {
+          name: "中心公告",
+          component: ""
+        },
+        {
+          name: "中心活動",
+          component: ""
+        },
+        {
+          name: "活動轉知",
+          component: ""
+        }
+      ]
     }
   }
 }
