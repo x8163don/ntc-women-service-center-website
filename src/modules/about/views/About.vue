@@ -4,7 +4,7 @@
       :title="title"
       :menuItems="menuItems"
       :defaultSelectedItem="selectedItem"
-      @selectMenuItem="this.selectMenuItem()"
+      @selectMenuItem="selectMenuItem"
       class="w-20"
     ></SideMenu>
 
