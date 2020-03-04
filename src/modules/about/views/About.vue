@@ -3,15 +3,15 @@
     <SideMenu
       :title="title"
       :menuItems="menuItems"
-      :defaultSelectedItem="electedItem"
-      @selectMenuItem="selectMenuItem"
+      :defaultSelectedItem="selectedItem"
+      @selectMenuItem="this.selectMenuItem()"
       class="w-20"
     ></SideMenu>
 
     <!-- Content -->
     <div class="w-80">
       <keep-alive>
-        <component v-bind:is="electedItem" class="w-100"></component>
+        <component v-bind:is="selectedItem" class="w-100"></component>
       </keep-alive>
     </div>
   </div>
@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       title: "關於我們",
-      electedItem: "AboutIntroduce",
+      selectedItem: "AboutIntroduce",
       menuItems: [
         {
           name: "中心簡介",
@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     selectMenuItem(selectedItem) {
-      this.electedItem = selectedItem.component
+      this.selectedItem = selectedItem.component
     }
   }
 }
