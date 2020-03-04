@@ -5,10 +5,13 @@
       <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pr2 pr0-ns">
         <span class="f7 f6-l db">220 新北市板橋區區運路101號111號3樓</span>
         <span class="f7 f6-l db">
-          電話 02-88510029
+          電話 02-8951-9029
         </span>
         <span class="f7 f6-l db">
-          傳真 02-2712-8002
+          傳真 02-8951-9239
+        </span>
+        <span class="f7 f6-l db">
+          信箱 ntwsc9029@gmaill.com
         </span>
       </article>
       <article class="fl w-50 dib-ns w-auto-ns mr4-m mr5-l mb4 pl2 pl0-ns">
