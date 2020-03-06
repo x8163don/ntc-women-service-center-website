@@ -60,10 +60,6 @@ export default {
           component: "AboutVisit"
         },
         {
-          name: "獲獎紀錄",
-          component: ""
-        },
-        {
           name: "新聞報章",
           component: ""
         }
