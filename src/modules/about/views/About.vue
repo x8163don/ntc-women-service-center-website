@@ -18,12 +18,14 @@
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu"
-import AboutIntroduce from "../components/AboutIntroduce"
-import AboutMap from "../components/AboutMap"
+import SideMenu from "../../common/components/SideMenu";
+import AboutIntroduce from "../components/AboutIntroduce";
+import AboutSpace from "../components/AboutSpace";
+import AboutMap from "../components/AboutMap";
+import AboutBooking from "../components/AboutBooking";
 
 export default {
-  components: { SideMenu, AboutIntroduce, AboutMap },
+  components: { SideMenu, AboutIntroduce, AboutSpace, AboutMap, AboutBooking },
   data() {
     return {
       title: "關於我們",
@@ -35,7 +37,7 @@ export default {
         },
         {
           name: "空間介紹",
-          component: ""
+          component: "AboutSpace"
         },
         {
           name: "交通資訊",
@@ -43,7 +45,7 @@ export default {
         },
         {
           name: "場地租借",
-          component: ""
+          component: "AboutBooking"
         },
         {
           name: "參訪預約",
@@ -58,14 +60,14 @@ export default {
           component: ""
         }
       ]
-    }
+    };
   },
   methods: {
     selectMenuItem(selectedItem) {
-      this.selectedItem = selectedItem.component
+      this.selectedItem = selectedItem.component;
     }
   }
-}
+};
 </script>
 
 <style></style>
