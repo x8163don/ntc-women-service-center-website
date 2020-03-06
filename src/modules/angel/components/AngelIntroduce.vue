@@ -28,7 +28,8 @@
 export default {
   data() {
     return {
-      imgUrl: process.env.VUE_APP_ANGEL_INTRODUCE_IMG
+      imgUrl:
+        "https://lh3.googleusercontent.com/BFvWGIPb5-Cauu2TeNon4psoVENAVUmYh8cmyUprjw5G-ty4DxhNeyaHpCwSgA5cFZhvBA6y9X_t3IvewhkxWKq4x8LOibq3L6D6uVsfXxfnFJ4Gp92KYS1qWmrXzal4b6BKaSrIbJWLEiC1LbBkxLUiQKl7g_AsSf0YaA3GB9CkxsVJnFlbwONVOZX-WcNTqniyANpCFj138waJs8-5YlfIOYG0xPSKEcrMGFnDH5Xthbfi7kogelz4Q7elxNw8xt6uZ_fSnFIMWceRf91TZkQy7OBukOEEx71A9bVEqlGVVFIjp6tbQzu0mEAGlEtu2mTE6JSiXPoOMNyEoWyVhodXzbU1JT3Sfp8AazuIntHtILSdjdvjwAwTVKjq1bw0jfYiEW9GAI41j6vktBOQgY1T7cavkCBmTLxkEN_aeYThkrtZn7OBNOESlNPSZuUrYd6XgRtpvKo_gk-Tpu26KJazTUsex8YayIM2BSUsV33aj7XhCg5bsEpOG0cnY0QBqxvdQEluZGepNEJsChfNIMAGNVCuQ1SiPTZ0k8WGFQ5qjrkfMSkLEk7evBTOortPofCQyaKEc_IIg36XsJ8C8--fGmeo7bISx1HXwd4Ek2JnwTYDxz-Aqc69Uh4ZG5A6MQtaOBca6L9_SUAaoD1u9iYlRvEE2JLNdI6SsYcvdzjcZ7AtSaZTstPvyrX_SjEfaSq9PaIiiUpMIB_FRvVBcoRyeIx1DH1nsrxJgzvcIziWeTU_=w909-h571-no"
     }
   }
 }
