@@ -23,9 +23,17 @@ import AboutIntroduce from "../components/AboutIntroduce";
 import AboutSpace from "../components/AboutSpace";
 import AboutMap from "../components/AboutMap";
 import AboutBooking from "../components/AboutBooking";
+import AboutVisit from "../components/AboutVisit";
 
 export default {
-  components: { SideMenu, AboutIntroduce, AboutSpace, AboutMap, AboutBooking },
+  components: {
+    SideMenu,
+    AboutIntroduce,
+    AboutSpace,
+    AboutMap,
+    AboutBooking,
+    AboutVisit
+  },
   data() {
     return {
       title: "關於我們",
@@ -49,7 +57,7 @@ export default {
         },
         {
           name: "參訪預約",
-          component: ""
+          component: "AboutVisit"
         },
         {
           name: "獲獎紀錄",
