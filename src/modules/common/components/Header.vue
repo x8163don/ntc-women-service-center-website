@@ -28,7 +28,8 @@
 export default {
   data() {
     return {
-      logoImage: process.env.VUE_APP_IMG_HOST + process.env.VUE_APP_HEADER_LOGO,
+      logoImage:
+        "https://lh3.googleusercontent.com/bH8Hq6lZPIQGJQw3v13uomwoYwCy3Q_45XLVwuogHLJuchgTIV0NovvFVwoiXmJphzwOq7f3ViOT71MbGSOf0dl0tw2nBDveMnWf6cq9UrjCsSs-fOUe8j8yC1HpZiWRnAMXm6Rr2zGqhAUDgz_63w6RA23DTt0bmEDv3B6mq9hUgNbgqINyvXmw4BM6DW5dCIX4ce0AJ6Fo0TasxvbD5lPmL0LiGI28wC7HJIVpxZEIXkXRzEzPpRszH4eLK5DrF3FS07PQrTvAcNd7LsCqbqvB5KbfdTtvaPp9nBRAC5LZK4SB7wTTSRgNzo8wDgG1L5CYD2Pkr3gqYGBbNzr8CV4o5SDWOS3-AjZbQFsdV_QUJi_Nuumnfc_u3Xq-RwGVGIYjX1rhqKeNk9JPzwzcpF2RYWGVvaobvg0xLRmLeNQy52GY64_dOCLodMLOfMHkP-lgoXU4BP2lM9Ugx17MgwkbhLwf_l9Srv-klnRk4RNRLgJwuZBPpvNYe5A42kVZBeIoxm-zZIgW3rJ3viZU8OkDv30N8nWTEOCT6vh7QXVEmFALVq6yfvnFljq8d74ZKrxF93d0w_NruiVd0GLCHHcJjDVLpgkRgDD5p7Gazk0K3U8LAcqbdOhuRQzGrBBbDuG9ueO4OvhqcE9CGXru5XFzMeebK-2ZvITirvZdb8G66mAoXdxBxAwfAzQGPIi5Oz3R82nl3ziMXDytEnK8FW7GZXA0GJfZJMXnTfMsMidzZTrz=w920-h375-no",
       links: [
         { to: "/about", showText: "關於我們" },
         { to: "/news", showText: "最新消息" },
