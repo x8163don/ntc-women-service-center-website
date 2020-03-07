@@ -1,27 +1,35 @@
 <template>
-  <div class="flex flex-column pa4">
+  <div class="flex pa4">
     <SideMenu
       :title="title"
       :menuItems="menuItems"
-      :defaultSelectedItem="menuItems[0].component"
+      :defaultSelectedItem="selectedItem"
+      class="w-20"
     ></SideMenu>
 
     <!-- Content -->
-    <div></div>
+    <div class="w-80">
+      <keep-alive>
+        <component v-bind:is="selectedItem" class="w-100"></component>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu"
+import SideMenu from "../../common/components/SideMenu";
+import ActivityNew from "../components/ActivityNew";
+
 export default {
-  components: { SideMenu },
+  components: { SideMenu, ActivityNew },
   data() {
     return {
       title: "活動報報",
+      selectedItem: "ActivityNew",
       menuItems: [
         {
           name: "最新活動",
-          component: ""
+          component: "ActivityNew"
         },
         {
           name: "過往活動",
@@ -36,9 +44,9 @@ export default {
           component: ""
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style></style>
