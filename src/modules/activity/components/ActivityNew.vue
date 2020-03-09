@@ -1,15 +1,21 @@
 <template>
-  <div class="pa3">
+  <div class="flex pa3">
     <div
-      class="flex items-center w-100 h3 mb4 bb grow pointer"
+      class="w-third h6 mr3 ba grow pointer"
       v-for="activity in activities"
       :key="activity.id"
       @click="openActivity(activity)"
     >
-      <div class="w-20 f5 tc">
-        {{ activity.startDate }}
+      <div class="w-100 h-75 h6">
+        <img class="w-100 h-100" :src="activity.imgUrl" />
       </div>
-      <div class="w-80 f3">【{{ activity.type }}】{{ activity.name }}</div>
+
+      <div class="h-25">
+        <div class="gray f5 tc">
+          {{ activity.startDate }}
+        </div>
+        <div class="f4 tc">【{{ activity.type }}】{{ activity.name }}</div>
+      </div>
     </div>
 
     <Modal :show="isModalShow" @close="isModalShow = false">
