@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <div class="pa3">
     <div
+      class="flex items-center w-100 h3 mb4 bb grow pointer"
       v-for="activity in activities"
-      :key="activity.startDate + activity.imgUrl"
+      :key="activity.id"
       @click="openActivity(activity)"
     >
-      <div>{{ activity.startDate }} - {{ activity.endDate }}</div>
-      <img :src="activity.imgUrl" />
+      <div class="w-20 f5 tc">
+        {{ activity.startDate }}
+      </div>
+      <div class="w-80 f3">【{{ activity.type }}】{{ activity.name }}</div>
     </div>
 
     <Modal :show="isModalShow" @close="isModalShow = false">
@@ -31,7 +34,9 @@ export default {
       activityInfo: null,
       activities: Activities.filter(
         item => new Date(item.startDate).getYear() === new Date().getYear()
-      )
+      ).sort(function(o) {
+        return o.startDate * -1;
+      })
     };
   },
   methods: {
