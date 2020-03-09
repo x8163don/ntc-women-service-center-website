@@ -34,7 +34,7 @@
       地址:新北市板橋區區運路111號3樓<br />
       電話:02-8951-9029<br />
       傳真:02-8951-9239<br />
-      電子信箱:ntwsc9029@gmail.com<br />官方網站: 官方FB:
+      電子信箱:ntwsc9029@gmail.com<br />
     </p>
     <div class="flex">
       <div>
