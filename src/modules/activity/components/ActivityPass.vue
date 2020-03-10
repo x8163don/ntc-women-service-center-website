@@ -24,32 +24,22 @@
       </div>
     </div>
 
-    <Modal :show="isModalShow" @close="isModalShow = false">
-      <div class="pa3 h-100" v-if="activityInfo">
-        <div v-if="activityInfo.imgUrl.length">
-          <img
-            v-for="url in activityInfo.imgUrl"
-            :key="'Pass' + url"
-            :src="url"
-            class="w-100 h-100"
-          />
-        </div>
-        <div v-else-if="activityInfo.pdfUrl" class="w-100">
-          <iframe :src="activityInfo.pdfUrl" class="w-100 w-100"></iframe>
-        </div>
-      </div>
-    </Modal>
+    <ActivityModal
+      :show="isModalShow"
+      :activity="activityInfo"
+      @close="isModalShow = false"
+    ></ActivityModal>
   </div>
 </template>
 
 <script>
 import Activities from "../data/activities.json";
 import ActivityType from "../data/activityType.json";
-import Modal from "../../common/components/Modal.vue";
+import ActivityModal from "./ActivityModal.vue";
 
 export default {
   components: {
-    Modal
+    ActivityModal
   },
   data() {
     return {
