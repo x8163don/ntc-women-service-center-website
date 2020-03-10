@@ -21,9 +21,17 @@
 import SideMenu from "../../common/components/SideMenu";
 import ActivityNew from "../components/ActivityNew";
 import ActivityPass from "../components/ActivityPass";
+import ActivityTheme from "../components/ActivityTheme";
+import ActivitySeries from "../components/ActivitySeries";
 
 export default {
-  components: { SideMenu, ActivityNew, ActivityPass },
+  components: {
+    SideMenu,
+    ActivityNew,
+    ActivityPass,
+    ActivityTheme,
+    ActivitySeries
+  },
   data() {
     return {
       title: "活動報報",
@@ -39,11 +47,11 @@ export default {
         },
         {
           name: "主題活動",
-          component: ""
+          component: "ActivityTheme"
         },
         {
           name: "系列活動",
-          component: ""
+          component: "ActivitySeries"
         }
       ]
     };
