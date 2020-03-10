@@ -1,9 +1,9 @@
 <template>
-  <div class="flex pa3">
+  <div class="flex flex-wrap pa3">
     <div
-      class="w-third h6 mr3 ba grow pointer"
+      class="w-30 h6 mr3 mb3 ba grow pointer"
       v-for="activity in activities"
-      :key="activity.id"
+      :key="'Pass' + activity.id"
       @click="openActivity(activity)"
     >
       <div class="w-100 h-75 h6">
@@ -25,8 +25,18 @@
     </div>
 
     <Modal :show="isModalShow" @close="isModalShow = false">
-      <div class="pa3" v-if="activityInfo">
-        <img class="w-100 h-100" :src="activityInfo.imgUrl" />
+      <div class="pa3 h-100" v-if="activityInfo">
+        <div v-if="activityInfo.imgUrl.length">
+          <img
+            v-for="url in activityInfo.imgUrl"
+            :key="'Pass' + url"
+            :src="url"
+            class="w-100 h-100"
+          />
+        </div>
+        <div v-else-if="activityInfo.pdfUrl" class="w-100">
+          <iframe :src="activityInfo.pdfUrl" class="w-100 w-100"></iframe>
+        </div>
       </div>
     </Modal>
   </div>
@@ -46,10 +56,8 @@ export default {
       isModalShow: false,
       activityInfo: null,
       activities: Activities.filter(
-        item => new Date(item.startDate).getYear() === new Date().getYear()
-      ).sort(function(o) {
-        return o.startDate * -1;
-      })
+        item => new Date(item.startDate).getYear() !== new Date().getYear()
+      )
     };
   },
   methods: {

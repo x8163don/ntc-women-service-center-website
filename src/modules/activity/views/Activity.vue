@@ -4,6 +4,7 @@
       :title="title"
       :menuItems="menuItems"
       :defaultSelectedItem="selectedItem"
+      @selectMenuItem="selectMenuItem"
       class="w-20"
     ></SideMenu>
 
@@ -19,9 +20,10 @@
 <script>
 import SideMenu from "../../common/components/SideMenu";
 import ActivityNew from "../components/ActivityNew";
+import ActivityPass from "../components/ActivityPass";
 
 export default {
-  components: { SideMenu, ActivityNew },
+  components: { SideMenu, ActivityNew, ActivityPass },
   data() {
     return {
       title: "活動報報",
@@ -33,7 +35,7 @@ export default {
         },
         {
           name: "過往活動",
-          component: ""
+          component: "ActivityPass"
         },
         {
           name: "主題活動",
@@ -45,6 +47,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    selectMenuItem(selectedItem) {
+      this.selectedItem = selectedItem.component;
+    }
   }
 };
 </script>
