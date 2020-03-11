@@ -9,7 +9,7 @@
           class="w-100 h-100"
         />
       </div>
-      <div v-if="activity.pdfUrl">
+      <div class="center" v-if="activity.pdfUrl">
         <iframe
           name="iFrame"
           :src="activity.pdfUrl"
