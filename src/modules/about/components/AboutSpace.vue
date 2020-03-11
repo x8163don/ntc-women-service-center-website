@@ -7,6 +7,22 @@
     <div class="flex">
       <div
         class="w-third h6 mr3 ba grow pointer"
+        v-for="url in readingRoomUrl"
+        :key="url"
+        @click="openImagePreview(url)"
+      >
+        <img class="w-100 h-100" :src="url" />
+      </div>
+    </div>
+
+    <h2>展覽館</h2>
+    <p>
+      每年都有規劃不同的藝文展覽，盡情享受展覽的視覺饗宴，和豐富有趣
+      的各式新知，帶給你充實的一天。
+    </p>
+    <div class="flex">
+      <div
+        class="w-third h6 mr3 ba grow pointer"
         v-for="url in exhibitionRoomUrl"
         :key="url"
         @click="openImagePreview(url)"
@@ -49,7 +65,7 @@
     </p>
     <div
       class="w-third h6 mr3 ba grow pointer"
-      v-for="url in readingRoomUrl"
+      v-for="url in videoRoomUrl"
       :key="url"
       @click="openImagePreview(url)"
     >
@@ -94,6 +110,9 @@ export default {
         "https://lh3.googleusercontent.com/38J8NLptHsmrbWLf5ZbUii7_Ru0GcB3JI2WssCacQI41Tr6QNVhAVLaRjeDTr3yQhl6FlHresEH_4yj1GwMSEG-afIcpJPsGvh9snaaLU1bONgbYtOm-zHpu8p4Ixk9DQYFAVXy2S5mr8xcKtYV6xysJhOP7I1OJqLRkhISHx2jMw9zQ3Veb2qMwN4LyVx4xw_VkF5v6nRXqkY7LCKPKT4VvphEIlznbtBx_NUyxpGeldLPnv_EciN9bZmgMv1hOpOD6sLccc9DEp454x7JMzsIY5ICCzvChsEJCmJbaChCwYXgQyQDzW-iYuAFSklerwdqFmChLS84_wS7Wgp2_f4TAkto7EcIY85P1u_FMOOL8INxkkC_-K0so9s_VGHfKHUgjMcUPrgVCh0oLaU4w8hQgYG1jgTOJH3hkMTtmhS2ndrzM9pdCGzx1v06wBDNf0BzaRkvP8AD5v7vBck18Czi8Lx92juz3qF_H6DRATbliASZUZjsSY4ZDe6XpTTGbdKI8IpRsYJXKxQ6b-Gs-Md_mrXPA5yVMiTcCFgN8Z_gg2U00AXWHrBXwDSvq93dxfEmgro0W1SBQ-4Gv2yBghu2hIeLNFdt3uHCT1chG6JiHmmuI8d3eanOu2-CWiFfqVeCXZDsm6A8XTfGg1mKnYzgUAXdUxpWAIGxJauylPsrlwfJP-VQdL9dNcTmXOu8PIdfRc9yPwnjpbmIEYAEtR-B1xldKWQpQHL4Vp9lNSVYNBbwd=w1280-h960-no"
       ],
       readingRoomUrl: [
+        "https://lh3.googleusercontent.com/fnNs7ToYcAJDtcS2QbiuQec0l6-k3UQDzIhbqDnHuFjBCgf0hxNVJO4yaGk5d8024GRabCI3XWXr5m5yEPdV0cM7SVWL5C1G6-2QG4Ajeq09D8RnOPlGwCMWFKP0QjIPAU6U7_pfCTPH7fZYtpXO7VFs7ytZW5059YtNfTIZcdXP9iA7sdwOu8ADpEg4BNvHsJMhIXPs5ZhvR9n34nCv2UgVwc1ckyvlDFlwxhISzVAAdCKfhSCOqk6kgb4W8WPWHhnk73UvgknGPkCkSIfcRPAnBbo2KohP_3AFEhUkABnhIkA9-olBNLrr83EBMLMzcaUV9949C7lYxEPYcQILzG7Ha92S4nwSL2zlplp_pM6trU-zDx9JnckFKa4z8DKHN91OHf8n-vo1Q65sTrJwMabkEjwDhSQlIzrZQyV1NiRMt1GzNVydkwsS9hJvKw7O_QQK42DcqbIBacqYHyCp7HXpheoSaE8fBB_4ucp6KFqX3MCuKjs8bDc5LdJJHVE9Yiym_dq4jRpAgso2L6qpv4TiC7CnJnEiNV1MHj3PZ9lyzSbUn6yZDvyBwhAV8yWd0Dq6KXmA3WHV6SatC6zilz4lySNQOrkR_9vTlpS3ft5xeU5_QbIQjMJspoOHy9x9clZAH4rSpwhpYsSZwspxT9Vk4NB2IVljKDNJ9GYqRd2wwTPgtimCqQizXZP2gHvIeNmRyyPstDHovXtZPwnPvk8pKsPdCGey0jTgsAyan5yohq0=w1280-h960-no"
+      ],
+      videoRoomUrl: [
         "https://lh3.googleusercontent.com/MK4MpmsSdLDBRJzLeqMOp-hi1x9ltz-sgFX3YUYkngwnbiUGnbrWM8TYMmr7ztF9UuYZkhna4GU9ZZNReTZBhv97cjWg7WpTaIXUmem-GHlF-a2u1iVgHEC8c2eOeRfuIj5EA46-FdATYY2gAq4kolvasKUyr0QRj5MYS32bEeCX-ySC_oRJNz-RqaUyZqtbiGwZgB9AY4uEiop267YLXsIZjXYywNYGrrstle5MGZDMXy_gM41mT3rgWBRQcq2yIfeGTsQA4thkIgXHh8H-tAfDMliah2UPtgc2VBC8_2gtUTWOUg2benaicqHd7k6bpdGiGaUh2uN6IupZzwf4Cbs5qNyyKAQV7WU3Yr-mquzxw1c7txloj781OCIdpYFFY0PamiYApjvMOIIkw8Z47mWSdN8B6d-XHgq29SPlE0hqUHjK2-NMEGvVZjlvH0eFZrLd22tSs0R0DFBVZk8boBTq89lBHHz1kVph3vFLolM0rvbjVLIrhQQrJk6vNp61n4tlTHyVCiBUK8hbTMeW3ODLsPuiyqXJKDOetyrPqECdlSxXsPJoAyArsAujnPnNnuuScx2LcjHl0Ot-nw7lvkufEpCqxp4ydRHnRMSAnuL5ldvI2VZv-XiNFt_YvFMRmhvS0ECDT37qpEFOzLF4EIHwyYjLOqD3Zj5BmB2m-zpEhvEYShvMrWLBhKS1qYFxQBuCh3ab9MMK5ChleUdUBrDBPV0ExcGEPCM6Af5O_PBxWlzg=w1478-h1108-no"
       ],
       parentChildUrl: [
