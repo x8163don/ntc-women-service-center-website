@@ -13,7 +13,7 @@
         <iframe
           name="iFrame"
           :src="activity.pdfUrl"
-          width="100%"
+          :width="width"
           :height="height"
         ></iframe>
       </div>
@@ -26,16 +26,6 @@ import Modal from "../../common/components/Modal.vue";
 
 export default {
   components: { Modal },
-  mounted() {
-    const iFrames = document.getElementsByName("iFrame");
-    const deviceWidth = document.documentElement.clientWidth;
-    const deviceHeight = document.documentElement.clientHeight;
-    console.log(deviceHeight);
-    for (let iframe in iFrames) {
-      iframe.style.width = Number(deviceWidth) * 0.9 + "px";
-      iframe.style.height = Number(deviceHeight) * 0.9 + "px";
-    }
-  },
   props: {
     show: {
       type: Boolean,
@@ -50,7 +40,8 @@ export default {
   },
   data() {
     return {
-      height: document.documentElement.clientHeight
+      width: document.documentElement.clientWidth * 0.85,
+      height: document.documentElement.clientHeight * 0.9
     };
   }
 };
