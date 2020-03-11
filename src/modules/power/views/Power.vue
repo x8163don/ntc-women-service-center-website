@@ -1,40 +1,56 @@
 <template>
-  <div>
+  <div class="flex pa4">
     <SideMenu
       :title="title"
       :menuItems="menuItems"
-      :defaultSelectedItem="menuItems[0].component"
+      :defaultSelectedItem="selectedItem"
+      @selectMenuItem="selectMenuItem"
+      class="w-20"
     ></SideMenu>
 
     <!-- Content -->
-    <div></div>
+    <div class="w-80">
+      <keep-alive>
+        <component v-bind:is="selectedItem" class="w-100"></component>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import SideMenu from "../../common/components/SideMenu"
+import SideMenu from "../../common/components/SideMenu";
+import PowerActivity from "../components/PowerActivity";
+import PowerStudy from "../components/PowerStudy";
+import PowerIssue from "../components/PowerIssue";
+
 export default {
-  components: { SideMenu },
+  components: { SideMenu, PowerActivity, PowerStudy, PowerIssue },
   data() {
     return {
       title: "女力加油站",
+      selectedItem: "PowerActivity",
       menuItems: [
         {
           name: "活動",
-          component: ""
+          component: "PowerActivity"
         },
         {
           name: "研習",
-          component: ""
+          component: "PowerStudy"
         },
         {
           name: "性別議題",
-          component: ""
+          component: "PowerIssue"
         }
       ]
+    };
+  },
+  methods: {
+    selectMenuItem(selectedItem) {
+      this.selectedItem = selectedItem.component;
     }
   }
-}
+};
 </script>
 
 <style></style>
