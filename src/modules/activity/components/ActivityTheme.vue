@@ -45,7 +45,7 @@ export default {
     return {
       isModalShow: false,
       activityInfo: null,
-      activities: Activities.filter(item => item.type.some(type => type === 3))
+      activities: Activities.filter(item => item.type.some(type => type === 2))
     };
   },
   methods: {
