@@ -1,6 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../modules/home/views/Home";
+
+const NavContentLayout = () =>
+  import("../modules/common/components/NavContentLayout");
+
 import About from "../modules/about/views/About";
 import Activity from "../modules/activity/views/Activity";
 import Angel from "../modules/angel/views/Angel";
@@ -8,12 +12,10 @@ import Center from "../modules/center/views/Center";
 import Growing from "../modules/growing/views/Growing";
 import Information from "../modules/info/views/Information";
 
-const News = () => import("../modules/news/views/News");
 const NewsNav = () => import("../modules/news/components/NewsNav");
-const NewsAnnouncement = () =>
-  import("../modules/news/components/NewsAnnouncement");
-const NewsActivity = () => import("../modules/news/components/NewsActivity");
-const NewsOther = () => import("../modules/news/components/NewsOther");
+const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement");
+const NewsActivity = () => import("../modules/news/views/NewsActivity");
+const NewsOther = () => import("../modules/news/views/NewsOther");
 
 import Power from "../modules/power/views/Power";
 import Videos from "../modules/videos/views/Videos";
@@ -58,7 +60,7 @@ const routes = [
   },
   {
     path: "/news",
-    component: News,
+    component: NavContentLayout,
     redirect: "/news/announcement",
     children: [
       {
