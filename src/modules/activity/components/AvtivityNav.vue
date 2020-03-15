@@ -14,19 +14,19 @@ export default {
       links: [
         {
           name: "最新活動",
-          path: "new"
+          path: "/activity/new"
         },
         {
           name: "過往活動",
-          path: "pass"
+          path: "/activity/pass"
         },
         {
           name: "主題活動",
-          path: "theme"
+          path: "/activity/theme"
         },
         {
           name: "系列活動",
-          path: "series"
+          path: "/activity/series"
         }
       ]
     };

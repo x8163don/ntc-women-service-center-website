@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 
 const NavContentLayout = () =>
   import("../modules/common/components/NavContentLayout");
+const DataPreview = () =>
+  import("../modules/common/components/DataPreview.vue");
 
 const Home = () => import("../modules/home/views/Home");
 
@@ -123,6 +125,13 @@ const routes = [
           side: ActivityNav,
           content: ActivitySeries
         }
+      },
+      {
+        path: "post/:id",
+        components: {
+          side: ActivityNav,
+          content: DataPreview
+        }
       }
     ]
   },
@@ -199,6 +208,13 @@ const routes = [
         components: {
           side: NewsNav,
           content: NewsOther
+        }
+      },
+      {
+        path: "post/:id",
+        components: {
+          side: NewsNav,
+          content: DataPreview
         }
       }
     ]
