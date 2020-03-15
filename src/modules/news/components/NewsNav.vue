@@ -14,15 +14,15 @@ export default {
       links: [
         {
           name: "中心公告",
-          path: "announcement"
+          path: "/news/announcement"
         },
         {
           name: "中心活動",
-          path: "activity"
+          path: "/news/activity"
         },
         {
           name: "活動轉知",
-          path: "other"
+          path: "/news/other"
         }
       ]
     };
