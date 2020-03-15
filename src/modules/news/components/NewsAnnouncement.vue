@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import News from "../data/announcement.json";
+import News from "../data/news.json";
 import NewsList from "../components/NewsList";
 
 export default {
