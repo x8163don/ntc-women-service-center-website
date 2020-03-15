@@ -6,7 +6,12 @@ const NavContentLayout = () =>
   import("../modules/common/components/NavContentLayout");
 
 import About from "../modules/about/views/About";
-import Activity from "../modules/activity/views/Activity";
+const ActivityNav = () => import("../modules/activity/components/AvtivityNav");
+const ActivityNew = () => import("../modules/activity/views/ActivityNew");
+const ActivityPass = () => import("../modules/activity/views/ActivityPass");
+const ActivityTheme = () => import("../modules/activity/views/ActivityTheme");
+const ActivitySeries = () => import("../modules/activity/views/ActivitySeries");
+
 import Angel from "../modules/angel/views/Angel";
 import Center from "../modules/center/views/Center";
 import Growing from "../modules/growing/views/Growing";
@@ -35,8 +40,38 @@ const routes = [
   },
   {
     path: "/activity",
-    name: "Activity",
-    component: Activity
+    redirect: "/activity/new",
+    component: NavContentLayout,
+    children: [
+      {
+        path: "new",
+        components: {
+          side: ActivityNav,
+          content: ActivityNew
+        }
+      },
+      {
+        path: "pass",
+        components: {
+          side: ActivityNav,
+          content: ActivityPass
+        }
+      },
+      {
+        path: "theme",
+        components: {
+          side: ActivityNav,
+          content: ActivityTheme
+        }
+      },
+      {
+        path: "series",
+        components: {
+          side: ActivityNav,
+          content: ActivitySeries
+        }
+      }
+    ]
   },
   {
     path: "/angel",
@@ -60,8 +95,8 @@ const routes = [
   },
   {
     path: "/news",
-    component: NavContentLayout,
     redirect: "/news/announcement",
+    component: NavContentLayout,
     children: [
       {
         path: "announcement",

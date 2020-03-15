@@ -14,15 +14,15 @@
 </template>
 
 <script>
-import Videos from "../data/videos.json"
+import Videos from "../data/videos.json";
 
 export default {
   data() {
     return {
       videos: Videos
-    }
+    };
   }
-}
+};
 </script>
 
 <style></style>

@@ -35,7 +35,7 @@
 <script>
 import Activities from "../data/activities.json";
 import ActivityType from "../data/activityType.json";
-import ActivityModal from "./ActivityModal.vue";
+import ActivityModal from "../components/ActivityModal";
 
 export default {
   components: {

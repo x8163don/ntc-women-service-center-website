@@ -35,7 +35,7 @@
 <script>
 import Activities from "../data/activities.json";
 import ActivityType from "../data/activityType.json";
-import ActivityModal from "./ActivityModal.vue";
+import ActivityModal from "../components/ActivityModal";
 
 export default {
   components: {
@@ -45,7 +45,7 @@ export default {
     return {
       isModalShow: false,
       activityInfo: null,
-      activities: Activities.filter(item => item.type.some(type => type === 2))
+      activities: Activities.filter(item => item.type.some(type => type === 3))
     };
   },
   methods: {
