@@ -19,7 +19,6 @@ const ActivityTheme = () => import("../modules/activity/views/ActivityTheme");
 const ActivitySeries = () => import("../modules/activity/views/ActivitySeries");
 
 import Angel from "../modules/angel/views/Angel";
-import Center from "../modules/center/views/Center";
 import Growing from "../modules/growing/views/Growing";
 
 const NewsNav = () => import("../modules/news/components/NewsNav");
@@ -27,7 +26,12 @@ const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement");
 const NewsActivity = () => import("../modules/news/views/NewsActivity");
 const NewsOther = () => import("../modules/news/views/NewsOther");
 
-import Power from "../modules/power/views/Power";
+const PowerNav = () => import("../modules/power/components/PowerNav");
+const PowerActivity = () => import("../modules/power/views/PowerActivity");
+const PowerIssue = () => import("../modules/power/views/PowerIssue");
+const PowerVideos = () => import("../modules/power/views/PowerVideos");
+const PowerFiles = () => import("../modules/power/views/PowerFiles");
+
 import Videos from "../modules/videos/views/Videos";
 
 Vue.use(VueRouter);
@@ -121,11 +125,6 @@ const routes = [
     component: Angel
   },
   {
-    path: "/center",
-    name: "Center",
-    component: Center
-  },
-  {
     path: "/growing",
     name: "Growing",
     component: Growing
@@ -160,8 +159,38 @@ const routes = [
   },
   {
     path: "/power",
-    name: "Power",
-    component: Power
+    redirect: "/power/activity",
+    component: NavContentLayout,
+    children: [
+      {
+        path: "activity",
+        components: {
+          side: PowerNav,
+          content: PowerActivity
+        }
+      },
+      {
+        path: "issue",
+        components: {
+          side: PowerNav,
+          content: PowerIssue
+        }
+      },
+      {
+        path: "videos",
+        components: {
+          side: PowerNav,
+          content: PowerVideos
+        }
+      },
+      {
+        path: "files",
+        components: {
+          side: PowerNav,
+          content: PowerFiles
+        }
+      }
+    ]
   },
   {
     path: "/videos",
