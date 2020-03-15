@@ -20,11 +20,10 @@
 <script>
 import SideMenu from "../../common/components/SideMenu";
 import PowerActivity from "../components/PowerActivity";
-import PowerStudy from "../components/PowerStudy";
 import PowerIssue from "../components/PowerIssue";
 
 export default {
-  components: { SideMenu, PowerActivity, PowerStudy, PowerIssue },
+  components: { SideMenu, PowerActivity, PowerIssue },
   data() {
     return {
       title: "女力加油站",
@@ -33,10 +32,6 @@ export default {
         {
           name: "活動",
           component: "PowerActivity"
-        },
-        {
-          name: "研習",
-          component: "PowerStudy"
         },
         {
           name: "性別議題",
