@@ -5,7 +5,13 @@ import Home from "../modules/home/views/Home";
 const NavContentLayout = () =>
   import("../modules/common/components/NavContentLayout");
 
-import About from "../modules/about/views/About";
+const AboutNav = () => import("../modules/about/components/AboutNav");
+const AboutIntroduce = () => import("../modules/about/views/AboutIntroduce");
+const AboutSpace = () => import("../modules/about/views/AboutSpace");
+const AboutMap = () => import("../modules/about/views/AboutMap");
+const AboutVisit = () => import("../modules/about/views/AboutVisit");
+const AboutBooking = () => import("../modules/about/views/AboutBooking");
+
 const ActivityNav = () => import("../modules/activity/components/AvtivityNav");
 const ActivityNew = () => import("../modules/activity/views/ActivityNew");
 const ActivityPass = () => import("../modules/activity/views/ActivityPass");
@@ -15,7 +21,6 @@ const ActivitySeries = () => import("../modules/activity/views/ActivitySeries");
 import Angel from "../modules/angel/views/Angel";
 import Center from "../modules/center/views/Center";
 import Growing from "../modules/growing/views/Growing";
-import Information from "../modules/info/views/Information";
 
 const NewsNav = () => import("../modules/news/components/NewsNav");
 const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement");
@@ -35,8 +40,45 @@ const routes = [
   },
   {
     path: "/about",
-    name: "About",
-    component: About
+    redirect: "/about/introduce",
+    component: NavContentLayout,
+    children: [
+      {
+        path: "introduce",
+        components: {
+          side: AboutNav,
+          content: AboutIntroduce
+        }
+      },
+      {
+        path: "space",
+        components: {
+          side: AboutNav,
+          content: AboutSpace
+        }
+      },
+      {
+        path: "map",
+        components: {
+          side: AboutNav,
+          content: AboutMap
+        }
+      },
+      {
+        path: "visit",
+        components: {
+          side: AboutNav,
+          content: AboutVisit
+        }
+      },
+      {
+        path: "booking",
+        components: {
+          side: AboutNav,
+          content: AboutBooking
+        }
+      }
+    ]
   },
   {
     path: "/activity",
@@ -87,11 +129,6 @@ const routes = [
     path: "/growing",
     name: "Growing",
     component: Growing
-  },
-  {
-    path: "/information",
-    name: "Information",
-    component: Information
   },
   {
     path: "/news",
