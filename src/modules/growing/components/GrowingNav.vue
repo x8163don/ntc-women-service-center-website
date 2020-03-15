@@ -10,23 +10,15 @@ export default {
   },
   data() {
     return {
-      title: "女力加油站",
+      title: "成長小屋",
       links: [
         {
-          name: "活動",
-          path: "activity"
+          name: "館藏書籍",
+          path: "collection"
         },
         {
-          name: "性別議題",
-          path: "issue"
-        },
-        {
-          name: "影音專區",
-          path: "videos"
-        },
-        {
-          name: "文宣品/刊物",
-          path: "files"
+          name: "CEDAW專區",
+          path: "cedaw"
         }
       ]
     };

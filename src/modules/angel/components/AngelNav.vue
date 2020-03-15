@@ -10,23 +10,19 @@ export default {
   },
   data() {
     return {
-      title: "女力加油站",
+      title: "微光天使",
       links: [
         {
-          name: "活動",
-          path: "activity"
+          name: "認識微光天使",
+          path: "introduce"
         },
         {
-          name: "性別議題",
-          path: "issue"
+          name: "招募志工",
+          path: "recruit"
         },
         {
-          name: "影音專區",
-          path: "videos"
-        },
-        {
-          name: "文宣品/刊物",
-          path: "files"
+          name: "獲獎紀錄",
+          path: "prize"
         }
       ]
     };

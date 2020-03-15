@@ -1,9 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../modules/home/views/Home";
 
 const NavContentLayout = () =>
   import("../modules/common/components/NavContentLayout");
+
+const Home = () => import("../modules/home/views/Home");
 
 const AboutNav = () => import("../modules/about/components/AboutNav");
 const AboutIntroduce = () => import("../modules/about/views/AboutIntroduce");
@@ -18,8 +19,14 @@ const ActivityPass = () => import("../modules/activity/views/ActivityPass");
 const ActivityTheme = () => import("../modules/activity/views/ActivityTheme");
 const ActivitySeries = () => import("../modules/activity/views/ActivitySeries");
 
-import Angel from "../modules/angel/views/Angel";
-import Growing from "../modules/growing/views/Growing";
+const AngelNav = () => import("../modules/angel/components/AngelNav");
+const AngelIntroduce = () => import("../modules/angel/views/AngelIntroduce");
+const AngelPrize = () => import("../modules/angel/views/AngelPrize");
+const AngelRecruit = () => import("../modules/angel/views/AngelRecruit");
+
+const GrowingNav = () => import("../modules/growing/components/GrowingNav");
+const GrowingCollection = () =>
+  import("../modules/growing/views/GrowingCollections");
 
 const NewsNav = () => import("../modules/news/components/NewsNav");
 const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement");
@@ -32,7 +39,7 @@ const PowerIssue = () => import("../modules/power/views/PowerIssue");
 const PowerVideos = () => import("../modules/power/views/PowerVideos");
 const PowerFiles = () => import("../modules/power/views/PowerFiles");
 
-import Videos from "../modules/videos/views/Videos";
+const Videos = () => import("../modules/videos/views/Videos");
 
 Vue.use(VueRouter);
 
@@ -121,13 +128,52 @@ const routes = [
   },
   {
     path: "/angel",
-    name: "Angel",
-    component: Angel
+    redirect: "/angel/introduce",
+    component: NavContentLayout,
+    children: [
+      {
+        path: "introduce",
+        components: {
+          side: AngelNav,
+          content: AngelIntroduce
+        }
+      },
+      {
+        path: "recruit",
+        components: {
+          side: AngelNav,
+          content: AngelRecruit
+        }
+      },
+      {
+        path: "prize",
+        components: {
+          side: AngelNav,
+          content: AngelPrize
+        }
+      }
+    ]
   },
   {
     path: "/growing",
-    name: "Growing",
-    component: Growing
+    redirect: "/growing/collection",
+    component: NavContentLayout,
+    children: [
+      {
+        path: "collection",
+        components: {
+          side: GrowingNav,
+          content: GrowingCollection
+        }
+      },
+      {
+        path: "cedaw",
+        components: {
+          side: GrowingNav,
+          content: ""
+        }
+      }
+    ]
   },
   {
     path: "/news",
