@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
+// import Common Components
 const NavContentLayout = () =>
   import("../modules/common/components/NavContentLayout");
 const DataPreview = () =>
