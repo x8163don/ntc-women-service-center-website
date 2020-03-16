@@ -57,10 +57,10 @@
 </template>
 
 <script>
-import Swiper from "swiper"
-import HomeActivity from "../components/HomeActivity"
-import HomeNews from "../components/HomeNews"
-import HomePower from "../components/HomePower"
+import Swiper from "swiper";
+import HomeActivity from "../components/HomeActivity";
+import HomeNews from "../components/HomeNews";
+import HomePower from "../components/HomePower";
 
 export default {
   components: {
@@ -69,22 +69,20 @@ export default {
     HomePower
   },
   mounted() {
-    this.initSwiper()
+    this.initSwiper();
   },
   data() {
     return {
       banners: [
         {
-          link: "http://www.google.com",
-          src: "https://i1.go2yd.com/image.php?url=0KFRrK8beh"
+          link: "/activity/post/f5bf82a5-5633-41ef-9678-e346ef7552e2",
+          src:
+            "https://lh3.googleusercontent.com/24ZTi7PeFBG8QMJk_QA5uoAl4ief-jSa1kw3cpCjhWk5Qc6aHGl76K3F1vc9IRWo7zGWVi_njKZ3acexu1MbE_CiNYKogyvqhUvJi4RTVdceMmO241mJicRjlUVo9gEc_PxZpvvFlho8n4SL66Nk1n6gRtV2sKmEOE69lozyXSK1Uz9yyzKmeV4Q7CSWLJkCw2i-J88U7R3MX6jrEU2N2vdYmiU0zT0HpcFPcQH3h2PRfzY_GjOjTScrhHww0t4TanaRpiFy75NagK8dwL63EIHBXIAq6CB9auArCa_5SolmKba_7OWELnitOHtkwlY9TA9l8v5MSK9MtnvjK9cw5dc3cj3YM8UiUF1hwKzkjnUtK1MppALkr4l1UhwCXbUn214e_CkaXGk_Iv4MR-2ztmWWl9AhBxMvC07dj3yj3JjixiypcHngGiNfBgoDepIOxcJlrlwBR-mb0H8EI3InFUdRuKWPmTQFQ50skyGzO-4FucVDdCQLEfcNZCqfX06h0roZcX4p1CscY38LQy4keRnJM484rXb_op1rctGeOJDVE7Br62w9HCqK1aTfXJfs5g-p-QZ7EyTModPPVcJJRfWt6IPUHc_7RsOL1lfy4m32QOp1qDUdRf7LQAvNzg4JOhhmU1_FEFVhowStKWKR5K-1CuMgAxzYtH578uNST38yLQny7gcJt6lOkT_xudI7PJtCFm0_-xo66ThNFxzz6VAYH4JcrMq6RHtjvQz-3F3XXg4=w1344-h1008-no"
         },
         {
-          link: "http://www.google.com",
-          src: "https://i1.go2yd.com/image.php?url=0KFRrK8beh"
-        },
-        {
-          link: "http://www.google.com",
-          src: "https://i1.go2yd.com/image.php?url=0KFRrK8beh"
+          link: "/activity/post/c9109ee8-3d3f-4baa-ab24-a82bec4e1e4a",
+          src:
+            "https://lh3.googleusercontent.com/p0jpSzQBkrdQTLSO9eJEFcYgYe8iYkqcySz7JpnkoiHjfg3PfbgGi1EmWO1UQ3UtucsTxWIazxyckUutej5qlD5JmqkHRX7EIPLIqvrzbnvLM5tW6xgqwc-yROrwjfzBwkL5qhL1rVLueoY475KlKDXrIfgdhNY-5Shlq5M_UyaRomwx6KZFUnsF4sTI1LyZxoMwgNtYU9YbGkJVJE20OqkTQonuaMp-uezjfRBHxkF85RCiaDC8rt8P8A9Xvz_rFJRoxF3qEVpvNkEHwXl7D6Sm4wYkOVBgfR066lYbqH0dtoLkl2BToXATESkEQyMafA2ja0Sj_P8TcoNVruesS6PIo4XWa0iz_lh7az3r0TqeY3luREotA4NYCFN0uXcmD8QS69MY5LjGmqYYSlPqpEgSsu_c7zlbzlHzeo5eFib5AGSYCRPp8Vrtn-B3NVg_y84voEbcxz4S1gzS4yYnylRU_fSDedOiUY_7dYbV1rf9x0lDLxgFZ6-3AaMKR6iOtEe-bmAIx3jnHdFrmjZ3pPKvA-ysHYcuc5W3BMuhrzMhzE04r-_qxwhwHNVIu88tt1WeekAyi6nSIangCy-g0xWh8pYbRUDSsNr4TEPTVdRhQnl6ZVIYjDM5cxre_pe_bWxG3c77n7G7_JmhFEpqEVoxqHLY5m2cCIVIWU0mAuyLi7qS56HcfoF3Mnswbr0wQvU539qkF3Ue9DvfqRxvBKMYOup9ovw_u05J3xz7oHXl-C8z=w2880-h1442-no"
         }
       ],
 
@@ -105,25 +103,24 @@ export default {
           component: "HomePower"
         }
       ]
-    }
+    };
   },
   methods: {
     initSwiper() {
       this.swiper = new Swiper(".swiper-container", {
-        spaceBetween: 30,
         loop: true,
         autoplay: {
-          delay: 3500,
+          delay: 5000,
           disableOnInteraction: false
         },
         pagination: {
           el: ".swiper-pagination",
           clickable: true
         }
-      })
+      });
     }
   }
-}
+};
 </script>
 
 <style scoped>
