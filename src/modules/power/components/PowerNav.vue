@@ -14,19 +14,19 @@ export default {
       links: [
         {
           name: "研習",
-          path: "study"
+          path: "/power/study"
         },
         {
           name: "性別議題",
-          path: "issue"
+          path: "/power/issue"
         },
         {
           name: "影音專區",
-          path: "videos"
+          path: "/power/videos"
         },
         {
           name: "文宣品/刊物",
-          path: "files"
+          path: "/power/files"
         }
       ]
     };

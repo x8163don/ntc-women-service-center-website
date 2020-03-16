@@ -30,6 +30,7 @@ const AngelRecruit = () => import("../modules/angel/views/AngelRecruit");
 const GrowingNav = () => import("../modules/growing/components/GrowingNav");
 const GrowingCollection = () =>
   import("../modules/growing/views/GrowingCollections");
+const GrowingCedaw = () => import("../modules/growing/views/GrowingCedaw");
 
 const NewsNav = () => import("../modules/news/components/NewsNav");
 const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement");
@@ -180,7 +181,7 @@ const routes = [
         path: "cedaw",
         components: {
           side: GrowingNav,
-          content: ""
+          content: GrowingCedaw
         }
       }
     ]
@@ -251,6 +252,13 @@ const routes = [
         components: {
           side: PowerNav,
           content: PowerFiles
+        }
+      },
+      {
+        path: "post/:id",
+        components: {
+          side: PowerNav,
+          content: DataPreview
         }
       }
     ]

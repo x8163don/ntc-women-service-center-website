@@ -22,10 +22,11 @@
 <script>
 import News from "../../news/data/news.json";
 import Activities from "../../activity/data/activities.json";
+import PowerStudy from "../../power/data/activities.json";
 
 export default {
   mounted() {
-    const posts = [].concat(News, Activities);
+    const posts = [].concat(News, Activities, PowerStudy);
     this.content = posts.find(item => item.id === this.$route.params.id);
     this.$nextTick(() => {
       this.width = this.$refs.container.clientWidth;
