@@ -36,7 +36,7 @@ const NewsActivity = () => import("../modules/news/views/NewsActivity");
 const NewsOther = () => import("../modules/news/views/NewsOther");
 
 const PowerNav = () => import("../modules/power/components/PowerNav");
-const PowerActivity = () => import("../modules/power/views/PowerActivity");
+const PowerStudy = () => import("../modules/power/views/PowerStudy");
 const PowerIssue = () => import("../modules/power/views/PowerIssue");
 const PowerVideos = () => import("../modules/power/views/PowerVideos");
 const PowerFiles = () => import("../modules/power/views/PowerFiles");
@@ -221,14 +221,14 @@ const routes = [
   },
   {
     path: "/power",
-    redirect: "/power/activity",
+    redirect: "/power/study",
     component: NavContentLayout,
     children: [
       {
-        path: "activity",
+        path: "study",
         components: {
           side: PowerNav,
-          content: PowerActivity
+          content: PowerStudy
         }
       },
       {

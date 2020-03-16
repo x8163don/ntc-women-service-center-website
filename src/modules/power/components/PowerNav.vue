@@ -13,8 +13,8 @@ export default {
       title: "女力加油站",
       links: [
         {
-          name: "活動",
-          path: "activity"
+          name: "研習",
+          path: "study"
         },
         {
           name: "性別議題",
