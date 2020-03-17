@@ -26,16 +26,14 @@ export default {
     menuItems: {
       type: Array,
       default: function() {
-        return []
+        return [];
       }
     }
   },
   methods: {
     selectMenuItem(selectedItem) {
-      this.$emit("selectMenuItem", selectedItem)
+      this.$emit("selectMenuItem", selectedItem);
     }
   }
-}
+};
 </script>
-
-<style></style>
