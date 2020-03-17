@@ -1,6 +1,10 @@
 language: node_js
 node_js: stable
-
+addons:
+  sonarcloud:
+    organization: x8163don
+    token:
+      secure: 0728e669f3961aa8fc144e27c1df5b9aa7d76268 # encrypted value of your token
 cache:
   directories:
     - node_modules
