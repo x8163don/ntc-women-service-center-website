@@ -25,7 +25,7 @@
         >
           {{ tab.showName }}
         </div>
-        <div class="w-100 h5">
+        <div class="w-100 h5 pre">
           <keep-alive>
             <component v-bind:is="selectedTab"></component>
           </keep-alive>
@@ -101,6 +101,27 @@ export default {
         {
           showName: "女力加油站",
           component: "HomePower"
+        }
+      ],
+
+      news: [
+        {
+          name: "title1",
+          url: "https://www.google.com"
+        }
+      ],
+
+      activies: [
+        {
+          name: "activies1",
+          url: "https://www.google.com"
+        }
+      ],
+
+      powers: [
+        {
+          name: "power1",
+          url: "https://www.google.com"
         }
       ]
     };
