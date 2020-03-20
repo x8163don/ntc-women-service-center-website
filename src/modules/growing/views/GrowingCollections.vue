@@ -6,7 +6,7 @@
       href="https://drive.google.com/uc?id=1zuzmOXHByueviKMmgmsYUzQRs_bz7nLN&export=download"
     >
       圖書清單
-    </template>
+    </a>
     <div>
       <img v-for="url in imgUrls" :key="url" :src="url" />
     </div>
