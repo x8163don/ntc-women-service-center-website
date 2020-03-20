@@ -1,11 +1,11 @@
 <template>
   <div>
-    <img class="w-80 " :src="introduceImgUrl" />
     <div class="ml4 mt4">
       <a :href="bookingFileUrl">
         預約表單下載
       </a>
     </div>
+    <img class="w-80 " :src="introduceImgUrl" />
   </div>
 </template>
 
