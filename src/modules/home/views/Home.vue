@@ -16,15 +16,18 @@
 
     <!-- Info -->
     <div class="flex">
-      <div class="pa3 w-60 flex flex-wrap">
-        <div
-          v-for="(tab, index) in tabs"
-          :key="'tab' + index"
-          @click="selectedTab = tab.component"
-          class="w4 mr1 pa2 bg-orange white bg-animate hover-bg-white hover-black"
-        >
-          {{ tab.showName }}
+      <div class="pa3 w-60 flex flex-column">
+        <div class="flex">
+          <div
+            v-for="(tab, index) in tabs"
+            :key="'tab' + index"
+            @click="selectedTab = tab.component"
+            class="w4 mr1 pa2 bg-orange white bg-animate hover-bg-white hover-black"
+          >
+            {{ tab.showName }}
+          </div>
         </div>
+
         <div class="w-100 h5 pre">
           <keep-alive>
             <component v-bind:is="selectedTab"></component>
@@ -38,18 +41,76 @@
         <div class="lt">
           <div class="tl w2 h1 bg-red dib v-btm "></div>
           <div class="tl red dib">與你有約</div>
+          <div class="mt2">
+            <a href="/activity" :class="buttonStyle">我要報名</a>
+            <a href="/about/booking" :class="buttonStyle">場地租借</a>
+            <a href="/about/visit" :class="buttonStyle">預約參訪</a>
+          </div>
         </div>
 
         <!-- Resource -->
         <div>
           <div class="w2 h1 bg-red dib v-btm"></div>
           <div class="red dib">共享資源</div>
+          <div class="mt2">
+            <a href="/growing/cedaw" :class="buttonStyle">認識CEDAW</a>
+            <a
+              href="https://www.gec.ntpc.gov.tw/content/?parent_id=10122"
+              :class="buttonStyle"
+              >新北市婦女資源地圖</a
+            >
+          </div>
         </div>
 
         <!-- Other website -->
         <div>
           <div class="w2 h1 bg-red dib v-btm"></div>
           <div class="red dib">友站連結</div>
+          <div class="mt2 flex flex-column">
+            <div class="flex flex-row">
+              <div class="flex flex-column">
+                <a href="/videos" :class="buttonStyle">
+                  性平影音
+                </a>
+
+                <a href="https://www.ntpc.gov.tw/ch/index.jsp"
+                  ><img
+                    class="h3"
+                    src="https://www.ntpc.gov.tw/ch/images/all/logo.png"
+                  />
+                </a>
+              </div>
+
+              <div class="ml2 flex flex-column">
+                <a href="https://www.facebook.com/NTWSC/">
+                  <img src="../../../assets/facebook.png" />
+                </a>
+
+                <a href="https://lin.ee/cMbVcnM">
+                  <img src="../../../assets/line.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="http://www.taiwanwomencenter.org.tw/zh-tw/Home/Index"
+            :class="buttonStyle"
+            >國家婦女館</a
+          >
+          <a
+            href="http://www.gender-indicators.org.tw/zh-tw/home"
+            :class="buttonStyle"
+            >性別指標資訊平台</a
+          >
+          <a href="https://gec.ey.gov.tw/" :class="buttonStyle"
+            >行政院 性別平等會</a
+          >
+          <a
+            href="https://www.stat.gov.tw/np.asp?ctNode=6015"
+            :class="buttonStyle"
+            >行政院性別主計總處–性別統計專區</a
+          >
         </div>
       </div>
     </div>
@@ -73,6 +134,9 @@ export default {
   },
   data() {
     return {
+      //button style
+      buttonStyle: "mr2 tc f4 link dim mb2 pa3 dib white bg-mid-gray pointer",
+
       banners: [
         {
           link: "/activity/post/f5bf82a5-5633-41ef-9678-e346ef7552e2",
