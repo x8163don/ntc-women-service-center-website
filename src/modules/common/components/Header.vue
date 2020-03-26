@@ -10,7 +10,7 @@
       <template v-for="(link, index) in links">
         <router-link
           :key="index"
-          class="w-25 pa3 tc no-underline default-text-color pointer"
+          class="flex-auto pa3 tc no-underline default-text-color pointer"
           :to="link.to"
           >{{ link.showText }}</router-link
         >
@@ -48,6 +48,10 @@ export default {
 .nav {
   padding: 30px;
   background-color: #f68657;
+}
+
+.menu-item {
+  flex: 1;
 }
 
 .router-link-exact-active {
