@@ -34,7 +34,7 @@ export default {
         },
         {
           name: "新聞報章",
-          path: ""
+          path: "news"
         }
       ]
     };

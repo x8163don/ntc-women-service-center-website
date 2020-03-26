@@ -15,6 +15,7 @@ const AboutSpace = () => import("../modules/about/views/AboutSpace");
 const AboutMap = () => import("../modules/about/views/AboutMap");
 const AboutVisit = () => import("../modules/about/views/AboutVisit");
 const AboutBooking = () => import("../modules/about/views/AboutBooking");
+const AboutNews = () => import("../modules/about/views/AboutNews");
 
 const ActivityNav = () => import("../modules/activity/components/AvtivityNav");
 const ActivityNew = () => import("../modules/activity/views/ActivityNew");
@@ -91,6 +92,13 @@ const routes = [
         components: {
           side: AboutNav,
           content: AboutBooking
+        }
+      },
+      {
+        path: "news",
+        components: {
+          side: AboutNav,
+          content: AboutNews
         }
       }
     ]
