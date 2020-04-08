@@ -12,6 +12,12 @@ export default {
     return {
       news: [
         {
+          startDate: "2020/04/05",
+          name: "新北女聲結合復興電台 宣導性平和婦女福利",
+          url:
+            "https://www.idn.com.tw/news/news_content.aspx?catid=4&catsid=2&catdid=0&artid=20200406hsieh010"
+        },
+        {
           startDate: "2019/12/13",
           name: "五股貿商社區 滿滿眷村味",
           url:
