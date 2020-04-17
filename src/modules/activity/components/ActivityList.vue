@@ -6,7 +6,7 @@
       :key="'Pass' + activity.id"
     >
       <a :href="activity.url">
-        <div class="w-100 h-75 h6">
+        <div class="w-100 h6">
           <img
             v-if="activity.imgUrl[0]"
             :src="activity.imgUrl[0]"
@@ -18,7 +18,7 @@
           <div class="gray f5 tc">
             {{ activity.startDate }}
           </div>
-          <div class="f4 tc">
+          <div class="pb2 f4 tc">
             【{{ getActivityTypeName(activity.type[0]) }}】{{ activity.name }}
           </div>
         </div>
