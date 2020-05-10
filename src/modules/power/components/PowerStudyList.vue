@@ -1,30 +1,28 @@
 <template>
-  <div class="flex flex-wrap pa3">
-    <div
-      class="w-30 h6 mr3 mb3 ba grow pointer"
-      v-for="activity in activities"
-      :key="activity.id"
-    >
-      <a :href="activity.url">
-        <div class="w-100 h-75 h6">
-          <img
-            v-if="activity.imgUrl[0]"
+  <v-container fluid>
+    <v-row dense>
+      <v-col
+        cols="3"
+        v-for="activity in activities"
+        :key="'Pass' + activity.id"
+        class="mb2 grow"
+      >
+        <v-card class="mx-auto" max-width="400" :href="activity.url">
+          <v-img
+            class="white--text align-end"
+            height="200px"
             :src="activity.imgUrl[0]"
-            class="w-100 h-100"
-          />
-        </div>
-
-        <div class="h-25">
-          <div class="gray f5 tc">
-            {{ activity.startDate }}
-          </div>
-          <div class="f4 tc">
-            {{ activity.name }}
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+            contain
+          >
+          </v-img>
+          <v-card-subtitle class="pb-0">{{ activity.name }}</v-card-subtitle>
+          <v-card-text class="text--primary">
+            <div>{{ activity.startDate }}</div>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -33,6 +31,6 @@ import Activities from "../data/activities.json";
 export default {
   data() {
     return { activities: Activities };
-  }
+  },
 };
 </script>
