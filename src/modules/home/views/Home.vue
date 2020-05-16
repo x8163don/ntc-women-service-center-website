@@ -145,7 +145,7 @@ export default {
         {
           link: "/activity/post/f5bf82a5-5633-41ef-9678-e346ef7552e2",
           src:
-            "https://lh3.googleusercontent.com/24ZTi7PeFBG8QMJk_QA5uoAl4ief-jSa1kw3cpCjhWk5Qc6aHGl76K3F1vc9IRWo7zGWVi_njKZ3acexu1MbE_CiNYKogyvqhUvJi4RTVdceMmO241mJicRjlUVo9gEc_PxZpvvFlho8n4SL66Nk1n6gRtV2sKmEOE69lozyXSK1Uz9yyzKmeV4Q7CSWLJkCw2i-J88U7R3MX6jrEU2N2vdYmiU0zT0HpcFPcQH3h2PRfzY_GjOjTScrhHww0t4TanaRpiFy75NagK8dwL63EIHBXIAq6CB9auArCa_5SolmKba_7OWELnitOHtkwlY9TA9l8v5MSK9MtnvjK9cw5dc3cj3YM8UiUF1hwKzkjnUtK1MppALkr4l1UhwCXbUn214e_CkaXGk_Iv4MR-2ztmWWl9AhBxMvC07dj3yj3JjixiypcHngGiNfBgoDepIOxcJlrlwBR-mb0H8EI3InFUdRuKWPmTQFQ50skyGzO-4FucVDdCQLEfcNZCqfX06h0roZcX4p1CscY38LQy4keRnJM484rXb_op1rctGeOJDVE7Br62w9HCqK1aTfXJfs5g-p-QZ7EyTModPPVcJJRfWt6IPUHc_7RsOL1lfy4m32QOp1qDUdRf7LQAvNzg4JOhhmU1_FEFVhowStKWKR5K-1CuMgAxzYtH578uNST38yLQny7gcJt6lOkT_xudI7PJtCFm0_-xo66ThNFxzz6VAYH4JcrMq6RHtjvQz-3F3XXg4=w1344-h1008-no"
+            "https://lh3.googleusercontent.com/pw/ACtC-3dqzExeTI8dK_MMQ1iEpT-j8zhqnWc_XwVdbiEfkTxm-XTCbMh6tUhplXCoH6YsRqsZWKPoxfIIPd6dtphFY0ezV5Mj0jw5mU5-3T9MWyMkhjUCb_JlCmLPCpwDYf8S-gFDXw0kfCXCvp8oiWx5Ghdb=w674-h898-no?authuser=1"
         },
         {
           link: "/activity/post/c9109ee8-3d3f-4baa-ab24-a82bec4e1e4a",
