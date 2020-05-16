@@ -39,13 +39,13 @@ export default {
       type: Array,
       default() {
         return [];
-      },
-    },
+      }
+    }
   },
   methods: {
     getActivityTypeName(index) {
       return ActivityType[index];
-    },
-  },
+    }
+  }
 };
 </script>

@@ -37,7 +37,8 @@ export default {
         { to: "/growing", showText: "成長小屋" },
         { to: "/power", showText: "女力加油站" },
         { to: "/videos", showText: "性平影音" },
-        { to: "/angel", showText: "微光天使" }
+        { to: "/angel", showText: "微光天使" },
+        { to: "/exhibitions", showText: "線上展覽" }
       ]
     };
   }

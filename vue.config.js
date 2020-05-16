@@ -4,12 +4,12 @@ module.exports = {
   publicPath: process.env.VUE_APP_BUILD_PATH,
   productionSourceMap: false,
   transpileDependencies: ["vuetify"],
-  configureWebpack: (config) => {
+  configureWebpack: config => {
     const plugins = [];
 
     plugins.push(getCopyPlugin());
     config.plugins = [...config.plugins, ...plugins];
-  },
+  }
 };
 
 function getCopyPlugin() {

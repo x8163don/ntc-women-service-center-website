@@ -46,6 +46,10 @@ const PowerFiles = () => import("../modules/power/views/PowerFiles");
 
 const Videos = () => import("../modules/videos/views/Videos");
 
+const Exhibitions = () => import("../modules/exhibition/views/Exhibition.vue");
+const ExhibitionsInfo = () =>
+  import("../modules/exhibition/views/ExhibitionInfo.vue");
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -275,6 +279,18 @@ const routes = [
     path: "/videos",
     name: "Videos",
     component: Videos
+  },
+
+  {
+    path: "/exhibitions",
+    name: "Exhibitions",
+    component: Exhibitions
+  },
+
+  {
+    path: "/exhibition/:id",
+    name: "Exhibition",
+    component: ExhibitionsInfo
   }
 ];
 

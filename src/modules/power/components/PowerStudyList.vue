@@ -31,6 +31,6 @@ import Activities from "../data/activities.json";
 export default {
   data() {
     return { activities: Activities };
-  },
+  }
 };
 </script>
