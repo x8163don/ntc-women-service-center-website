@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row>
       <v-col height="100%" lg="9">
-        <v-img aspect-ratio="1.77" contain :src="currentPageImage"></v-img>
+        <v-img aspect-ratio="1" contain :src="currentPageImage"></v-img>
       </v-col>
 
       <v-col lg="2" class="overflow-y-scroll" style="height: 33vw">
@@ -25,21 +25,21 @@ export default {
   props: {
     currentPage: {
       type: Number,
-      default: 0
+      default: 0,
     },
     pages: {
       type: Array,
       default() {
-        return [];
-      }
-    }
+        return []
+      },
+    },
   },
   computed: {
     currentPageImage() {
-      return this.pages[this.currentPage].image;
-    }
-  }
-};
+      return this.pages[this.currentPage].image
+    },
+  },
+}
 </script>
 
 <style scoped></style>
