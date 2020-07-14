@@ -56,6 +56,7 @@
             <a href="/activity" :class="buttonStyle">我要報名</a>
             <a href="/about/booking" :class="buttonStyle">場地租借</a>
             <a href="/about/visit" :class="buttonStyle">預約參訪</a>
+            <a href="/trips" :class="buttonStyle">女路之旅</a>
           </div>
         </div>
 
