@@ -55,7 +55,7 @@
       <a
         disable
         class="f6 link dim br2 ph3 pv2 mb2 dib white bg-dark-blue"
-        href="#0"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc_zTyLNIhe8jFm5Y5WKS5Xj8-K4UPSylizC8tNbtG51o2pFQ/viewform?usp=sf_link"
         >點我報名</a
       >
     </div>
