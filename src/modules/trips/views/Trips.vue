@@ -6,6 +6,10 @@
     </h2>
 
     <!-- main banner -->
+    <v-img
+      src="https://lh3.googleusercontent.com/pw/ACtC-3dh1rC7tY5PPy70-xJ0zEO09YiYfK-DkkM2ysHEV0XSzBQd9CZhJyxs9teqUbdLnJVurwsz6gJXBxG82fCKXbCvVfMBdXRV1vwgTWKdzPCDij4gSuFahLx9h0RPTWWjEsNe-uc60SrlA5B1nuyLAaM6=w1341-h843-no?authuser=1"
+      class="mt4"
+    ></v-img>
 
     <!-- route -->
     <b :class="subtitle">導覽路線</b>
@@ -14,12 +18,12 @@
       →06台陽招待所→07皇宮(平溪富士山、基隆河生態) →08礦工
       雕像→09礦工福利社→10菁桐火車站→11菁桐礦業生活館→12
       石底大斜坑→13捨石山→14選洗煤場
-      <a
-        href="https://drive.google.com/file/d/1luxuvKlAZqkSVYnOpkQxo0HMqpixIm60/view?usp=sharing"
-        :class="linkStyle"
-        >詳細點我</a
-      >
     </p>
+    <a
+      href="https://drive.google.com/file/d/1luxuvKlAZqkSVYnOpkQxo0HMqpixIm60/view?usp=sharing"
+      :class="linkStyle"
+      >詳細點我</a
+    >
 
     <!-- activity -->
     <b :class="subtitle">
@@ -49,14 +53,14 @@
         >詳細點我</a
       >
     </b>
+    <!-- video -->
 
     <!-- booking -->
     <div class="mt3">
       <a
-        disable
-        class="f6 link dim br2 ph3 pv2 mb2 dib white bg-dark-blue"
+        class="f2 link dim br2 ph3 pv2 mb2 dib white bg-dark-blue"
         href="https://docs.google.com/forms/d/e/1FAIpQLSc_zTyLNIhe8jFm5Y5WKS5Xj8-K4UPSylizC8tNbtG51o2pFQ/viewform?usp=sf_link"
-        >點我報名</a
+        >預約參訪</a
       >
     </div>
   </div>
@@ -67,8 +71,8 @@ export default {
   data() {
     return {
       // default style
-      subtitle: "db f3 mb1 mt3",
-      linkStyle: "f4 fw6 blue link dim",
+      subtitle: "db f4 mt4",
+      linkStyle: "f4 fw6 db blue link dim mt3 ml-auto mr-auto ",
     }
   },
 }
