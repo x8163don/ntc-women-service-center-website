@@ -39,7 +39,7 @@
           <v-card class="pa5">
             <a
               :class="linkStyle"
-              href="https://drive.google.com/file/d/1v5NIY7P9iPs-pg3oJCp_rceBfdMs2l02/view?usp=sharing"
+              href="https://drive.google.com/file/d/1yIFJ7mMNPJogaZfegzxkB8P1w5bp9BeK/view?usp=sharing"
               >店家簡介
             </a>
           </v-card>
@@ -50,8 +50,19 @@
           <v-card class="pa5">
             <a
               :class="linkStyle"
-              href="https://drive.google.com/file/d/1mrUPlgj0XvHnz2o5Z8p1stjRmlY_MoYM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1NRws3yaXCLa1E1CD3Qmb1GBk_zcJW6KT/view?usp=sharing"
               >預約導覽說明
+            </a>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col class="mr3 ml3">
+          <v-card class="center pa5 w-third">
+            <a
+              :class="linkStyle"
+              href="https://drive.google.com/file/d/1K7dRkfULKYxs1mbxloao4Ci9ZVK_jVoo/view?usp=sharing"
+              >參訪手冊
             </a>
           </v-card>
         </v-col>
@@ -70,8 +81,8 @@
       ></iframe>
     </div>
 
-    <!-- booking -->
     <v-container class="mt5">
+      <!-- booking -->
       <v-row>
         <v-col class="tc">
           <a
