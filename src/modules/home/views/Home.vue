@@ -53,10 +53,18 @@
           <div class="tl w2 h1 bg-red dib v-btm "></div>
           <div class="tl red dib">與你有約</div>
           <div class="mt2">
-            <a href="/activity" :class="buttonStyle">我要報名</a>
-            <a href="/about/booking" :class="buttonStyle">場地租借</a>
-            <a href="/about/visit" :class="buttonStyle">預約參訪</a>
-            <a href="/trips" :class="buttonStyle">女路之旅</a>
+            <a href="/activity" :class="buttonStyle" class="button-yellow"
+              >我要報名</a
+            >
+            <a href="/about/booking" :class="buttonStyle" class="button-yellow"
+              >場地租借</a
+            >
+            <a href="/about/visit" :class="buttonStyle" class="button-yellow"
+              >預約參訪</a
+            >
+            <a href="/trips" :class="buttonStyle" class="button-yellow"
+              >女路之旅</a
+            >
           </div>
         </div>
 
@@ -65,10 +73,13 @@
           <div class="w2 h1 bg-red dib v-btm"></div>
           <div class="red dib">共享資源</div>
           <div class="mt2">
-            <a href="/growing/cedaw" :class="buttonStyle">認識CEDAW</a>
+            <a href="/growing/cedaw" :class="buttonStyle" class="button-pink"
+              >認識CEDAW</a
+            >
             <a
               href="https://www.gec.ntpc.gov.tw/content/?parent_id=10122"
               :class="buttonStyle"
+              class="button-pink"
               >新北市婦女資源地圖</a
             >
           </div>
@@ -81,7 +92,11 @@
           <div class="mt2 flex flex-column">
             <div class="flex flex-row">
               <div class="flex flex-column">
-                <a href="/videos" :class="buttonStyle">
+                <a
+                  href="/videos"
+                  :class="buttonStyle"
+                  class="button-light-green"
+                >
                   性平影音
                 </a>
 
@@ -108,19 +123,25 @@
           <a
             href="http://www.taiwanwomencenter.org.tw/zh-tw/Home/Index"
             :class="buttonStyle"
+            class="button-light-green"
             >國家婦女館</a
           >
           <a
             href="http://www.gender-indicators.org.tw/zh-tw/home"
             :class="buttonStyle"
+            class="button-light-green"
             >性別指標資訊平台</a
           >
-          <a href="https://gec.ey.gov.tw/" :class="buttonStyle"
+          <a
+            href="https://gec.ey.gov.tw/"
+            :class="buttonStyle"
+            class="button-light-green"
             >行政院 性別平等會</a
           >
           <a
             href="https://www.stat.gov.tw/np.asp?ctNode=6015"
             :class="buttonStyle"
+            class="button-light-green"
             >行政院性別主計總處–性別統計專區</a
           >
         </div>
@@ -147,7 +168,7 @@ export default {
   data() {
     return {
       //button style
-      buttonStyle: "mr2 tc f4 link dim mb2 pa3 dib white bg-mid-gray pointer",
+      buttonStyle: "mr2 tc f4 link dim mb2 pa3 dib pointer gray",
 
       banners: [
         {
@@ -229,5 +250,17 @@ export default {
 .tab {
   background-color: #f68657;
   color: #fff;
+}
+
+.button-yellow {
+  background-color: #f9e79f;
+}
+
+.button-pink {
+  background-color: #f5b7b1;
+}
+
+.button-light-green {
+  background-color: #a2d9ce;
 }
 </style>
