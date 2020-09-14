@@ -5,6 +5,13 @@
         <p>{{ file.name }}</p>
       </a>
     </div>
+    
+    <div class="mt4 mb3 f4 dark-blue">延伸閱讀</div>
+    <div v-for="article in articles" :key="article.url" class="mb3">
+      <a :href="article.url">
+        <p>{{ article.name }}</p>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -42,6 +49,13 @@ export default {
           name: "103年新北市婦女需求調查表",
           url:
             "https://drive.google.com/file/d/1GApwelRiEnBzQYDQTaIVtY9KBH6hxF4O/view"
+        }
+      ],
+      articles:[
+        {
+          name: "侯市長阿伯的28個故事",
+          url:
+            "https://drive.google.com/file/d/1sh7hpk1pyeVRtAmDvqEtRn_rzkhZIbPP/view"
         }
       ]
     };
