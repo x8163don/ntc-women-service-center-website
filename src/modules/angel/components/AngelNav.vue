@@ -23,6 +23,10 @@ export default {
         {
           name: "獲獎紀錄",
           path: "prize"
+        },
+        {
+          name: "志工活動",
+          path: "activity"
         }
       ]
     };

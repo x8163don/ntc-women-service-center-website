@@ -26,6 +26,7 @@ const AngelNav = () => import("../modules/angel/components/AngelNav")
 const AngelIntroduce = () => import("../modules/angel/views/AngelIntroduce")
 const AngelPrize = () => import("../modules/angel/views/AngelPrize")
 const AngelRecruit = () => import("../modules/angel/views/AngelRecruit")
+const AngelActivity = () => import("../modules/angel/views/AngelActivity")
 
 const GrowingNav = () => import("../modules/growing/components/GrowingNav")
 const GrowingCollection = () =>
@@ -174,6 +175,13 @@ const routes = [
         components: {
           side: AngelNav,
           content: AngelPrize,
+        },
+      },
+      {
+        path: "activity",
+        components: {
+          side: AngelNav,
+          content: AngelActivity,
         },
       },
     ],
