@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import SideNav from "../../common/components/SideNav.vue";
+import SideNav from "../../common/components/SideNav.vue"
 export default {
   components: {
-    SideNav
+    SideNav,
   },
   data() {
     return {
@@ -14,22 +14,22 @@ export default {
       links: [
         {
           name: "認識微光天使",
-          path: "introduce"
+          path: "introduce",
         },
         {
           name: "招募志工",
-          path: "recruit"
+          path: "recruit",
         },
         {
           name: "獲獎紀錄",
-          path: "prize"
+          path: "prize",
         },
         {
-          name: "志工活動",
-          path: "activity"
-        }
-      ]
-    };
-  }
-};
+          name: "志工歷年活動",
+          path: "activity",
+        },
+      ],
+    }
+  },
+}
 </script>
