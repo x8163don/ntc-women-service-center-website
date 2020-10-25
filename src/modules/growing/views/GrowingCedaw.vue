@@ -14,6 +14,16 @@ export default {
     return {
       files: [
         {
+          name: "性別平等工具書-繪本篇",
+          url:
+            "https://drive.google.com/file/d/1y_NW_nO8sBrIC3V6b6E2XCoFW8wk2K55/view",
+        },
+        {
+          name: "性別平等工具書-電影篇",
+          url:
+            "https://drive.google.com/file/d/1hauH-WbDnlddaeTzdRj7sVeW3b3k8yvJ/view",
+        },
+        {
           name: "性別平等工具書-書籍篇",
           url:
             "https://drive.google.com/file/d/1D_LuzxOW9i_13lIT3R32vDBuXNMY44Gv/view",
