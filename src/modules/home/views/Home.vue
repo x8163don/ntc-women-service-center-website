@@ -195,37 +195,19 @@ export default {
           component: "HomePower",
         },
       ],
-
-      news: [
-        {
-          name: "title1",
-          url: "https://www.google.com",
-        },
-      ],
-
-      activies: [
-        {
-          name: "activies1",
-          url: "https://www.google.com",
-        },
-      ],
-
-      powers: [
-        {
-          name: "power1",
-          url: "https://www.google.com",
-        },
-      ],
     }
   },
   methods: {
     initSwiper() {
       this.swiper = new Swiper(".swiper-container", {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
+        loop: false,
+        autoplay:
+          this.banners.length === 1
+            ? false
+            : {
+                delay: 5000,
+                disableOnInteraction: true,
+              },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
