@@ -172,16 +172,6 @@ export default {
 
       banners: [
         {
-          link: "/activity/post/41d1e70f-d159-49f5-9627-2d0265d1fac6",
-          src:
-            "https://lh3.googleusercontent.com/pw/ACtC-3dlN2OvJcx6AsMkJfzhXdDbiGeNdqbvBGxo_EIAVzxRUzuel0-uDaT910XP4KGzzTWOl621Y12zIwrK-kHYQ1qS239mEkG3xbfiIqT1IhgPxoAnyHxf77ReCN4-WV4-4prDJdgVMLG7nDWg4CPS-qgq=w585-h843-no?authuser=0",
-        },
-        {
-          link: "/activity/post/f5bf82a5-5633-41ef-9678-e346ef7552e2",
-          src:
-            "https://lh3.googleusercontent.com/pw/ACtC-3dqzExeTI8dK_MMQ1iEpT-j8zhqnWc_XwVdbiEfkTxm-XTCbMh6tUhplXCoH6YsRqsZWKPoxfIIPd6dtphFY0ezV5Mj0jw5mU5-3T9MWyMkhjUCb_JlCmLPCpwDYf8S-gFDXw0kfCXCvp8oiWx5Ghdb=w674-h898-no?authuser=1",
-        },
-        {
           link: "/activity/post/c9109ee8-3d3f-4baa-ab24-a82bec4e1e4a",
           src:
             "https://lh3.googleusercontent.com/p0jpSzQBkrdQTLSO9eJEFcYgYe8iYkqcySz7JpnkoiHjfg3PfbgGi1EmWO1UQ3UtucsTxWIazxyckUutej5qlD5JmqkHRX7EIPLIqvrzbnvLM5tW6xgqwc-yROrwjfzBwkL5qhL1rVLueoY475KlKDXrIfgdhNY-5Shlq5M_UyaRomwx6KZFUnsF4sTI1LyZxoMwgNtYU9YbGkJVJE20OqkTQonuaMp-uezjfRBHxkF85RCiaDC8rt8P8A9Xvz_rFJRoxF3qEVpvNkEHwXl7D6Sm4wYkOVBgfR066lYbqH0dtoLkl2BToXATESkEQyMafA2ja0Sj_P8TcoNVruesS6PIo4XWa0iz_lh7az3r0TqeY3luREotA4NYCFN0uXcmD8QS69MY5LjGmqYYSlPqpEgSsu_c7zlbzlHzeo5eFib5AGSYCRPp8Vrtn-B3NVg_y84voEbcxz4S1gzS4yYnylRU_fSDedOiUY_7dYbV1rf9x0lDLxgFZ6-3AaMKR6iOtEe-bmAIx3jnHdFrmjZ3pPKvA-ysHYcuc5W3BMuhrzMhzE04r-_qxwhwHNVIu88tt1WeekAyi6nSIangCy-g0xWh8pYbRUDSsNr4TEPTVdRhQnl6ZVIYjDM5cxre_pe_bWxG3c77n7G7_JmhFEpqEVoxqHLY5m2cCIVIWU0mAuyLi7qS56HcfoF3Mnswbr0wQvU539qkF3Ue9DvfqRxvBKMYOup9ovw_u05J3xz7oHXl-C8z=w2880-h1442-no",
@@ -205,37 +195,19 @@ export default {
           component: "HomePower",
         },
       ],
-
-      news: [
-        {
-          name: "title1",
-          url: "https://www.google.com",
-        },
-      ],
-
-      activies: [
-        {
-          name: "activies1",
-          url: "https://www.google.com",
-        },
-      ],
-
-      powers: [
-        {
-          name: "power1",
-          url: "https://www.google.com",
-        },
-      ],
     }
   },
   methods: {
     initSwiper() {
       this.swiper = new Swiper(".swiper-container", {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
+        loop: false,
+        autoplay:
+          this.banners.length === 1
+            ? false
+            : {
+                delay: 5000,
+                disableOnInteraction: true,
+              },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
