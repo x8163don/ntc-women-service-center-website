@@ -81,6 +81,17 @@
       ></iframe>
     </div>
 
+    <div class="mt5">
+      <iframe
+        src="https://www.youtube.com/embed/lO4FGVfvYD0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="db center w-90"
+        style="height:30vw"
+      ></iframe>
+    </div>
+
     <v-container class="mt5">
       <!-- booking -->
       <v-row>
