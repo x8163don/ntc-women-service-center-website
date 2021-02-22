@@ -3,20 +3,22 @@
 </template>
 
 <script>
-import News from "../../news/data/news.json";
+import { getPosts } from "../../api/index.js"
 
-import HomeLinkList from "./HomeLinkList.vue";
+import HomeLinkList from "./HomeLinkList.vue"
 
 export default {
   components: {
-    HomeLinkList
+    HomeLinkList,
+  },
+  async mounted() {
+    const response = await getPosts({ category: "最新消息", number: 10 })
+    this.news = response.data.posts
   },
   data() {
     return {
-      news: News.filter(
-        item => new Date(item.startDate).getYear() === new Date().getYear()
-      )
-    };
-  }
-};
+      news: [],
+    }
+  },
+}
 </script>

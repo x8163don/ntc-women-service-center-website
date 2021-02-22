@@ -5,6 +5,7 @@ import VueRouter from "vue-router"
 const NavContentLayout = () =>
   import("../modules/common/components/NavContentLayout")
 const DataPreview = () => import("../modules/common/components/DataPreview.vue")
+const PostDetail = () => import("../modules/common/components/PostDetail")
 
 const Home = () => import("../modules/home/views/Home")
 
@@ -237,7 +238,7 @@ const routes = [
         path: "post/:id",
         components: {
           side: NewsNav,
-          content: DataPreview,
+          content: PostDetail,
         },
       },
     ],
