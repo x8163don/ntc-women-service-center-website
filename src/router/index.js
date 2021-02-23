@@ -1,65 +1,66 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
+import Vue from "vue";
+import VueRouter from "vue-router";
 
 // import Common Components
 const NavContentLayout = () =>
-  import("../modules/common/components/NavContentLayout")
-const DataPreview = () => import("../modules/common/components/DataPreview.vue")
-const PostDetail = () => import("../modules/common/components/PostDetail")
+  import("../modules/common/components/NavContentLayout");
+const DataPreview = () =>
+  import("../modules/common/components/DataPreview.vue");
+const PostDetail = () => import("../modules/common/components/PostDetail");
 
-const Home = () => import("../modules/home/views/Home")
+const Home = () => import("../modules/home/views/Home");
 
-const AboutNav = () => import("../modules/about/components/AboutNav")
-const AboutIntroduce = () => import("../modules/about/views/AboutIntroduce")
-const AboutSpace = () => import("../modules/about/views/AboutSpace")
-const AboutMap = () => import("../modules/about/views/AboutMap")
-const AboutVisit = () => import("../modules/about/views/AboutVisit")
-const AboutBooking = () => import("../modules/about/views/AboutBooking")
-const AboutNews = () => import("../modules/about/views/AboutNews")
+const AboutNav = () => import("../modules/about/components/AboutNav");
+const AboutIntroduce = () => import("../modules/about/views/AboutIntroduce");
+const AboutSpace = () => import("../modules/about/views/AboutSpace");
+const AboutMap = () => import("../modules/about/views/AboutMap");
+const AboutVisit = () => import("../modules/about/views/AboutVisit");
+const AboutBooking = () => import("../modules/about/views/AboutBooking");
+const AboutNews = () => import("../modules/about/views/AboutNews");
 
-const ActivityNav = () => import("../modules/activity/components/AvtivityNav")
-const ActivityNew = () => import("../modules/activity/views/ActivityNew")
-const ActivityPass = () => import("../modules/activity/views/ActivityPass")
-const ActivityTheme = () => import("../modules/activity/views/ActivityTheme")
-const ActivitySeries = () => import("../modules/activity/views/ActivitySeries")
+const ActivityNav = () => import("../modules/activity/components/AvtivityNav");
+const ActivityNew = () => import("../modules/activity/views/ActivityNew");
+const ActivityPass = () => import("../modules/activity/views/ActivityPass");
+const ActivityTheme = () => import("../modules/activity/views/ActivityTheme");
+const ActivitySeries = () => import("../modules/activity/views/ActivitySeries");
 
-const AngelNav = () => import("../modules/angel/components/AngelNav")
-const AngelIntroduce = () => import("../modules/angel/views/AngelIntroduce")
-const AngelPrize = () => import("../modules/angel/views/AngelPrize")
-const AngelRecruit = () => import("../modules/angel/views/AngelRecruit")
-const AngelActivity = () => import("../modules/angel/views/AngelActivity")
+const AngelNav = () => import("../modules/angel/components/AngelNav");
+const AngelIntroduce = () => import("../modules/angel/views/AngelIntroduce");
+const AngelPrize = () => import("../modules/angel/views/AngelPrize");
+const AngelRecruit = () => import("../modules/angel/views/AngelRecruit");
+const AngelActivity = () => import("../modules/angel/views/AngelActivity");
 
-const GrowingNav = () => import("../modules/growing/components/GrowingNav")
+const GrowingNav = () => import("../modules/growing/components/GrowingNav");
 const GrowingCollection = () =>
-  import("../modules/growing/views/GrowingCollections")
-const GrowingCedaw = () => import("../modules/growing/views/GrowingCedaw")
+  import("../modules/growing/views/GrowingCollections");
+const GrowingCedaw = () => import("../modules/growing/views/GrowingCedaw");
 
-const NewsNav = () => import("../modules/news/components/NewsNav")
-const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement")
-const NewsActivity = () => import("../modules/news/views/NewsActivity")
-const NewsOther = () => import("../modules/news/views/NewsOther")
+const NewsNav = () => import("../modules/news/components/NewsNav");
+const NewsAnnouncement = () => import("../modules/news/views/NewsAnnouncement");
+const NewsActivity = () => import("../modules/news/views/NewsActivity");
+const NewsOther = () => import("../modules/news/views/NewsOther");
 
-const PowerNav = () => import("../modules/power/components/PowerNav")
-const PowerStudy = () => import("../modules/power/views/PowerStudy")
-const PowerIssue = () => import("../modules/power/views/PowerIssue")
-const PowerVideos = () => import("../modules/power/views/PowerVideos")
-const PowerFiles = () => import("../modules/power/views/PowerFiles")
+const PowerNav = () => import("../modules/power/components/PowerNav");
+const PowerStudy = () => import("../modules/power/views/PowerStudy");
+const PowerIssue = () => import("../modules/power/views/PowerIssue");
+const PowerVideos = () => import("../modules/power/views/PowerVideos");
+const PowerFiles = () => import("../modules/power/views/PowerFiles");
 
-const Videos = () => import("../modules/videos/views/Videos")
+const Videos = () => import("../modules/videos/views/Videos");
 
-const Trips = () => import("../modules/trips/views/Trips")
+const Trips = () => import("../modules/trips/views/Trips");
 
-const Exhibitions = () => import("../modules/exhibition/views/Exhibition.vue")
+const Exhibitions = () => import("../modules/exhibition/views/Exhibition.vue");
 const ExhibitionsInfo = () =>
-  import("../modules/exhibition/views/ExhibitionInfo.vue")
+  import("../modules/exhibition/views/ExhibitionInfo.vue");
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: Home
   },
   {
     path: "/about",
@@ -70,45 +71,45 @@ const routes = [
         path: "introduce",
         components: {
           side: AboutNav,
-          content: AboutIntroduce,
-        },
+          content: AboutIntroduce
+        }
       },
       {
         path: "space",
         components: {
           side: AboutNav,
-          content: AboutSpace,
-        },
+          content: AboutSpace
+        }
       },
       {
         path: "map",
         components: {
           side: AboutNav,
-          content: AboutMap,
-        },
+          content: AboutMap
+        }
       },
       {
         path: "visit",
         components: {
           side: AboutNav,
-          content: AboutVisit,
-        },
+          content: AboutVisit
+        }
       },
       {
         path: "booking",
         components: {
           side: AboutNav,
-          content: AboutBooking,
-        },
+          content: AboutBooking
+        }
       },
       {
         path: "news",
         components: {
           side: AboutNav,
-          content: AboutNews,
-        },
-      },
-    ],
+          content: AboutNews
+        }
+      }
+    ]
   },
   {
     path: "/activity",
@@ -119,38 +120,38 @@ const routes = [
         path: "new",
         components: {
           side: ActivityNav,
-          content: ActivityNew,
-        },
+          content: ActivityNew
+        }
       },
       {
         path: "pass",
         components: {
           side: ActivityNav,
-          content: ActivityPass,
-        },
+          content: ActivityPass
+        }
       },
       {
         path: "theme",
         components: {
           side: ActivityNav,
-          content: ActivityTheme,
-        },
+          content: ActivityTheme
+        }
       },
       {
         path: "series",
         components: {
           side: ActivityNav,
-          content: ActivitySeries,
-        },
+          content: ActivitySeries
+        }
       },
       {
         path: "post/:id",
         components: {
           side: ActivityNav,
-          content: PostDetail,
-        },
-      },
-    ],
+          content: PostDetail
+        }
+      }
+    ]
   },
   {
     path: "/angel",
@@ -161,31 +162,31 @@ const routes = [
         path: "introduce",
         components: {
           side: AngelNav,
-          content: AngelIntroduce,
-        },
+          content: AngelIntroduce
+        }
       },
       {
         path: "recruit",
         components: {
           side: AngelNav,
-          content: AngelRecruit,
-        },
+          content: AngelRecruit
+        }
       },
       {
         path: "prize",
         components: {
           side: AngelNav,
-          content: AngelPrize,
-        },
+          content: AngelPrize
+        }
       },
       {
         path: "activity",
         components: {
           side: AngelNav,
-          content: AngelActivity,
-        },
-      },
-    ],
+          content: AngelActivity
+        }
+      }
+    ]
   },
   {
     path: "/growing",
@@ -196,17 +197,17 @@ const routes = [
         path: "collection",
         components: {
           side: GrowingNav,
-          content: GrowingCollection,
-        },
+          content: GrowingCollection
+        }
       },
       {
         path: "cedaw",
         components: {
           side: GrowingNav,
-          content: GrowingCedaw,
-        },
-      },
-    ],
+          content: GrowingCedaw
+        }
+      }
+    ]
   },
   {
     path: "/news",
@@ -217,31 +218,31 @@ const routes = [
         path: "announcement",
         components: {
           side: NewsNav,
-          content: NewsAnnouncement,
-        },
+          content: NewsAnnouncement
+        }
       },
       {
         path: "activity",
         components: {
           side: NewsNav,
-          content: NewsActivity,
-        },
+          content: NewsActivity
+        }
       },
       {
         path: "other",
         components: {
           side: NewsNav,
-          content: NewsOther,
-        },
+          content: NewsOther
+        }
       },
       {
         path: "post/:id",
         components: {
           side: NewsNav,
-          content: PostDetail,
-        },
-      },
-    ],
+          content: PostDetail
+        }
+      }
+    ]
   },
   {
     path: "/power",
@@ -252,72 +253,72 @@ const routes = [
         path: "study",
         components: {
           side: PowerNav,
-          content: PowerStudy,
-        },
+          content: PowerStudy
+        }
       },
       {
         path: "issue",
         components: {
           side: PowerNav,
-          content: PowerIssue,
-        },
+          content: PowerIssue
+        }
       },
       {
         path: "videos",
         components: {
           side: PowerNav,
-          content: PowerVideos,
-        },
+          content: PowerVideos
+        }
       },
       {
         path: "files",
         components: {
           side: PowerNav,
-          content: PowerFiles,
-        },
+          content: PowerFiles
+        }
       },
       {
         path: "post/:id",
         components: {
           side: PowerNav,
-          content: DataPreview,
-        },
-      },
-    ],
+          content: DataPreview
+        }
+      }
+    ]
   },
   {
     path: "/videos",
     name: "Videos",
-    component: Videos,
+    component: Videos
   },
 
   {
     path: "/exhibitions",
     name: "Exhibitions",
-    component: Exhibitions,
+    component: Exhibitions
   },
 
   {
     path: "/exhibition/:id",
     name: "Exhibition",
-    component: ExhibitionsInfo,
+    component: ExhibitionsInfo
   },
   {
     path: "/trips",
     name: "Trips",
-    component: Trips,
+    component: Trips
   },
   {
     path: "*",
     name: "Home",
-    component: Home,
-  },
-]
+    component: Home
+  }
+];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
-})
+  routes
+});
 
-export default router
+export default router;
