@@ -24,7 +24,7 @@ import PowerStudy from "../../power/data/activities.json"
 
 export default {
   mounted() {
-    const posts = [].concat(Activities, PowerStudy)
+    const posts = [].concat(PowerStudy)
     this.content = posts.find((item) => item.id === this.$route.params.id)
     this.$nextTick(() => {
       this.width = this.$refs.container.clientWidth
