@@ -3,21 +3,25 @@
 </template>
 
 <script>
-import Activities from "../../activity/data/activities.json";
-
-import HomeLinkList from "./HomeLinkList.vue";
+import { getPosts } from "../../api/index"
+import HomeLinkList from "./HomeLinkList.vue"
 
 export default {
   components: {
-    HomeLinkList
+    HomeLinkList,
   },
-
+  async mounted() {
+    await getPosts({
+      number: 10,
+      category: "活動報報",
+    }).then((response) => {
+      this.activities = response.data.posts
+    })
+  },
   data() {
     return {
-      activities: Activities.filter(
-        item => new Date(item.startDate).getYear() === new Date().getYear()
-      )
-    };
-  }
-};
+      activities: [],
+    }
+  },
+}
 </script>

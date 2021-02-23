@@ -20,30 +20,28 @@
 </template>
 
 <script>
-import News from "../../news/data/news.json";
-import Activities from "../../activity/data/activities.json";
-import PowerStudy from "../../power/data/activities.json";
+import PowerStudy from "../../power/data/activities.json"
 
 export default {
   mounted() {
-    const posts = [].concat(News, Activities, PowerStudy);
-    this.content = posts.find(item => item.id === this.$route.params.id);
+    const posts = [].concat(Activities, PowerStudy)
+    this.content = posts.find((item) => item.id === this.$route.params.id)
     this.$nextTick(() => {
-      this.width = this.$refs.container.clientWidth;
-    });
+      this.width = this.$refs.container.clientWidth
+    })
   },
   data() {
     return {
       content: null,
       width: 0,
-      height: document.documentElement.clientHeight
-    };
+      height: document.documentElement.clientHeight,
+    }
   },
   methods: {
     resizeIframe() {
-      this.width = this.$refs.container.clientWidth;
-      this.height = this.$refs.container.clientHeight;
-    }
-  }
-};
+      this.width = this.$refs.container.clientWidth
+      this.height = this.$refs.container.clientHeight
+    },
+  },
+}
 </script>

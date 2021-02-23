@@ -1,17 +1,21 @@
 <template>
-  <NewsList :news="announcement"></NewsList>
+  <NewsList :news="news"></NewsList>
 </template>
 
 <script>
-import News from "../data/news.json";
-import NewsList from "../components/NewsList";
+import NewsList from "../components/NewsList"
+import { getPosts } from "../../api/index"
 
 export default {
   components: { NewsList },
+  async mounted() {
+    const response = await getPosts({ category: "最新消息", number: 100 })
+    this.news = response.data.posts
+  },
   data() {
     return {
-      announcement: News
-    };
-  }
-};
+      news: [],
+    }
+  },
+}
 </script>

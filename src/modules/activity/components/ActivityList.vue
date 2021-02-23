@@ -4,25 +4,25 @@
       <v-col
         cols="3"
         v-for="activity in activities"
-        :key="'Pass' + activity.id"
+        :key="'Pass' + activity.ID"
         class="mb2 grow"
       >
-        <v-card class="mx-auto" max-width="400" :href="activity.url">
+        <v-card
+          class="mx-auto"
+          max-width="400"
+          :href="`/activity/post/${activity.ID}`"
+        >
           <v-img
             class="white--text align-end"
             height="200px"
-            :src="activity.imgUrl[0]"
+            :src="activity.featured_image"
             contain
           >
           </v-img>
-          <v-card-subtitle class="pb-0"
-            >【{{ getActivityTypeName(activity.type[0]) }}】{{
-              activity.name
-            }}</v-card-subtitle
-          >
+          <v-card-subtitle class="pb-0">{{ activity.title }}</v-card-subtitle>
 
           <v-card-text class="text--primary">
-            <div>{{ activity.startDate }}</div>
+            <div>{{ activity.date | localDateTime }}</div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -31,21 +31,21 @@
 </template>
 
 <script>
-import ActivityType from "../data/activityType.json";
+import moment from "moment"
 
 export default {
   props: {
     activities: {
       type: Array,
       default() {
-        return [];
-      }
-    }
+        return []
+      },
+    },
   },
-  methods: {
-    getActivityTypeName(index) {
-      return ActivityType[index];
-    }
-  }
-};
+  filters: {
+    localDateTime(isoDate) {
+      return moment(isoDate).format("yyyy-MM-DD HH:mm:ss")
+    },
+  },
+}
 </script>
