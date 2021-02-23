@@ -147,7 +147,7 @@ const routes = [
         path: "post/:id",
         components: {
           side: ActivityNav,
-          content: DataPreview,
+          content: PostDetail,
         },
       },
     ],

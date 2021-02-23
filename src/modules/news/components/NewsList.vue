@@ -8,10 +8,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in news" :key="item.id">
-          <td class="pv3 pr3 bb b--black-20">{{ item.startDate }}</td>
+        <tr v-for="item in news" :key="item.ID">
+          <td class="pv3 pr3 bb b--black-20">
+            {{ item.date | localDateTime }}
+          </td>
           <td class="pv3 pr3 bb b--black-20 printer">
-            <a :href="item.url">{{ item.name }}</a>
+            <a :href="`/news/post/${item.ID}`">{{ item.title }}</a>
           </td>
         </tr>
       </tbody>
@@ -20,14 +22,20 @@
 </template>
 
 <script>
+import moment from "moment"
 export default {
   props: {
     news: {
       type: Array,
       default() {
-        return [];
-      }
-    }
-  }
-};
+        return []
+      },
+    },
+  },
+  filters: {
+    localDateTime(isoDate) {
+      return moment(isoDate).format("yyyy-MM-DD HH:mm:ss")
+    },
+  },
+}
 </script>

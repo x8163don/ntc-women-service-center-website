@@ -3,14 +3,23 @@
 </template>
 
 <script>
-import Activities from "../data/activities.json";
-import ActivityList from "../components/ActivityList";
+import ActivityList from "../components/ActivityList"
+import { getPosts } from "../../api/index"
+
 export default {
   components: { ActivityList },
+  async mounted() {
+    await getPosts({
+      number: 100,
+      category: "系列活動",
+    }).then((response) => {
+      this.activities = response.data.posts
+    })
+  },
   data() {
     return {
-      activities: Activities.filter(item => item.type.some(type => type === 3))
-    };
-  }
-};
+      activities: [],
+    }
+  },
+}
 </script>
