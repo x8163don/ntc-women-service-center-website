@@ -4,6 +4,7 @@
 
 <script>
 import NewsList from "../components/NewsList"
+import { getPosts } from "../../api/index"
 
 export default {
   components: { NewsList },

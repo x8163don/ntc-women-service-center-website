@@ -172,9 +172,9 @@ export default {
 
       banners: [
         {
-          link: "/activity/post/c9109ee8-3d3f-4baa-ab24-a82bec4e1e4a",
+          link: "https://ntwsc.tw/activity/post/373",
           src:
-            "https://lh3.googleusercontent.com/p0jpSzQBkrdQTLSO9eJEFcYgYe8iYkqcySz7JpnkoiHjfg3PfbgGi1EmWO1UQ3UtucsTxWIazxyckUutej5qlD5JmqkHRX7EIPLIqvrzbnvLM5tW6xgqwc-yROrwjfzBwkL5qhL1rVLueoY475KlKDXrIfgdhNY-5Shlq5M_UyaRomwx6KZFUnsF4sTI1LyZxoMwgNtYU9YbGkJVJE20OqkTQonuaMp-uezjfRBHxkF85RCiaDC8rt8P8A9Xvz_rFJRoxF3qEVpvNkEHwXl7D6Sm4wYkOVBgfR066lYbqH0dtoLkl2BToXATESkEQyMafA2ja0Sj_P8TcoNVruesS6PIo4XWa0iz_lh7az3r0TqeY3luREotA4NYCFN0uXcmD8QS69MY5LjGmqYYSlPqpEgSsu_c7zlbzlHzeo5eFib5AGSYCRPp8Vrtn-B3NVg_y84voEbcxz4S1gzS4yYnylRU_fSDedOiUY_7dYbV1rf9x0lDLxgFZ6-3AaMKR6iOtEe-bmAIx3jnHdFrmjZ3pPKvA-ysHYcuc5W3BMuhrzMhzE04r-_qxwhwHNVIu88tt1WeekAyi6nSIangCy-g0xWh8pYbRUDSsNr4TEPTVdRhQnl6ZVIYjDM5cxre_pe_bWxG3c77n7G7_JmhFEpqEVoxqHLY5m2cCIVIWU0mAuyLi7qS56HcfoF3Mnswbr0wQvU539qkF3Ue9DvfqRxvBKMYOup9ovw_u05J3xz7oHXl-C8z=w2880-h1442-no",
+            "https://lh3.googleusercontent.com/pw/ACtC-3fiF1HkgovPcET7bult8EwCjDClkUPo1VPVE3D_S3wN0ucTvKFCdlH4Xcq3OoYr9bSCpqvIiGInLrhjJzlPlzMjeKp_bkkg58GfL5m24F0uuvm84iyIQpB6s7TPFjFRTTGoI0H5k3C3UTDDQAs-NrrK=w667-h889-no?authuser=1",
         },
       ],
 
