@@ -2,22 +2,22 @@
   <div id="app">
     <div>
       <Header></Header>
-      <router-view class="bg-white" />
+      <router-view class="header-space bg-white" />
       <Footer></Footer>
     </div>
   </div>
 </template>
 
 <script>
-import Header from "../src/modules/common/components/Header";
-import Footer from "../src/modules/common/components/Footer";
+import Header from "../src/modules/common/components/Header"
+import Footer from "../src/modules/common/components/Footer"
 
 export default {
   components: {
     Header,
-    Footer
-  }
-};
+    Footer,
+  },
+}
 </script>
 
 <style>
@@ -29,7 +29,11 @@ export default {
   background: #333366;
 }
 
-html{
+html {
   margin-top: 0 !important;
+}
+
+.header-space {
+  margin-top: 64px;
 }
 </style>

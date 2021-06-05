@@ -38,6 +38,7 @@ export default {
 
 <style scoped>
 .nav {
+  top: 0px;
   width: 100%;
   background-color: #f3b7bf;
 }
