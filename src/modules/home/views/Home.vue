@@ -11,7 +11,7 @@
           <a :href="banner.link">
             <v-img
               class="white--text align-end"
-              height="400px"
+              height="650px"
               :src="banner.src"
               contain
             ></v-img>
@@ -20,6 +20,8 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
+
+    <HomeNews2 />
 
     <!-- Info -->
     <div class="flex">
@@ -151,19 +153,21 @@
 </template>
 
 <script>
-import Swiper from "swiper"
-import HomeActivity from "../components/HomeActivity"
-import HomeNews from "../components/HomeNews"
-import HomePower from "../components/HomePower"
+import Swiper from "swiper";
+import HomeActivity from "../components/HomeActivity";
+import HomeNews from "../components/HomeNews";
+import HomeNews2 from "./HomeNews";
+import HomePower from "../components/HomePower";
 
 export default {
   components: {
     HomeActivity,
-    HomeNews,
     HomePower,
+    HomeNews,
+    HomeNews2
   },
   mounted() {
-    this.initSwiper()
+    this.initSwiper();
   },
   data() {
     return {
@@ -174,8 +178,8 @@ export default {
         {
           link: "https://ntwsc.tw/activity/post/373",
           src:
-            "https://lh3.googleusercontent.com/pw/ACtC-3fiF1HkgovPcET7bult8EwCjDClkUPo1VPVE3D_S3wN0ucTvKFCdlH4Xcq3OoYr9bSCpqvIiGInLrhjJzlPlzMjeKp_bkkg58GfL5m24F0uuvm84iyIQpB6s7TPFjFRTTGoI0H5k3C3UTDDQAs-NrrK=w667-h889-no?authuser=1",
-        },
+            "https://lh3.googleusercontent.com/pw/ACtC-3fiF1HkgovPcET7bult8EwCjDClkUPo1VPVE3D_S3wN0ucTvKFCdlH4Xcq3OoYr9bSCpqvIiGInLrhjJzlPlzMjeKp_bkkg58GfL5m24F0uuvm84iyIQpB6s7TPFjFRTTGoI0H5k3C3UTDDQAs-NrrK=w667-h889-no?authuser=1"
+        }
       ],
 
       swiper: null,
@@ -184,18 +188,18 @@ export default {
       tabs: [
         {
           showName: "最新消息",
-          component: "HomeNews",
+          component: "HomeNews"
         },
         {
           showName: "近期活動",
-          component: "HomeActivity",
+          component: "HomeActivity"
         },
         {
           showName: "女力加油站",
-          component: "HomePower",
-        },
-      ],
-    }
+          component: "HomePower"
+        }
+      ]
+    };
   },
   methods: {
     initSwiper() {
@@ -206,16 +210,16 @@ export default {
             ? false
             : {
                 delay: 5000,
-                disableOnInteraction: true,
+                disableOnInteraction: true
               },
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
-        },
-      })
-    },
-  },
-}
+          clickable: true
+        }
+      });
+    }
+  }
+};
 </script>
 
 <style scoped>
