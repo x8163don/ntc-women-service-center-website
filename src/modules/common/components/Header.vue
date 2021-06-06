@@ -1,19 +1,19 @@
 <template>
-  <nav class="z-9999 fixed flex bb b--white-10 nav">
-    <a class="link white-70 hover-white no-underline pa3" href="/">
+  <nav class="z-9999 fixed flex justify-center items-center nav">
+    <a
+      class="logo-link white-70 hover-white no-underline pa3 content-start"
+      href="/"
+    >
       <img src="../../../assets/logo.png" class="logo" alt="logo" />
     </a>
 
-    <div class="pr3 pl3 pt2 pb2 flex justify-center items-center">
-      <template v-for="(link, index) in links">
-        <router-link
-          :key="index"
-          class="f4 link dib tc white dim mr3 mr4-ns lh-title"
-          :to="link.to"
-          >{{ link.showText }}</router-link
-        >
-      </template>
-    </div>
+    <router-link
+      v-for="(link, index) in links"
+      :key="index"
+      class="f4 link dib tc white dim mr3 mr4-ns lh-title"
+      :to="link.to"
+      >{{ link.showText }}</router-link
+    >
   </nav>
 </template>
 
@@ -40,6 +40,7 @@ export default {
 .nav {
   top: 0px;
   width: 100%;
+  height: 64px;
   background-color: #f3b7bf;
 }
 
@@ -47,5 +48,10 @@ export default {
   margin-left: 60px;
   width: 32px;
   height: 32px;
+}
+
+.logo-link {
+  position: absolute;
+  left: 0;
 }
 </style>
