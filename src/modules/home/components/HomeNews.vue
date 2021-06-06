@@ -4,7 +4,7 @@
 
     <div class="card-container">
       <div v-for="item in recent" :key="item.ID" class="card">
-        <div class="flex justify-center grow">
+        <div class="flex justify-center grow" @click="toDetailPage(item)">
           <img class="card-img self-center mr3" :src="getIconPath(item)" />
 
           <div class="card-content">
@@ -60,6 +60,13 @@ export default {
           ? "news"
           : "activity";
       return require(`../../../assets/${filename}.png`);
+    },
+    toDetailPage(item) {
+      const target =
+        Object.keys(item.categories)[0].indexOf("活動") === -1
+          ? "news"
+          : "activity";
+      this.$router.push(`/${target}/post/${item.ID}`);
     }
   }
 };
@@ -94,12 +101,11 @@ export default {
 
 .card-abstract {
   max-height: 120px;
-  /*max-width: 400px;*/
   word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
 }
 </style>
