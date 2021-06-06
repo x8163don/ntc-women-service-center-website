@@ -21,33 +21,10 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <HomeNews2 />
+    <HomeNews class="mt5" />
 
     <!-- Info -->
     <div class="flex">
-      <v-tabs
-        v-model="selectedTab"
-        background-color="deep-purple accent-4"
-        class="pa4 elevation-2"
-      >
-        <v-tab
-          v-for="tab in tabs"
-          :key="tab.showName"
-          :href="'#' + tab.showName"
-          class="tab"
-        >
-          {{ tab.showName }}
-        </v-tab>
-
-        <v-tab-item
-          v-for="tab in tabs"
-          :key="'item' + tab.showName"
-          :value="tab.showName"
-        >
-          <component :is="tab.component"></component>
-        </v-tab-item>
-      </v-tabs>
-
       <!-- Link -->
       <div class="w-40 flex flex-column pa3">
         <!-- With you -->
@@ -154,17 +131,11 @@
 
 <script>
 import Swiper from "swiper";
-import HomeActivity from "../components/HomeActivity";
 import HomeNews from "../components/HomeNews";
-import HomeNews2 from "./HomeNews";
-import HomePower from "../components/HomePower";
 
 export default {
   components: {
-    HomeActivity,
-    HomePower,
-    HomeNews,
-    HomeNews2
+    HomeNews
   },
   mounted() {
     this.initSwiper();

@@ -9,15 +9,15 @@
 </template>
 
 <script>
-import Header from "../src/modules/common/components/Header"
-import Footer from "../src/modules/common/components/Footer"
+import Header from "../src/modules/common/components/Header";
+import Footer from "../src/modules/common/components/Footer";
 
 export default {
   components: {
     Header,
-    Footer,
-  },
-}
+    Footer
+  }
+};
 </script>
 
 <style>
@@ -31,6 +31,7 @@ export default {
 
 html {
   margin-top: 0 !important;
+  max-width: 100%;
 }
 
 .header-space {

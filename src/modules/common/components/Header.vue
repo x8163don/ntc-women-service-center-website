@@ -1,6 +1,6 @@
 <template>
   <nav class="z-9999 fixed flex bb b--white-10 nav">
-    <a class="link white-70 hover-white no-underline pa3" href="">
+    <a class="link white-70 hover-white no-underline pa3" href="/">
       <img src="../../../assets/logo.png" class="logo" alt="logo" />
     </a>
 
@@ -29,11 +29,11 @@ export default {
         { to: "/power", showText: "女力加油站" },
         { to: "/videos", showText: "性平影音" },
         { to: "/angel", showText: "微光天使" },
-        { to: "/exhibitions", showText: "線上展覽" },
-      ],
-    }
-  },
-}
+        { to: "/exhibitions", showText: "線上展覽" }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
