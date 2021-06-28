@@ -67,8 +67,8 @@ export default {
             { displayName: "女路之旅", url: "/trips" },
             { displayName: "報名活動", url: "/activity" },
             { displayName: "場地租借", url: "/about/booking" },
-            { displayName: "預約參訪", url: "/about/visit" }
-          ]
+            { displayName: "預約參訪", url: "/about/visit" },
+          ],
         },
         {
           title: "共享資源",
@@ -76,44 +76,44 @@ export default {
             { displayName: "認識CEDAW", url: "/growing/cedaw" },
             {
               displayName: "新北市婦女資源地圖",
-              url: "https://www.gec.ntpc.gov.tw/"
-            }
-          ]
+              url: "https://www.gec.ntpc.gov.tw/",
+            },
+          ],
         },
         {
           title: "友站連結",
           items: [
             {
               displayName: "新北市政府",
-              url: "https://www.ntpc.gov.tw/ch/index.jsp"
+              url: "https://www.ntpc.gov.tw/ch/index.jsp",
             },
             {
               displayName: "國家婦女館",
-              url: "http://www.taiwanwomencenter.org.tw/zh-tw/Home/Index"
+              url: "http://www.taiwanwomencenter.org.tw/zh-tw/Home/Index",
             },
             {
               displayName: "性別指標資訊平台",
-              url: "http://www.gender-indicators.org.tw/zh-tw/home"
+              url: "http://www.gender-indicators.org.tw/zh-tw/home",
             },
             {
               displayName: "性別平等會",
-              url: "https://gec.ey.gov.tw/"
+              url: "https://gec.ey.gov.tw/",
             },
             {
               displayName: "主計處-性別統計專區",
-              url: "https://www.stat.gov.tw/np.asp?ctNode=6015"
-            }
-          ]
-        }
-      ]
-    };
-  }
-};
+              url: "https://www.stat.gov.tw/np.asp?ctNode=6015",
+            },
+          ],
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style scope>
 .footer-container {
-  background-color: #f3b7bf;
+  background-color: #aaabd3;
 }
 
 .footer-section {

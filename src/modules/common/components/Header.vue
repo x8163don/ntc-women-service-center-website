@@ -5,6 +5,7 @@
       href="/"
     >
       <img src="../../../assets/logo.png" class="logo" alt="logo" />
+      <div class="ml2 dib white">新北市婦女服務中心</div>
     </a>
 
     <router-link
@@ -29,11 +30,11 @@ export default {
         { to: "/power", showText: "女力加油站" },
         { to: "/videos", showText: "性平影音" },
         { to: "/angel", showText: "微光天使" },
-        { to: "/exhibitions", showText: "線上展覽" }
-      ]
-    };
-  }
-};
+        { to: "/exhibitions", showText: "線上展覽" },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped>
@@ -41,7 +42,7 @@ export default {
   top: 0px;
   width: 100%;
   height: 64px;
-  background-color: #f3b7bf;
+  background-color: #aaabd3;
 }
 
 .logo {
