@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .nav {
-  top: 0px;
+  top: 0;
   width: 100%;
   height: 64px;
   background-color: #aaabd3;
