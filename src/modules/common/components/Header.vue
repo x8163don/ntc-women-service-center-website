@@ -5,7 +5,7 @@
       href="/"
     >
       <img src="../../../assets/logo.png" class="logo" alt="logo" />
-      <div class="ml2 dib white">新北市婦女服務中心</div>
+      <div class="ml2 mr2 dib white">新北市婦女服務中心</div>
     </a>
 
     <router-link

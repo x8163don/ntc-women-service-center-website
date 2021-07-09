@@ -9,9 +9,9 @@
 
           <div class="card-content">
             <div class="card-title f4 fw7">{{ item.title }}</div>
-            <div class="card-abstract mt2">
+            <p class="card-abstract mt2">
               {{ item.excerpt | toRawText }}
-            </div>
+            </p>
             <div class="f5 fw6 gray mt3">{{ item.date | toDate }}</div>
           </div>
         </div>
@@ -20,56 +20,56 @@
   </div>
 </template>
 <script>
-import { getPosts } from "../../api";
-import moment from "moment";
-import { htmlToText } from "html-to-text";
+import { getPosts } from "../../api"
+import moment from "moment"
+import { htmlToText } from "html-to-text"
 
 export default {
   name: "HomeNews",
   components: {},
   filters: {
     toRawText(value) {
-      return htmlToText(value) || "點我查看";
+      return htmlToText(value) || "點我查看"
     },
     toDate(value) {
-      return moment(value).format("YYYY / MM / DD");
-    }
+      return moment(value).format("YYYY / MM / DD")
+    },
   },
   async mounted() {
-    const news = await getPosts({ category: "最新消息", number: 10 });
-    const activities = await getPosts({ category: "中心活動", number: 10 });
-    this.recent = this.recent.concat(news.data.posts);
-    this.recent = this.recent.concat(activities.data.posts);
+    const news = await getPosts({ category: "最新消息", number: 10 })
+    const activities = await getPosts({ category: "中心活動", number: 10 })
+    this.recent = this.recent.concat(news.data.posts)
+    this.recent = this.recent.concat(activities.data.posts)
     this.recent
       .filter((value, index) => this.recent.indexOf(value) === index)
       .sort(
         (target, compare) =>
           moment(compare.date).unix() - moment(target.date).unix()
-      );
-    this.recent.length = 8;
+      )
+    this.recent.length = 8
   },
   data() {
     return {
-      recent: []
-    };
+      recent: [],
+    }
   },
   methods: {
     getIconPath(item) {
       const filename =
         Object.keys(item.categories)[0].indexOf("活動") === -1
           ? "news"
-          : "activity";
-      return require(`../../../assets/${filename}.png`);
+          : "activity"
+      return require(`../../../assets/${filename}.png`)
     },
     toDetailPage(item) {
       const target =
         Object.keys(item.categories)[0].indexOf("活動") === -1
           ? "news"
-          : "activity";
-      this.$router.push(`/${target}/post/${item.ID}`);
-    }
-  }
-};
+          : "activity"
+      this.$router.push(`/${target}/post/${item.ID}`)
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -84,7 +84,7 @@ export default {
   width: 35%;
   height: 100%;
   cursor: pointer;
-  margin-top: 40px;
+  padding: 40px;
 }
 .card-title {
   color: #889f9a;
@@ -107,5 +107,6 @@ export default {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  word-break: break-all;
 }
 </style>
