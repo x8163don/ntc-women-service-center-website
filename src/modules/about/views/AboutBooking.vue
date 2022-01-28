@@ -18,7 +18,7 @@ export default {
         "https://lh3.googleusercontent.com/gWDkb61j5Gmgy2upMgqTLf5GZKX9sDgFTVhLVGBitkw9JA0S7UicxVnA3419EjRb_aWVuryyPNpP1BSIGYSAP3GwqK8HhQhq5uGfWQT66quWSVPVo08QrZZT5qjlSYzks_OzCabKGDtjJQ41XAmc-68O4tV5MCBd3QuYXOJ1lsSf7VAKbp0QDFZCal-s7U7x06HCvGuoRaIVYLGFSZOgS-9A4qbZm4QIo-HVzLNQhWUcXDlp-TIiK7k348_ti66bW6xNasoSRwEYA5Wyz42Dzj46aJt6kNXFXJh8x815amJIJbcxCRfv5lBWXTTZ690q0CfbqFLbcQIlkUkNzuugqDRBiwu5OLvd2uWBzaDd3AByhzKUWcqbIWkjYRdz8rcx9elSCpYWCuhcAzPCGjLkjrUJ_ZDcelmCToC94IiKyUo-UoHAMNHPmzrnl-4bCzclZcj4sqpxE1Nxb9HdJbmvWf9upbOkjqzQ4FkkHb0aRw_stZG2fOa0I8glmS2yD9XMNNI3acwdaoD9l0wiA8whHxd3nRFszDSAfyFUguUfNrbpvbZpt6vheQ_qIXbip3daRz6GwjYzAfUweK1UCm6M978HSotAav6nDxo5198CQbiERZjTxPUWMxK04vtO2zq0jy6qP1elE0YFWhf7tK-Q1jG9foS5yL8aT2hvG6Rn67rmSbO4IxvBVHdn4q4DarDb-p5gzE9owZNChbToF-TOmMI4NpyAC2vN_VUa5uclWU1FXtMt_Bd7WY4=w1916-h1436-no",
       ],
       fileUrl:
-        "https://docs.google.com/document/d/1ay6ZZHGFUU-bGblMng2I6Z4ITrYghvld/edit?usp=sharing&ouid=115132396574802911669&rtpof=true&sd=true",
+        "https://docs.google.com/document/d/1cm1yJEoK64ba1PFwqWNr_6ykwuU5wemU/edit?usp=sharing&ouid=115132396574802911669&rtpof=true&sd=true",
     }
   },
 }
