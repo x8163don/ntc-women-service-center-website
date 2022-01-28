@@ -10,6 +10,7 @@ cache:
     - node_modules
 
 before_deploy:
+  - "export NODE_OPTIONS=--openssl-legacy-provider"
   - "npm run build"
 
 script: echo "npm test disabled"
