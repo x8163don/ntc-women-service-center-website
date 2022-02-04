@@ -10,6 +10,7 @@ const PostDetail = () => import("../modules/common/components/PostDetail");
 
 const Home = () => import("../modules/home/views/Home");
 const HomeV2 = () => import("../modules/home/views/Home_v2");
+const Introduce = () => import("../modules/about/views/Introduce");
 
 const AboutNav = () => import("../modules/about/components/AboutNav");
 const AboutIntroduce = () => import("../modules/about/views/AboutIntroduce");
@@ -67,6 +68,11 @@ const routes = [
     path: "/v2",
     name: "Home_v2",
     component: HomeV2
+  },
+  {
+    path: "/v2/about/introduce",
+    name: "Introduce",
+    component: Introduce
   },
   {
     path: "/about",
