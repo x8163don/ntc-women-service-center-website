@@ -9,8 +9,6 @@ const DataPreview = () =>
 const PostDetail = () => import("../modules/common/components/PostDetail");
 
 const Home = () => import("../modules/home/views/Home");
-const HomeV2 = () => import("../modules/home/views/Home_v2");
-const Introduce = () => import("../modules/about/views/Introduce");
 
 const AboutNav = () => import("../modules/about/components/AboutNav");
 const AboutIntroduce = () => import("../modules/about/views/AboutIntroduce");
@@ -56,6 +54,11 @@ const Exhibitions = () => import("../modules/exhibition/views/Exhibition.vue");
 const ExhibitionsInfo = () =>
   import("../modules/exhibition/views/ExhibitionInfo.vue");
 
+// v2
+const HomeV2 = () => import("../modules/home/views/Home_v2");
+const Introduce = () => import("../modules/about/views/Introduce");
+const Booking = () => import("../modules/about/views/Booking");
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -73,6 +76,11 @@ const routes = [
     path: "/v2/about/introduce",
     name: "Introduce",
     component: Introduce
+  },
+  {
+    path: "/v2/about/booking",
+    name: "Booking",
+    component: Booking
   },
   {
     path: "/about",
