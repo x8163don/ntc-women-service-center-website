@@ -6,6 +6,7 @@
     <RecentlyExhibition></RecentlyExhibition>
     <RecentlyAnnouncement></RecentlyAnnouncement>
     <RecentlyNewspaper></RecentlyNewspaper>
+    <OtherWebsite></OtherWebsite>
     <Footer></Footer>
   </div>
 </template>
@@ -17,9 +18,11 @@ import RecentlyActivities from "../components/RecentlyActivities";
 import RecentlyExhibition from "../components/RecentlyExhibition";
 import RecentlyAnnouncement from "../components/RecentlyAnnouncement";
 import RecentlyNewspaper from "../components/RecentlyNewspaper";
+import OtherWebsite from "../components/OtherWebsite";
 
 export default {
   components: {
+    OtherWebsite,
     Header,
     RecentlyActivities,
     RecentlyExhibition,
