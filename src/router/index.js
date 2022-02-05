@@ -59,6 +59,7 @@ const HomeV2 = () => import("../modules/home/views/Home_v2");
 const Introduce = () => import("../modules/about/views/Introduce");
 const Booking = () => import("../modules/about/views/Booking");
 const Traffic = () => import("../modules/about/views/Traffic");
+const ExhibitionsV2 = () => import("../modules/activity/views/Exhibition");
 
 Vue.use(VueRouter);
 
@@ -87,6 +88,11 @@ const routes = [
     path: "/v2/about/traffic",
     name: "Traffic",
     component: Traffic
+  },
+  {
+    path: "/v2/activity/exhibition",
+    name: "Exhibitions",
+    component: ExhibitionsV2
   },
   {
     path: "/about",
