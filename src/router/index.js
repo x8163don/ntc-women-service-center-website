@@ -58,6 +58,7 @@ const ExhibitionsInfo = () =>
 const HomeV2 = () => import("../modules/home/views/Home_v2");
 const Introduce = () => import("../modules/about/views/Introduce");
 const Booking = () => import("../modules/about/views/Booking");
+const Traffic = () => import("../modules/about/views/Traffic");
 
 Vue.use(VueRouter);
 
@@ -81,6 +82,11 @@ const routes = [
     path: "/v2/about/booking",
     name: "Booking",
     component: Booking
+  },
+  {
+    path: "/v2/about/traffic",
+    name: "Traffic",
+    component: Traffic
   },
   {
     path: "/about",
