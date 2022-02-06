@@ -86,6 +86,7 @@ export default {};
 
 h1 {
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .icon_check {

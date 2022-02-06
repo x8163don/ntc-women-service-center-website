@@ -64,6 +64,7 @@ h1 {
   width: 1200px;
   margin: 0 auto;
   margin-top: 20px;
+  font-size: 24px;
 }
 .activity_title {
   font-size: 24px;

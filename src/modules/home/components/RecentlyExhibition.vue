@@ -56,6 +56,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 24px;
+}
+
 .show {
   margin-top: 40px;
   position: relative;

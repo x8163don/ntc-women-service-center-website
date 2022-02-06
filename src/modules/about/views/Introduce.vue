@@ -131,6 +131,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 24px;
+}
+
 .main_container {
   width: 1200px;
   height: 1700px;

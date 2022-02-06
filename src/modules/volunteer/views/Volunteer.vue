@@ -79,7 +79,6 @@
   display: flex;
   margin-top: 150px;
 }
-/* 志工隊服務理念 */
 
 .info_container {
   width: 60%;
@@ -95,8 +94,6 @@
 .info_content {
   margin-top: 20px;
 }
-
-/* 志工招募 */
 
 .time_container {
   display: flex;
@@ -127,7 +124,6 @@
   object-fit: none;
 }
 
-/* 得獎紀錄 */
 .medals_container {
   display: block;
 }

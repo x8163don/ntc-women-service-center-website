@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header class="z-9999"></Header>
-    <div class="main_content z-100"><router-view /></div>
+    <Header></Header>
+    <div class="main_content"><router-view /></div>
     <Footer></Footer>
   </div>
 </template>
@@ -19,29 +19,20 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #2d2d2d;
+}
+
 * {
-  font-family: "Noto Sans TC", "Roboto";
-}
-
-.bg-blue {
-  background: #333366;
-}
-
-html {
-  margin-top: 0 !important;
-  max-width: 100%;
-}
-
-.header-space {
-  margin-top: 64px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main_content {
   width: 1200px;
   margin: 0 auto;
-}
-
-header {
-  z-index: 9999;
 }
 </style>

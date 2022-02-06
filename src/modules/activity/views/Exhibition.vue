@@ -235,4 +235,8 @@ export default {
   width: 287px;
   height: 169px;
 }
+
+h3 {
+  font-size: 18px;
+}
 </style>
