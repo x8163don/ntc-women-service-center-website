@@ -73,7 +73,6 @@ export default {
       category: "展覽"
     }).then(response => {
       this.exhibitions = response.data.posts;
-      console.log(this.exhibitions);
     });
   },
   computed: {
