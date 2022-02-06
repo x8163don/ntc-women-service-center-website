@@ -1,71 +1,38 @@
 <template>
-  <div>
-    <!-- Carousel -->
-    <div class="swiper-container tc">
-      <div class="swiper-wrapper">
-        <div
-          class="swiper-slide"
-          :key="index"
-          v-for="(banner, index) in banners"
-        >
-          <a :href="banner.link">
-            <v-img
-              class="white--text align-end"
-              height="650px"
-              :src="banner.src"
-              contain
-            ></v-img>
-          </a>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <HomeNews class="mt5 mb5" />
+  <div class="home">
+    <div class="banner"><img src="../../../assets/home/banner.jpg" /></div>
+    <RecentlyActivities></RecentlyActivities>
+    <RecentlyExhibition></RecentlyExhibition>
+    <RecentlyAnnouncement></RecentlyAnnouncement>
+    <RecentlyNewspaper></RecentlyNewspaper>
+    <OtherWebsite></OtherWebsite>
   </div>
 </template>
 
 <script>
-import Swiper from "swiper";
-import HomeNews from "../components/HomeNews";
+import RecentlyActivities from "../components/RecentlyActivities";
+import RecentlyExhibition from "../components/RecentlyExhibition";
+import RecentlyAnnouncement from "../components/RecentlyAnnouncement";
+import RecentlyNewspaper from "../components/RecentlyNewspaper";
+import OtherWebsite from "../components/OtherWebsite";
 
 export default {
   components: {
-    HomeNews
-  },
-  mounted() {
-    this.initSwiper();
+    OtherWebsite,
+    RecentlyActivities,
+    RecentlyExhibition,
+    RecentlyAnnouncement,
+    RecentlyNewspaper
   },
   data() {
-    return {
-      banners: [
-        {
-          link: "https://ntwsc.tw/activity/post/373",
-          src:
-            "https://lh3.googleusercontent.com/pw/ACtC-3enMFVbATtw-gJGwKYmzSAi4CGryV7y4rspLLOnONczssvxPQWFpZVIUm3t7HpOeBkXuWFX-FANJYa8YGw3tntj23qHVtQK8qI6zRu5B_F3qQyjAxVl8x_xY-uSxqghOnoEy05E-8oDO88p5hNbyWTz=w1922-h673-no?authuser=1"
-        }
-      ],
-
-      swiper: null
-    };
-  },
-  methods: {
-    initSwiper() {
-      this.swiper = new Swiper(".swiper-container", {
-        loop: false,
-        autoplay:
-          this.banners.length === 1
-            ? false
-            : {
-                delay: 5000,
-                disableOnInteraction: true
-              },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      });
-    }
+    return {};
   }
 };
 </script>
+
+<style scoped>
+.home {
+  width: 1200px;
+  margin: 0 auto;
+}
+</style>

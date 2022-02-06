@@ -4,7 +4,7 @@ import VueRouter from "vue-router";
 const PostDetail = () => import("../modules/common/components/PostDetail");
 
 // v2
-const HomeV2 = () => import("../modules/home/views/Home_v2");
+const Home = () => import("../modules/home/views/Home");
 const Introduce = () => import("../modules/about/views/Introduce");
 const Booking = () => import("../modules/about/views/Booking");
 const Traffic = () => import("../modules/about/views/Traffic");
@@ -20,12 +20,12 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: HomeV2
+    component: Home
   },
   {
     path: "",
     name: "Home_v2",
-    component: HomeV2
+    component: Home
   },
   {
     path: "/about/introduce",
@@ -75,7 +75,7 @@ const routes = [
   {
     path: "*",
     name: "Home",
-    component: HomeV2
+    component: Home
   }
 ];
 
