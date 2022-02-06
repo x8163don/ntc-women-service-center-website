@@ -23,11 +23,6 @@ const routes = [
     component: Home
   },
   {
-    path: "",
-    name: "Home_v2",
-    component: Home
-  },
-  {
     path: "/about/introduce",
     name: "Introduce",
     component: Introduce
