@@ -10,7 +10,7 @@
         class="placarad_card"
         v-for="item in recent"
         :key="item.ID"
-        @click="toDetailPage(item)"
+        @click="$router.push(`/post/${item.ID}`)"
       >
         <div class="placard_card_title">{{ item.title }}</div>
         <div class="placard_date">{{ item.date | toDate }}</div>
@@ -45,11 +45,6 @@ export default {
     return {
       recent: []
     };
-  },
-  methods: {
-    toDetailPage(item) {
-      this.$router.push(`/news/post/${item.ID}`);
-    }
   }
 };
 </script>

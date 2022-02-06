@@ -6,7 +6,7 @@
         class="activity_post"
         v-for="(item, idx) in recent"
         :key="item.ID"
-        @click="toDetailPage(item)"
+        @click="$router.push(`/post/${item.ID}`)"
       >
         <div class="post_img">
           <a>
@@ -16,9 +16,7 @@
         <div class="post_container">
           <div class="post_date">{{ item.date | toDate }}</div>
           <h2 class="post_title">
-            <a href="https://forms.gle/RHZqfZKyh5CjJD738" target="_blank">{{
-              item.title
-            }}</a>
+            <a target="_blank">{{ item.title }}</a>
           </h2>
           <div class="post_excerpt">
             {{ item.excerpt | toRawText }}
@@ -56,9 +54,6 @@ export default {
     getImageByIdx(idx) {
       const images = ["salon", "womencollege", "tool"];
       return require(`../../../assets/home/${images[idx % 3]}.png`);
-    },
-    toDetailPage(item) {
-      this.$router.push(`/activity/post/${item.ID}`);
     }
   }
 };

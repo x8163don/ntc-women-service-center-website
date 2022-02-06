@@ -10,6 +10,7 @@
         ref="activityCard"
         class="show_card"
         :class="{ hidden: !isShowExcerpt }"
+        @click="$router.push('/post/493')"
       >
         <div class="show_card_title">
           《百女圖 當代女子一百貌》100Looks of Contemporary Women
@@ -106,6 +107,7 @@ export default {
   box-shadow: 3px 3px 10px #ffce5b;
   animation-name: in_animation;
   animation-duration: 1s;
+  cursor: pointer;
 }
 
 .show_card_title {

@@ -1,16 +1,14 @@
 <template>
   <div id="app">
-    <div>
-      <Header></Header>
-      <router-view class="header-space bg-white" />
-      <Footer></Footer>
-    </div>
+    <Header class="z-9999"></Header>
+    <div class="main_content z-100"><router-view /></div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Header from "../src/modules/common/components/Header";
-import Footer from "../src/modules/common/components/Footer";
+import Header from "./modules/common/components/Header";
+import Footer from "./modules/common/components/Footer";
 
 export default {
   components: {
@@ -36,5 +34,14 @@ html {
 
 .header-space {
   margin-top: 64px;
+}
+
+.main_content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  z-index: 9999;
 }
 </style>
