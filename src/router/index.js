@@ -61,6 +61,7 @@ const Booking = () => import("../modules/about/views/Booking");
 const Traffic = () => import("../modules/about/views/Traffic");
 const ExhibitionsV2 = () => import("../modules/activity/views/Exhibition");
 const Activities = () => import("../modules/activity/views/Activities");
+const Volunteer = () => import("../modules/volunteer/views/Volunteer");
 
 Vue.use(VueRouter);
 
@@ -99,6 +100,11 @@ const routes = [
     path: "/v2/activity",
     name: "Activities",
     component: Activities
+  },
+  {
+    path: "/v2/volunteer",
+    name: "Volunteer",
+    component: Volunteer
   },
   {
     path: "/about",
