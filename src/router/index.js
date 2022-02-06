@@ -62,6 +62,7 @@ const Traffic = () => import("../modules/about/views/Traffic");
 const ExhibitionsV2 = () => import("../modules/activity/views/Exhibition");
 const Activities = () => import("../modules/activity/views/Activities");
 const Volunteer = () => import("../modules/volunteer/views/Volunteer");
+const GenderEquality = () => import("../modules/gender/views/GenderEquality");
 
 Vue.use(VueRouter);
 
@@ -105,6 +106,11 @@ const routes = [
     path: "/v2/volunteer",
     name: "Volunteer",
     component: Volunteer
+  },
+  {
+    path: "/v2/gender",
+    name: "GenderEquality",
+    component: GenderEquality
   },
   {
     path: "/about",

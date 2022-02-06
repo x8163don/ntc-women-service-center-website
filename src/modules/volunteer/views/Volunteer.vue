@@ -14,7 +14,6 @@
       <img src="../../../assets/volunteer/chart.png" />
     </div>
 
-    <!-- 志工招募 -->
     <div class="time_container">
       <img src="../../../assets/volunteer/serviceTime.png" />
       <div class="title">
@@ -30,7 +29,6 @@
       <img src="../../../assets/volunteer/right_lineImg.png" />
     </div>
 
-    <!-- 獎狀區 -->
     <div class="medals_container">
       <div class="medals_title">
         <div class="medalsImg">
@@ -70,10 +68,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 .chart_container,
