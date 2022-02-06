@@ -8,11 +8,11 @@ const Home = () => import("../modules/home/views/Home");
 const Introduce = () => import("../modules/about/views/Introduce");
 const Booking = () => import("../modules/about/views/Booking");
 const Traffic = () => import("../modules/about/views/Traffic");
-const ExhibitionsV2 = () => import("../modules/activity/views/Exhibition");
+const Exhibitions = () => import("../modules/activity/views/Exhibition");
 const Activities = () => import("../modules/activity/views/Activities");
-const Volunteer = () => import("../modules/volunteer/views/Volunteer");
 const GenderEquality = () => import("../modules/gender/views/GenderEquality");
 const WomanPower = () => import("../modules/power/views/WomanPower");
+const Volunteer = () => import("../modules/volunteer/views/Volunteer");
 
 Vue.use(VueRouter);
 
@@ -45,7 +45,7 @@ const routes = [
   {
     path: "/activity/exhibition",
     name: "Exhibitions",
-    component: ExhibitionsV2
+    component: Exhibitions
   },
   {
     path: "/activity",
