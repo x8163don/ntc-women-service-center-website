@@ -6,14 +6,22 @@
         <img src="../../../assets/activity/activity.png" />
       </div>
       <div class="salon_content_container">
-        <div class="salon_content_new">
+        <div
+          class="salon_content_new pointer"
+          @click="$router.push(`/post/${newlyActivity.ID}`)"
+        >
           最新活動
           <a> {{ newlyActivity.title }} </a>
         </div>
         <div class="salon_content_old">
           歷史活動
         </div>
-        <div v-for="activity in oldActivities" :key="activity.ID">
+        <div
+          v-for="activity in oldActivities"
+          :key="activity.ID"
+          @click="$router.push(`/post/${activity.ID}`)"
+          class="pointer link"
+        >
           {{ activity.title }}
         </div>
       </div>
@@ -21,7 +29,10 @@
 
     <div class="class_container">
       <div class="class_content_container">
-        <div class="class_content_new">
+        <div
+          class="class_content_new pointer"
+          @click="$router.push(`/post/${newlyCourse.ID}`)"
+        >
           最新活動
           <a> {{ newlyCourse.title }} </a>
         </div>
@@ -29,7 +40,12 @@
         <div class="class_content_old">
           歷史活動
         </div>
-        <div v-for="course in oldCourses" :key="course.ID">
+        <div
+          v-for="course in oldCourses"
+          :key="course.ID"
+          @click="$router.push(`/post/${course.ID}`)"
+          class="pointer link"
+        >
           {{ course.title }}
         </div>
       </div>
@@ -154,5 +170,9 @@ export default {
 
 .class_container {
   justify-content: flex-end;
+}
+
+.link:hover {
+  color: #ff4b2d;
 }
 </style>

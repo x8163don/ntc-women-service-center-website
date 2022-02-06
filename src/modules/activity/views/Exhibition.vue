@@ -5,14 +5,16 @@
         <div class="topstory_logo">最新展覽</div>
         <div class="topstory_logo_line"></div>
       </div>
-      <div class="topstory_content_container">
+      <div
+        class="topstory_content_container"
+        @click="$router.push(`/post/${newly.ID}`)"
+      >
         <h3>{{ newly.title }}</h3>
         <p v-html="newly.excerpt"></p>
         <img :src="getFirstImageSrc(newly.content)" />
       </div>
     </div>
 
-    <!-- 線上展覽 -->
     <div class="online_container">
       <div class="online_logo_container">
         <div class="online_logo">線上展覽</div>
@@ -23,6 +25,7 @@
           class="online_content"
           v-for="exhibition in oldExhibitions"
           :key="exhibition.ID"
+          @click="$router.push(`/post/${exhibition.ID}`)"
         >
           <div class="image">
             <img class="image" :src="getFirstImageSrc(exhibition.content)" />
@@ -36,7 +39,6 @@
       </div>
     </div>
 
-    <!-- 歷史展覽 -->
     <div class="history_container">
       <div class="history_logo_container">
         <div class="history_logo_line"></div>
@@ -47,6 +49,7 @@
           class="poster"
           v-for="exhibition in exhibitions"
           :key="exhibition.ID"
+          @click="$router.push(`/post/${exhibition.ID}`)"
         >
           <img :src="getFirstImageSrc(exhibition.content)" /><br />{{
             exhibition.title
@@ -145,6 +148,7 @@ export default {
 
 .topstory_content_container {
   width: 80%;
+  cursor: pointer;
 }
 
 .online_container {
@@ -177,6 +181,7 @@ export default {
 .online_content {
   display: flex;
   margin: 40px 200px;
+  cursor: pointer;
 }
 
 .online_info {
@@ -218,6 +223,7 @@ export default {
   margin: 30px;
   font-size: 18px;
   text-align: center;
+  cursor: pointer;
 }
 
 .poster > img {
