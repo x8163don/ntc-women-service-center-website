@@ -56,11 +56,11 @@ export default {
   margin-top: 150px;
   display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .placard_title {
   font-size: 24px;
-  text-align: center;
 }
 img.womenwalk {
   position: absolute;
