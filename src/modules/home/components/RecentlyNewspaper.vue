@@ -12,10 +12,6 @@
         </ul>
       </div>
       <div class="fb_container">
-        <img
-          class="icon_walkwomen"
-          src="../../../assets/home/icon_walkwomen.png"
-        />
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNTWSC&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           width="500"
@@ -337,13 +333,8 @@ export default {
   width: 500px;
 }
 
-.icon_walkwomen {
-  position: absolute;
-  top: -55px;
-  right: 0;
-}
 iframe {
   display: inline-block;
-  margin-top: 65px;
+  margin-top: 38px;
 }
 </style>
