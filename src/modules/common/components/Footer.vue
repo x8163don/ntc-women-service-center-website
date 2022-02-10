@@ -34,7 +34,8 @@
         <a href="https://www.facebook.com/NTWSC/posts/1387567328310264"
           ><img src="../../../assets/footer/icon_fb.png"
         /></a>
-        <a href="https://www.youtube.com/channel/UCJvvtrC2Y9s6efAm7P3YrwA"
+        <a
+          href="https://www.youtube.com/channel/UCMzQZyh84q_60M9Hu3YJAqg/videos"
           ><img src="../../../assets/footer/icon_youtube.png"
         /></a>
       </div>
