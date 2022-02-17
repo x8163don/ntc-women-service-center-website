@@ -38,7 +38,7 @@
       </p>
       <p class="download_button">
         <a
-          href="https://docs.google.com/document/d/1cm1yJEoK64ba1PFwqWNr_6ykwuU5wemU/edit?usp=sharing&ouid=115132396574802911669&rtpof=true&sd=true"
+          href="https://docs.google.com/document/d/1Vvgl5CQXXlYUmRO7W3hxeb7bnnfTBz52/edit?usp=sharing&ouid=115132396574802911669&rtpof=true&sd=true"
           ><img
             class="download"
             src="../../../assets/about/booking/button_download.png"
