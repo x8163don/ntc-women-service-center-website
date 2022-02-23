@@ -293,7 +293,7 @@ export default {
   content: "";
   width: 60px;
   height: 20px;
-  background: #ffce5b;
+  background: #F6A096;
   position: absolute;
   left: -20px;
   top: 4px;

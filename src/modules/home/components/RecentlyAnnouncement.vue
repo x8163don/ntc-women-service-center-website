@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="placard_title_container">
-      <img class="womenwalk" src="../../../assets/home/icon_flag.png" />
+      <img class="princess" src="../../../assets/home/princess.jpg" />
       <h1 class="placard_title">中心公告</h1>
     </div>
 
@@ -61,10 +61,11 @@ export default {
 
 .placard_title {
   font-size: 24px;
+  margin-bottom: 24px;
 }
-img.womenwalk {
+img.princess {
   position: absolute;
-  left: 40%;
+  left: 33%;
   bottom: 0px;
 }
 
@@ -72,7 +73,7 @@ img.womenwalk {
   content: "";
   width: 60px;
   height: 20px;
-  background: #ffce5b;
+  background: #F6A096;
   position: absolute;
   left: 50%;
   top: 20px;
@@ -80,8 +81,7 @@ img.womenwalk {
 }
 
 .placard {
-  background: #ffefce;
-  border-radius: 10px;
+  background: #FFEEED;
   display: flex;
   justify-content: space-between;
 }

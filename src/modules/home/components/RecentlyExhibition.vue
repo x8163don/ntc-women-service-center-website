@@ -76,7 +76,7 @@ h1 {
   content: "";
   width: 60px;
   height: 20px;
-  background: #ffce5b;
+  background: #F6A096;
   position: absolute;
   /*left: -20px;*/
   top: 4px;
@@ -108,7 +108,7 @@ h1 {
   right: 2px;
   bottom: 50px;
   background-color: white;
-  box-shadow: 3px 3px 10px #ffce5b;
+  box-shadow: 3px 3px 10px #F6A096;
   animation-name: in_animation;
   animation-duration: 1s;
   cursor: pointer;

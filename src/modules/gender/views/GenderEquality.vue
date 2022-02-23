@@ -273,7 +273,7 @@ export default {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  background-color: #ffefce;
+  background-color: #FFEEED;
   border-radius: 10px;
   height: 50px;
   width: 250px;
@@ -329,7 +329,7 @@ export default {
 }
 
 .download_link {
-  border: 4px solid #ffce5b;
+  border: 4px solid #F6A096;
   border-radius: 10px;
   padding: 30px;
   height: 100%;
