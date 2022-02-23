@@ -77,6 +77,7 @@ nav {
   margin: 0 20px;
   font-size: 20px;
   line-height: 60px;
+  font-weight: bold;
 }
 
 .navitem_list {
@@ -119,10 +120,6 @@ nav {
   transform: rotate(90deg);
 }
 
-.navitem_list > li,
-.navitem_secondlist > li {
-  padding: 10px;
-}
 
 .navitem_secondlist {
   display: none;
@@ -135,10 +132,14 @@ nav {
 
 .navitem > a,
 .navitem a {
-  line-height: 40px;
   font-size: 20px;
   text-decoration: none;
   color: #2d2d2d;
+  font-weight: blod;
+}
+
+.navitem_list a,.navitem_secondlist a {
+padding: 10px 20px;
 }
 
 .navitem-arrow::before {
@@ -165,6 +166,6 @@ nav {
 
 .navitem_list > li:hover,
 .navitem_secondlist > li:hover {
-  background-color: #ffefce;
+  background-color: #FFEEED;
 }
 </style>

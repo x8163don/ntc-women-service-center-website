@@ -157,7 +157,7 @@ h1 {
 .breadcrumb_list > li::before {
   content: "/";
   font-size: 18px;
-  color: #ffce5b;
+  color: #F6A096;
   margin: 0 10px;
 }
 
@@ -166,7 +166,7 @@ h1 {
 }
 
 .guid_content {
-  border: 8px solid #ffce5b;
+  border: 8px solid #F6A096;
   background: white;
   border-radius: 40px;
   width: 90%;
@@ -181,15 +181,15 @@ h1 {
 }
 
 .download:hover {
-  box-shadow: 3px 3px 10px #ffce5b;
+  box-shadow: 3px 3px 10px #F6A096;
 }
 /* 環境介紹 */
 .area_content {
   background: white;
-  border: 8px solid #ffce5b;
+  border: 8px solid #F6A096;
   border-radius: 40px;
   width: 90%;
-  padding: 60px;
+  padding: 100px 60px;
   position: absolute;
   top: 690px;
   right: 0;
@@ -211,7 +211,7 @@ h1 {
 
 .area_intro {
   border-radius: 0 20px 20px 0;
-  background: #ffce5b;
+  background: #FBD4D1;
   width: 500px;
   height: 300px;
   padding: 100px 50px;
@@ -246,30 +246,30 @@ img.light {
   position: relative;
 }
 .audioroom {
-  border: 6px solid #ffce5b;
+  border: 6px solid #FBD4D1;
   border-right: transparent;
   border-radius: 20px 0 0 20px;
   width: 350px;
   height: 200px;
 }
 .bookcrossing {
-  border: 6px solid #ffce5b;
+  border: 6px solid #FBD4D1;
   border-right: transparent;
   width: 200px;
   height: 200px;
 }
 .readingroom {
-  border: 6px solid #ffce5b;
+  border: 6px solid #FBD4D1;
   border-radius: 0 20px 20px 0;
   width: 350px;
   height: 200px;
 }
 .showroom {
-  border: 6px solid #ffce5b;
+  border: 6px solid #FBD4D1;
   border-radius: 20px;
   width: 600px;
   height: 200px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .circle {

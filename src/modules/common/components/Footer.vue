@@ -52,13 +52,13 @@ footer {
   width: 1200px;
   margin: 0 auto;
   margin-top: 40px;
-  display: flex;
+  display: flex !important;
   position: relative;
 }
 
 .info {
   width: 50%;
-  background-color: #ffefce;
+  background-color: #FFEEED;
   padding: 40px;
   font-size: 14px;
 }
@@ -70,7 +70,7 @@ footer {
 
 .webmap {
   width: 50%;
-  background-color: #ffefce;
+  background-color: #FFEEED;
   padding: 40px;
   font-size: 14px;
 }

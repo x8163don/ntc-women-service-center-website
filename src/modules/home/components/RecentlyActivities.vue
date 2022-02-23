@@ -67,6 +67,7 @@ h1 {
   font-size: 24px;
 }
 .activity_title {
+  margin-top: 60px;
   font-size: 24px;
   position: relative;
 }
@@ -80,7 +81,7 @@ h1 {
   content: "";
   width: 60px;
   height: 20px;
-  background: #ffce5b;
+  background: #F6A096;
   position: absolute;
   left: 50px;
   top: 4px;
@@ -115,6 +116,7 @@ h1 {
 .activity_post:hover {
   transform: translate(-2px, -2px);
   box-shadow: 2px 2px 5px #a7a7a7;
+  cursor: pointer;
 }
 
 .post_date {

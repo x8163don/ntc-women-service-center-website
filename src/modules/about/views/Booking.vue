@@ -59,7 +59,7 @@ export default {};
 }
 
 .main_container {
-  border: 8px solid #ffce5b;
+  border: 8px solid #F6A096;
   border-radius: 40px;
   padding: 40px;
   display: flex;
@@ -104,7 +104,7 @@ h1 {
 }
 
 .download:hover {
-  box-shadow: 3px 3px 10px #ffce5b;
+  box-shadow: 3px 3px 10px #F6A096;
 }
 
 .breadcrumb_list > li {
@@ -122,7 +122,7 @@ h1 {
 .breadcrumb_list > li::before {
   content: "/";
   font-size: 18px;
-  color: #ffce5b;
+  color: #F6A096;
   margin: 0 10px;
 }
 

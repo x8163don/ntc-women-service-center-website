@@ -35,7 +35,7 @@ h3 {
 }
 
 .main_container {
-  border: 8px solid #ffce5b;
+  border: 8px solid #F6A096;
   border-radius: 40px;
   padding: 40px;
   display: flex;
@@ -65,7 +65,7 @@ h3 {
 .breadcrumb_list > li::before {
   content: "/";
   font-size: 18px;
-  color: #ffce5b;
+  color: #F6A096;
   margin: 0 10px;
 }
 

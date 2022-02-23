@@ -133,7 +133,6 @@
 
 .medals_content {
   display: flex;
-  background-color: #ffefce;
   justify-content: space-around;
   padding: 30px;
   border-radius: 10px;

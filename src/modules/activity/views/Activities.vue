@@ -124,12 +124,12 @@ export default {
 .salon_content_new {
   width: 70%;
   border-radius: 20px;
-  padding-left: 50px;
+  padding-left: 22px;
   line-height: 60px;
   font-size: 16px;
   color: #ff4b2d;
   font-weight: bold;
-  background: #ffefce;
+  background: #FFEEED;
 }
 
 .salon_content_new > a {
@@ -160,7 +160,7 @@ export default {
   font-size: 16px;
   color: #ff4b2d;
   font-weight: bold;
-  background: #ffefce;
+  background: #FFEEED;
 }
 
 .class_content_new a {
@@ -174,5 +174,13 @@ export default {
 
 .link:hover {
   color: #ff4b2d;
+}
+.link{
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.salon_content_old,.class_content_old{
+  margin-bottom: 16px;
 }
 </style>
