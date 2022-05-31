@@ -18,6 +18,7 @@
         <ul class="navitem_secondlist">
           <li><a href="/activity/exhibition">主題展覽</a></li>
           <li><a href="/activity">講座與課程</a></li>
+          <li><a href="/trips">菁桐女路</a></li>
         </ul>
       </div>
 
@@ -120,7 +121,6 @@ nav {
   transform: rotate(90deg);
 }
 
-
 .navitem_secondlist {
   display: none;
   list-style: none;
@@ -138,8 +138,9 @@ nav {
   font-weight: blod;
 }
 
-.navitem_list a,.navitem_secondlist a {
-padding: 10px 20px;
+.navitem_list a,
+.navitem_secondlist a {
+  padding: 10px 20px;
 }
 
 .navitem-arrow::before {
@@ -166,6 +167,6 @@ padding: 10px 20px;
 
 .navitem_list > li:hover,
 .navitem_secondlist > li:hover {
-  background-color: #FFEEED;
+  background-color: #ffeeed;
 }
 </style>

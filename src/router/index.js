@@ -13,6 +13,7 @@ const Activities = () => import("../modules/activity/views/Activities");
 const GenderEquality = () => import("../modules/gender/views/GenderEquality");
 const WomanPower = () => import("../modules/power/views/WomanPower");
 const Volunteer = () => import("../modules/volunteer/views/Volunteer");
+const Trips = () => import("../modules/trips/views/Trips");
 
 Vue.use(VueRouter);
 
@@ -66,6 +67,11 @@ const routes = [
     path: "/post/:id",
     name: "PostDetail",
     component: PostDetail
+  },
+  {
+    path: "/trips/",
+    name: "Trips",
+    component: Trips
   },
   {
     path: "*",
