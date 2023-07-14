@@ -1,0 +1,29 @@
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    container: node:16
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+          git config --global --add safe.directory /__w/tcva-website/tcva-website/github-pages-deploy-action-temp-deployment-folder
+
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          clean: true
+          clean-exclude: |
+            CNAME.txt
