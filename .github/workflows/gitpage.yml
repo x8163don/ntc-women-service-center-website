@@ -14,8 +14,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          git config --global --add safe.directory /__w/tcva-website/tcva-website/github-pages-deploy-action-temp-deployment-folder
-
+          git config --global --add safe.directory /__w/ntc-women-service-center-website/ntc-women-service-center-website/github-pages-deploy-action-temp-deployment-folder
       - name: Install rsync 📚
         run: |
           apt-get update && apt-get install -y rsync
