@@ -194,8 +194,8 @@
       </div>
       <div>
         <iframe
-            src="https://calendar.google.com/calendar/embed?src=3ic4ib1rv215fp5ja9f20u2ogk%40group.calendar.google.com&ctz=Asia%2FTaipei"
-            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23f6a096&ctz=Asia%2FTaipei&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=bnR3c2M5MDI5QGdtYWlsLmNvbQ&src=ZjVkN2E3MWFkY2EyNGNhYTM0YTEyODgzODE1Yzk3ZjU5ZTE4YmE2N2U3NTFmZjQ2YzNlN2NmYzczZGJkMTdmMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=M2ljNGliMXJ2MjE1ZnA1amE5ZjIwdTJvZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23B39DDB&color=%233F51B5"
+            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
 
