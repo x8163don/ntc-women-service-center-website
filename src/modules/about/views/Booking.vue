@@ -3,12 +3,6 @@
   <div class="main_container">
     <div class="content_container">
       <h1>新北市婦女服務中心場地使用管理要點</h1>
-
-      <div class="img_container">
-        <img class="place_img" src="../../../assets/about/booking/place1.jpg"/>
-        <img class="place_img" src="../../../assets/about/booking/place2.jpg"/>
-      </div>
-
       <p>
         <img
             class="icon_check"
@@ -183,6 +177,11 @@
 
     <div class="book_action_container">
       <div>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23f6a096&ctz=Asia%2FTaipei&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=bnR3c2M5MDI5QGdtYWlsLmNvbQ&src=ZjVkN2E3MWFkY2EyNGNhYTM0YTEyODgzODE1Yzk3ZjU5ZTE4YmE2N2U3NTFmZjQ2YzNlN2NmYzczZGJkMTdmMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=M2ljNGliMXJ2MjE1ZnA1amE5ZjIwdTJvZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23B39DDB&color=%233F51B5"
+            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div>
         <p class="download_button">
           <a
               href="https://docs.google.com/document/d/1p2SM6-HGWeJknO9FiBsbJ9JFORT8BNAF/edit?usp=sharing&ouid=115132396574802911669&rtpof=true&sd=true"
@@ -192,12 +191,13 @@
           /></a>
         </p>
       </div>
-      <div>
-        <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23f6a096&ctz=Asia%2FTaipei&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=bnR3c2M5MDI5QGdtYWlsLmNvbQ&src=ZjVkN2E3MWFkY2EyNGNhYTM0YTEyODgzODE1Yzk3ZjU5ZTE4YmE2N2U3NTFmZjQ2YzNlN2NmYzczZGJkMTdmMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=M2ljNGliMXJ2MjE1ZnA1amE5ZjIwdTJvZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23039BE5&color=%23B39DDB&color=%233F51B5"
-            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
     </div>
+
+    <div class="img_container">
+      <img class="place_img" src="../../../assets/about/booking/place1.jpg"/>
+      <img class="place_img" src="../../../assets/about/booking/place2.jpg"/>
+    </div>
+
 
   </div>
 </template>
@@ -221,14 +221,15 @@ export default {};
 .img_container {
   padding-top: 20px;
   width: 30%;
+  display: flex;
 }
 
 .place_img {
   border-radius: 10px;
+  margin-left: 10px;
   width: 300px;
   height: 200px;
   object-fit: cover;
-  margin-bottom: 10px;
 }
 
 .content_container {
