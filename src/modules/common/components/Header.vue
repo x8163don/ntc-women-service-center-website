@@ -23,7 +23,7 @@
       </div>
 
       <a class="navitem" href="/gender">性別平等專區</a>
-      <a class="navitem" href="/power">女力加油站</a>
+      <a class="navitem" href="/download">下載專區</a>
       <a class="navitem" href="/volunteer">志工服務</a>
     </nav>
   </header>

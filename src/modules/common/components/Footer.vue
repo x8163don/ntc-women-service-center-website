@@ -27,7 +27,7 @@
         <li><a href="/activity/exhibition">主題展覽</a></li>
         <li><a href="/activity">講座與課程</a></li>
         <li><a href="/gender">性別平等專區</a></li>
-        <li><a href="/power">女力加油站</a></li>
+        <li><a href="/download">下載專區</a></li>
         <li><a href="/volunteer">志工服務</a></li>
       </ul>
       <div class="img_icon">

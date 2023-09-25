@@ -91,7 +91,7 @@
 
     <div class="download_container">
       <div class="download_tilte">
-        <img src="../../../assets/gender_equality/Icon-download.png" />下載專區
+        <img src="../../../assets/gender_equality/Icon-download.png" />性別平等相關研究
       </div>
       <div class="download_content">
         <div class="download_link">

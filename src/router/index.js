@@ -59,7 +59,7 @@ const routes = [
     component: GenderEquality
   },
   {
-    path: "/power",
+    path: "/download",
     name: "WomanPower",
     component: WomanPower
   },

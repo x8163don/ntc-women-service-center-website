@@ -40,7 +40,7 @@
         ><br />
       </div>
       <div class="library_content">
-        <img src="../../../assets/power/Icon-play.png" /><br />課程影音<br />
+        <img src="../../../assets/power/Icon-play.png" /><br />水電工班課程影音<br />
         <a href="https://youtu.be/RIx0v-4zurw" target="_blank"
           >水電基礎教學單元一</a
         ><br />
