@@ -106,8 +106,7 @@
         </div>
         <img src="../../../assets/power/playlink.png" target="_blank" /><a
           href="https://www.youtube.com/channel/UCMzQZyh84q_60M9Hu3YJAqg/videos"
-          >觀看系列影片</a
-        >
+          >觀看系列影片</a>
       </div>
     </div>
   </div>

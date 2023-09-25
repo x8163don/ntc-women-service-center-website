@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <a href="./index.html"><img src="../../../assets/header/logo.png"/></a>
+      <a href="/"><img src="../../../assets/header/logo.png"/></a>
     </div>
     <nav>
       <div class="navitem navitem-arrow">

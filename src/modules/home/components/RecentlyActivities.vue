@@ -3,14 +3,14 @@
     <h1 class="activity_title">活動消息</h1>
     <div class="activity">
       <div
-        class="activity_post"
-        v-for="(item, idx) in recent"
-        :key="item.ID"
-        @click="$router.push(`/post/${item.ID}`)"
+          class="activity_post"
+          v-for="(item, idx) in recent"
+          :key="item.ID"
+          @click="$router.push(`/post/${item.ID}`)"
       >
         <div class="post_img">
           <a>
-            <img :src="getImageByIdx(idx)" />
+            <img :src="getImage(item,idx)"/>
           </a>
         </div>
         <div class="post_container">
@@ -27,9 +27,9 @@
   </div>
 </template>
 <script>
-import { getPosts } from "../../api";
+import {getPosts} from "../../api";
 import moment from "moment";
-import { htmlToText } from "html-to-text";
+import {htmlToText} from "html-to-text";
 
 export default {
   name: "RecentlyActivities",
@@ -42,7 +42,7 @@ export default {
     }
   },
   async mounted() {
-    const activities = await getPosts({ category: "中心活動", number: 3 });
+    const activities = await getPosts({category: "中心活動", number: 3});
     this.recent = this.recent.concat(activities.data.posts);
   },
   data() {
@@ -51,7 +51,18 @@ export default {
     };
   },
   methods: {
-    getImageByIdx(idx) {
+    getImage(item, idx) {
+
+      const content = item.content
+      const temp = document.createElement('div');
+      temp.innerHTML = content
+
+      const imgs = Array.apply(null, temp.querySelectorAll("\\img"))
+      const thumbnail = imgs.find(img => img.width > 100 && img.height > 100)
+      if (thumbnail) {
+        return thumbnail.src
+      }
+
       const images = ["salon", "womencollege", "tool"];
       return require(`../../../assets/home/${images[idx % 3]}.png`);
     }
@@ -66,6 +77,7 @@ h1 {
   margin-top: 20px;
   font-size: 24px;
 }
+
 .activity_title {
   margin-top: 60px;
   font-size: 24px;
@@ -108,8 +120,6 @@ h1 {
 
 .post_container {
   height: 250px;
-  border: 1px solid #a7a7a7;
-  border-top: transparent;
   padding: 30px;
 }
 
@@ -137,5 +147,11 @@ h1 {
 
 .post_excerpt {
   font-size: 16px;
+}
+
+.post_img > a > img {
+  width: 370px;
+  height: 250px;
+  object-fit: scale-down;
 }
 </style>
