@@ -64,7 +64,7 @@ export default {
   async mounted() {
     await getPosts({
       number: 10,
-      category: "活動報報"
+      category: "活動"
     }).then(response => {
       this.activities = response.data.posts;
     });
