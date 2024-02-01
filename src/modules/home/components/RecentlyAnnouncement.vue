@@ -38,7 +38,7 @@ export default {
     }
   },
   async mounted() {
-    const news = await getPosts({ category: "最新消息", number: 2 });
+    const news = await getPosts({ category: "中心公告", number: 2 });
     this.recent = this.recent.concat(news.data.posts);
   },
   data() {

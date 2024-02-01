@@ -42,7 +42,7 @@ export default {
     }
   },
   async mounted() {
-    const activities = await getPosts({category: "中心活動", number: 3});
+    const activities = await getPosts({category: "活動消息", number: 3});
     this.recent = this.recent.concat(activities.data.posts);
   },
   data() {

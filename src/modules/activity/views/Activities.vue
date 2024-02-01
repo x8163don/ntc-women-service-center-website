@@ -33,12 +33,12 @@
           class="class_content_new pointer"
           @click="$router.push(`/post/${newlyCourse.ID}`)"
         >
-          最新活動
+          最新課程
           <a> {{ newlyCourse.title }} </a>
         </div>
 
         <div class="class_content_old">
-          歷史活動
+          歷史課程
         </div>
         <div
           v-for="course in oldCourses"
