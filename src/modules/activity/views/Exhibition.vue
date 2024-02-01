@@ -72,7 +72,7 @@ export default {
       this.onlineExhibitions = response.data.posts;
     });
     await getPosts({
-      number: 100,
+      number: 20,
       category: "展覽"
     }).then(response => {
       this.exhibitions = response.data.posts;
@@ -216,7 +216,9 @@ export default {
 
 .history_content_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .poster {
