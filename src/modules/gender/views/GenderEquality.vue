@@ -12,10 +12,10 @@
             Against Women
           </div>
           <div class="banner_info">
-            聯合國大會於1979年12月通過，並開放給各國簽字、批准和加入生效<br />
-            公約的成員國須承諾履行一系列的措施，終止一切形式對婦女的歧視。<br />
-            <br />
-            保障婦女在政治、法律、工作、教育、醫療服務、商業活動與家庭關係<br />等各方面的權利。
+            聯合國大會於1979年12月通過，並開放給各國簽字、批准和加入生效<br/>
+            公約的成員國須承諾履行一系列的措施，終止一切形式對婦女的歧視。<br/>
+            <br/>
+            保障婦女在政治、法律、工作、教育、醫療服務、商業活動與家庭關係<br/>等各方面的權利。
           </div>
         </div>
       </div>
@@ -24,19 +24,19 @@
     <div class="film_container">
       <div class="youtube">
         <iframe
-          id="youtube"
-          width="570"
-          height="360"
-          :src="selectedVideo.url"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+            id="youtube"
+            width="570"
+            height="360"
+            :src="selectedVideo.url"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
         ></iframe>
       </div>
       <div class="youtubelist_container">
         <div class="youbelist_title">
-          <img src="../../../assets/gender_equality/Icon-video.png" />
+          <img src="../../../assets/gender_equality/Icon-video.png"/>
           CEDAW系列短片
         </div>
         <div class="animate_link_container">
@@ -45,10 +45,10 @@
           </div>
           <div id="cedaw-list" class="youtubelist_link">
             <div
-              class="video_item"
-              v-for="video in cedawVideos"
-              :key="video.url"
-              @click="selectVideo(video)"
+                class="video_item"
+                v-for="video in cedawVideos"
+                :key="video.url"
+                @click="selectVideo(video)"
             >
               <div class="dot"></div>
               <div>{{ video.title }}</div>
@@ -59,7 +59,7 @@
 
       <div class="youtubelist_container">
         <div class="youbelist_title">
-          <img src="../../../assets/gender_equality/Icon-video.png" />
+          <img src="../../../assets/gender_equality/Icon-video.png"/>
           反性別暴力倡議史
         </div>
         <div class="animate_link_container">
@@ -68,21 +68,21 @@
           </div>
           <div id="anti_gender-list" class="youtubelist_link">
             <div
-              class="video_item"
-              v-for="video in antiViolenceVideos"
-              :key="video.url"
-              @click="selectVideo(video)"
+                class="video_item"
+                v-for="video in antiViolenceVideos"
+                :key="video.url"
+                @click="selectVideo(video)"
             >
               <div class="dot"></div>
               <div>{{ video.title }}</div>
             </div>
             <a
-              href="https://www.youtube.com/channel/UCI1902Tuyzq5WXRevEtA5pA/videos"
+                href="https://www.youtube.com/channel/UCI1902Tuyzq5WXRevEtA5pA/videos"
             >
               觀看更多<img
                 class="arrowlink"
                 src="../../../assets/gender_equality/Icon-right-circle.png"
-              />
+            />
             </a>
           </div>
         </div>
@@ -91,37 +91,37 @@
 
     <div class="download_container">
       <div class="download_tilte">
-        <img src="../../../assets/gender_equality/Icon-download.png" />性別平等相關研究
+        <img src="../../../assets/gender_equality/Icon-download.png"/>性別平等相關研究
       </div>
       <div class="download_content">
         <div class="download_link">
           <a
-            v-for="item in genderImage"
-            :key="item.url"
-            target="_blank"
-            :href="item.url"
-            style="display: block; margin-bottom: 20px"
-            >{{ item.name }}</a
+              v-for="item in genderImage"
+              :key="item.url"
+              target="_blank"
+              :href="item.url"
+              style="display: block; margin-bottom: 20px"
+          >{{ item.name }}</a
           >
         </div>
         <div class="download_link">
           <a
-            v-for="item in life"
-            :key="item.url"
-            target="_blank"
-            :href="item.url"
-            style="display: block; margin-bottom: 20px"
-            >{{ item.name }}</a
+              v-for="item in life"
+              :key="item.url"
+              target="_blank"
+              :href="item.url"
+              style="display: block; margin-bottom: 20px"
+          >{{ item.name }}</a
           >
         </div>
         <div class="download_link">
           <a
-            v-for="item in requirement"
-            :key="item.url"
-            target="_blank"
-            :href="item.url"
-            style="display: block; margin-bottom: 20px"
-            >{{ item.name }}</a
+              v-for="item in requirement"
+              :key="item.url"
+              target="_blank"
+              :href="item.url"
+              style="display: block; margin-bottom: 20px"
+          >{{ item.name }}</a
           >
         </div>
       </div>
@@ -162,50 +162,56 @@ export default {
           category: "性別圖像",
           name: "2021年性別圖像",
           url:
-            "https://drive.google.com/file/d/1HtDgZkzgSeTtYhBLbSMGPc_0CY4IL4m1/view"
+              "https://drive.google.com/file/d/1HtDgZkzgSeTtYhBLbSMGPc_0CY4IL4m1/view"
         },
         {
           category: "性別圖像",
           name: "2020年性別圖像",
           url:
-            "https://drive.google.com/file/d/1TcikE1RRQWBlGTAhGQKC2DZm6wGLuvuG/view"
+              "https://drive.google.com/file/d/1TcikE1RRQWBlGTAhGQKC2DZm6wGLuvuG/view"
         },
         {
           category: "性別圖像",
           name: "2019年性別圖像",
           url:
-            "https://drive.google.com/file/d/1TW6W1MHmhp8mVmwICyi0iTi_L2DEBrge/view"
+              "https://drive.google.com/file/d/1TW6W1MHmhp8mVmwICyi0iTi_L2DEBrge/view"
         },
         {
           category: "性別圖像",
           name: "2018年性別圖像",
           url:
-            "https://drive.google.com/file/d/1wZFm7ZqxWPwpWcvHhNGDdTp6ytMCYkxw/view"
+              "https://drive.google.com/file/d/1wZFm7ZqxWPwpWcvHhNGDdTp6ytMCYkxw/view"
         },
         {
           category: "性別圖像",
 
           name: "2017年性別圖像",
           url:
-            "https://drive.google.com/file/d/1IuhjIr2SG0Iwp0jzTEec0WAYNID7WgrS/view"
+              "https://drive.google.com/file/d/1IuhjIr2SG0Iwp0jzTEec0WAYNID7WgrS/view"
         },
         {
           category: "婦女生活調查",
           name: "108年全國婦女生活狀況調查報告",
           url:
-            "https://drive.google.com/file/d/1c5GWxDLkOnJkJL6PDquz5tDDaHIZzOUO/view"
+              "https://drive.google.com/file/d/1c5GWxDLkOnJkJL6PDquz5tDDaHIZzOUO/view"
         },
         {
           category: "婦女生活調查",
           name: "104年全國婦女生活狀況調查報告",
           url:
-            "https://drive.google.com/file/d/1IDT_v8GoNcbY0-dCw0wz4bypzSwzb0p-/view"
+              "https://drive.google.com/file/d/1IDT_v8GoNcbY0-dCw0wz4bypzSwzb0p-/view"
+        },
+        {
+          category: "婦女需求調查",
+          name: "108年新北市婦女需求調查表",
+          url:
+              "https://drive.google.com/file/d/1Dr37smWa5zyOswmsVl94UM3ccLNQYLrA/view"
         },
         {
           category: "婦女需求調查",
           name: "103年新北市婦女需求調查表",
           url:
-            "https://drive.google.com/file/d/1GApwelRiEnBzQYDQTaIVtY9KBH6hxF4O/view"
+              "https://drive.google.com/file/d/1GApwelRiEnBzQYDQTaIVtY9KBH6hxF4O/view"
         }
       ]
     };
