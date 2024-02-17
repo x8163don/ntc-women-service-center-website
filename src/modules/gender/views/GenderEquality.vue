@@ -124,6 +124,16 @@
           >{{ item.name }}</a
           >
         </div>
+        <div class="download_link">
+          <a
+              v-for="item in genderMagazine"
+              :key="item.url"
+              target="_blank"
+              :href="item.url"
+              style="display: block; margin-bottom: 20px"
+          >{{ item.name }}</a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -148,6 +158,9 @@ export default {
     },
     requirement() {
       return this.files.filter(item => item.category === "婦女需求調查");
+    },
+    genderMagazine() {
+      return this.files.filter(item => item.category === "性別平等教育季刊");
     }
   },
   data() {
@@ -212,6 +225,52 @@ export default {
           name: "103年新北市婦女需求調查表",
           url:
               "https://drive.google.com/file/d/1GApwelRiEnBzQYDQTaIVtY9KBH6hxF4O/view"
+        },
+        {
+          category: "性別平等教育季刊",
+          name: "102期 給教育造浪者的性教育",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/%E7%AC%AC102%E6%9C%9F%20%E7%B5%A6%E6%95%99%E8%82%B2%E9%80%A0%E6%B5%AA%E8%80%85%E7%9A%84%E6%80%A7%E6%95%99%E8%82%B2.pdf"
+        }
+        ,
+        {
+          category: "性別平等教育季刊",
+          name: "101期 給教育造浪者的性教育",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/%E7%AC%AC101%E6%9C%9F%20%E7%99%BD%E8%89%B2%E6%81%90%E6%80%96%E7%9A%84%E6%80%A7%E5%88%A5%E9%9D%A2%E9%9D%A2%E8%A7%80--%E7%A9%BF%E8%B6%8A%E6%BF%83%E9%9C%A7%E7%9A%84%E4%BA%BA%EF%BC%9A%E5%A5%B9%E7%9A%84%E7%99%BD%E6%81%90%E8%A8%98%E6%86%B6%E8%88%87%E8%A6%8B%E8%AD%89_v2.pdf"
+        }
+        ,
+        {
+          category: "性別平等教育季刊",
+          name: "100期 世代留聲──我們新住在臺灣",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/%E7%AC%AC100%E6%9C%9F%20%E4%B8%96%E4%BB%A3%E7%95%99%E8%81%B2%E2%94%80%E2%94%80%E6%88%91%E5%80%91%E6%96%B0%E4%BD%8F%E5%9C%A8%E8%87%BA%E7%81%A3.pdf"
+        }
+        , {
+          category: "性別平等教育季刊",
+          name: "99期 請問貴姓？──姓氏的性別政治",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/NO99%20%E8%AB%8B%E5%95%8F%E8%B2%B4%E5%A7%93%EF%BC%9F%E2%94%80%E2%94%80%E5%A7%93%E6%B0%8F%E7%9A%84%E6%80%A7%E5%88%A5%E6%94%BF%E6%B2%BB.pdf"
+        }
+        , {
+          category: "性別平等教育季刊",
+          name: "98期 大學校園性別友善空間開箱！",
+          url: "https://www.gender.edu.tw/web//upload/society/Magazine/NO98%20%20%E5%A4%A7%E5%AD%B8%E6%A0%A1%E5%9C%92%E6%80%A7%E5%88%A5%E5%8F%8B%E5%96%84%E7%A9%BA%E9%96%93%E9%96%8B%E7%AE%B1%EF%BC%81.pdf"
+        }
+        , {
+          category: "性別平等教育季刊",
+          name: "97期 社區，有她陪伴！",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/NO97%20%20%E7%A4%BE%E5%8D%80%EF%BC%8C%E6%9C%89%E5%A5%B9%E9%99%AA%E4%BC%B4%EF%BC%81.pdf"
+        }
+        , {
+          category: "性別平等教育季刊",
+          name: "96期 跨性別專題，第二個十年",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/NO96%20%20%E8%B7%A8%E6%80%A7%E5%88%A5%E5%B0%88%E9%A1%8C%EF%BC%8C%E7%AC%AC%E4%BA%8C%E5%80%8B%E5%8D%81%E5%B9%B4.pdf"
+        }
+        , {
+          category: "性別平等教育季刊",
+          name: "95期 多元文化/性別與家庭",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/NO95%20%E5%A4%9A%E5%85%83%E6%96%87%E5%8C%96%E3%80%81%E6%80%A7%E5%88%A5%E8%88%87%E5%AE%B6%E5%BA%AD_v2.s.pdf"
+        }, {
+          category: "性別平等教育季刊",
+          name: "94期 國際人權公約在臺灣",
+          url: "https://www.gender.edu.tw/web/upload/society/Magazine/NO94%20%E5%9C%8B%E9%9A%9B%E4%BA%BA%E6%AC%8A%E5%85%AC%E7%B4%84%E5%9C%A8%E8%87%BA%E7%81%A3v4.pdf"
         }
       ]
     };
@@ -330,7 +389,9 @@ export default {
 
 .download_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap:15px 20px;
   margin-top: 40px;
 }
 
@@ -339,6 +400,7 @@ export default {
   border-radius: 10px;
   padding: 30px;
   height: 100%;
+  width: 30%;
 }
 
 a {
