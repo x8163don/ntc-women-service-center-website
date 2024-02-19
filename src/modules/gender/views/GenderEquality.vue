@@ -173,6 +173,22 @@ export default {
       files: [
         {
           category: "性別圖像",
+          name: "2024年性別圖像",
+          url:
+              "https://drive.google.com/file/d/1yHuMiZCq8QN1FeC1zVwajRszlS1hFBx4/view"
+        }, {
+          category: "性別圖像",
+          name: "2023年性別圖像",
+          url:
+              "https://drive.google.com/file/d/1XEOprIe1npHQdPvAzCKt-U-y5AoiWDdQ/view"
+        }, {
+          category: "性別圖像",
+          name: "2022年性別圖像",
+          url:
+              "https://drive.google.com/file/d/1ernCVYXWiaxW2XA7cXMlJtbUXFQZyuMh/view"
+        },
+        {
+          category: "性別圖像",
           name: "2021年性別圖像",
           url:
               "https://drive.google.com/file/d/1HtDgZkzgSeTtYhBLbSMGPc_0CY4IL4m1/view"
@@ -391,7 +407,7 @@ export default {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap:15px 20px;
+  gap: 15px 20px;
   margin-top: 40px;
 }
 
