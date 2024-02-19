@@ -95,6 +95,7 @@
       </div>
       <div class="download_content">
         <div class="download_link">
+          <div class="research_title">性別圖像</div>
           <a
               v-for="item in genderImage"
               :key="item.url"
@@ -105,6 +106,7 @@
           >
         </div>
         <div class="download_link">
+          <div class="research_title">婦女生活調查</div>
           <a
               v-for="item in life"
               :key="item.url"
@@ -115,6 +117,7 @@
           >
         </div>
         <div class="download_link">
+          <div class="research_title">婦女需求調查</div>
           <a
               v-for="item in requirement"
               :key="item.url"
@@ -125,6 +128,7 @@
           >
         </div>
         <div class="download_link">
+          <div class="research_title">性別平等教育季刊</div>
           <a
               v-for="item in genderMagazine"
               :key="item.url"
@@ -401,6 +405,13 @@ export default {
 
 .download_tilte > img {
   margin-right: 10px;
+}
+
+.research_title {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 8px 0;
+  color: gray;
 }
 
 .download_content {
